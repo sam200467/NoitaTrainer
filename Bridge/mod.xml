@@ -1,0 +1,7 @@
+<Mod
+  name="Codex Noita Trainer Bridge"
+  description="Local bridge for live Noita statistics, overlays, teleportation, and trainer actions."
+  request_no_api_restrictions="1"
+  is_game_mode="0"
+>
+</Mod>

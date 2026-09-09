@@ -1,0 +1,8259 @@
+{
+ "spells": [
+  {
+   "id": "BOMB",
+   "zh": "炸弹",
+   "en": "Bomb",
+   "iconIndex": 37,
+   "description": "召唤一枚对地形破坏力极大的炸弹"
+  },
+  {
+   "id": "LIGHT_BULLET",
+   "zh": "火花弹",
+   "en": "Spark bolt",
+   "iconIndex": 231,
+   "description": "弱小但带有迷人闪烁的投射物"
+  },
+  {
+   "id": "LIGHT_BULLET_TRIGGER",
+   "zh": "触发火花弹",
+   "en": "Spark bolt with trigger",
+   "iconIndex": 233,
+   "description": "在碰撞时施放另一法术的火花弹"
+  },
+  {
+   "id": "LIGHT_BULLET_TRIGGER_2",
+   "zh": "双重触发火花弹",
+   "en": "Spark bolt with double trigger",
+   "iconIndex": 234,
+   "description": "在碰撞时施放另外两个法术的火花弹"
+  },
+  {
+   "id": "LIGHT_BULLET_TIMER",
+   "zh": "定时火花弹",
+   "en": "Spark bolt with timer",
+   "iconIndex": 232,
+   "description": "在定时结束后释放另一法术的火花弹"
+  },
+  {
+   "id": "BULLET",
+   "zh": "魔法箭",
+   "en": "Magic arrow",
+   "iconIndex": 56,
+   "description": "好用的魔法箭"
+  },
+  {
+   "id": "BULLET_TRIGGER",
+   "zh": "触发魔法箭",
+   "en": "Magic arrow with trigger",
+   "iconIndex": 58,
+   "description": "在碰撞时释放另一法术的魔法箭"
+  },
+  {
+   "id": "BULLET_TIMER",
+   "zh": "定时魔法箭",
+   "en": "Magic arrow with timer",
+   "iconIndex": 57,
+   "description": "在定时结束后释放另一法术的魔法箭"
+  },
+  {
+   "id": "HEAVY_BULLET",
+   "zh": "魔法弹",
+   "en": "Magic bolt",
+   "iconIndex": 170,
+   "description": "魔法师们的常用弹药，但更大一号"
+  },
+  {
+   "id": "HEAVY_BULLET_TRIGGER",
+   "zh": "触发魔法弹",
+   "en": "Magic bolt with trigger",
+   "iconIndex": 172,
+   "description": "在碰撞时释放另一法术的魔法弹"
+  },
+  {
+   "id": "HEAVY_BULLET_TIMER",
+   "zh": "定时魔法弹",
+   "en": "Magic bolt with timer",
+   "iconIndex": 171,
+   "description": "在定时结束后释放另一法术的魔法弹"
+  },
+  {
+   "id": "AIR_BULLET",
+   "zh": "强气流",
+   "en": "Burst of air",
+   "iconIndex": 6,
+   "description": "能够大幅推动物体的一道气流"
+  },
+  {
+   "id": "SLOW_BULLET",
+   "zh": "能量球",
+   "en": "Energy orb",
+   "iconIndex": 338,
+   "description": "缓慢而强大的能量球"
+  },
+  {
+   "id": "SLOW_BULLET_TRIGGER",
+   "zh": "触发能量球",
+   "en": "Energy orb with a trigger",
+   "iconIndex": 340,
+   "description": "在碰撞时释放另一法术的能量球"
+  },
+  {
+   "id": "SLOW_BULLET_TIMER",
+   "zh": "定时能量球",
+   "en": "Energy orb with a timer",
+   "iconIndex": 339,
+   "description": "在定时结束后释放另一法术的能量球"
+  },
+  {
+   "id": "HOOK",
+   "zh": "抓钩魔弹",
+   "en": "Hookbolt",
+   "iconIndex": 194,
+   "description": "将施法者向其失效位置拉动的发光抓钩"
+  },
+  {
+   "id": "BLACK_HOLE",
+   "zh": "黑洞",
+   "en": "Black hole",
+   "iconIndex": 29,
+   "description": "缓慢的虚无球体，吞噬沿路的一切材料"
+  },
+  {
+   "id": "BLACK_HOLE_DEATH_TRIGGER",
+   "zh": "失效触发黑洞",
+   "en": "Black Hole with Death Trigger",
+   "iconIndex": 31,
+   "description": "在失效时释放另一法术的黑洞"
+  },
+  {
+   "id": "WHITE_HOLE",
+   "zh": "白洞",
+   "en": "White hole",
+   "iconIndex": 411,
+   "description": "一个正面能量球体，摧毁所及的一切"
+  },
+  {
+   "id": "BLACK_HOLE_BIG",
+   "zh": "巨型黑洞",
+   "en": "Giga black hole",
+   "iconIndex": 30,
+   "description": "不断增长的负能量球体，摧毁所及的一切"
+  },
+  {
+   "id": "WHITE_HOLE_BIG",
+   "zh": "巨型白洞",
+   "en": "Giga white hole",
+   "iconIndex": 412,
+   "description": "不断增长的正能量球体，摧毁所及的一切"
+  },
+  {
+   "id": "BLACK_HOLE_GIGA",
+   "zh": "终极黑洞",
+   "en": "Omega Black Hole",
+   "iconIndex": 32,
+   "description": "即使是光也终将灭亡..."
+  },
+  {
+   "id": "WHITE_HOLE_GIGA",
+   "zh": "终极白洞",
+   "en": "Omega white hole",
+   "iconIndex": 413,
+   "description": "一个巨大的正面能量球体，摧毁所及的一切"
+  },
+  {
+   "id": "TENTACLE_PORTAL",
+   "zh": "邪神传送门",
+   "en": "Eldritch portal",
+   "iconIndex": 378,
+   "description": "打开一个单向传送门，邪恶的异界生物会伸出它们的触手"
+  },
+  {
+   "id": "SPITTER",
+   "zh": "分裂弹",
+   "en": "Spitter bolt",
+   "iconIndex": 347,
+   "description": "快速但寿命短暂的魔法弹"
+  },
+  {
+   "id": "SPITTER_TIMER",
+   "zh": "定时分裂弹",
+   "en": "Spitter bolt with timer",
+   "iconIndex": 352,
+   "description": "在定时结束后释放另一法术的分裂弹"
+  },
+  {
+   "id": "SPITTER_TIER_2",
+   "zh": "大型分裂弹",
+   "en": "Large spitter bolt",
+   "iconIndex": 348,
+   "description": "分裂弹的更强大版本"
+  },
+  {
+   "id": "SPITTER_TIER_2_TIMER",
+   "zh": "定时大型分裂弹",
+   "en": "Large spitter bolt with timer",
+   "iconIndex": 349,
+   "description": "定时分裂弹的更强大版本"
+  },
+  {
+   "id": "SPITTER_TIER_3",
+   "zh": "巨型分裂弹",
+   "en": "Giant spitter bolt",
+   "iconIndex": 350,
+   "description": "最强大形式的分裂弹"
+  },
+  {
+   "id": "SPITTER_TIER_3_TIMER",
+   "zh": "定时巨型分裂弹",
+   "en": "Giant spitter bolt with timer",
+   "iconIndex": 351,
+   "description": "最强大形式的定时分裂弹"
+  },
+  {
+   "id": "BUBBLESHOT",
+   "zh": "泡泡火花",
+   "en": "Bubble spark",
+   "iconIndex": 53,
+   "description": "弹性十足但不够准确的投射物"
+  },
+  {
+   "id": "BUBBLESHOT_TRIGGER",
+   "zh": "触发泡泡火花",
+   "en": "Bubble spark with trigger",
+   "iconIndex": 54,
+   "description": "在碰撞时释放另一法术的泡泡火花"
+  },
+  {
+   "id": "DISC_BULLET",
+   "zh": "圆锯片",
+   "en": "Disc projectile",
+   "iconIndex": 111,
+   "description": "锐利且富有弹性的的锯片"
+  },
+  {
+   "id": "DISC_BULLET_BIG",
+   "zh": "巨型锯片",
+   "en": "Giga disc projectile",
+   "iconIndex": 112,
+   "description": "更大号的锯片！而且它好像关于如何飞行有它自己的想法..."
+  },
+  {
+   "id": "DISC_BULLET_BIGGER",
+   "zh": "终极锯片",
+   "en": "Summon Omega Sawblade",
+   "iconIndex": 113,
+   "description": "这锯片是真的离谱"
+  },
+  {
+   "id": "BOUNCY_ORB",
+   "zh": "弹性能量球",
+   "en": "Energy sphere",
+   "iconIndex": 51,
+   "description": "快速且带有弹性的锋利球体"
+  },
+  {
+   "id": "BOUNCY_ORB_TIMER",
+   "zh": "定时弹性能量球",
+   "en": "Energy sphere with timer",
+   "iconIndex": 52,
+   "description": "在定时结束后释放另一法术的弹性能量球"
+  },
+  {
+   "id": "RUBBER_BALL",
+   "zh": "弹跳绿豆",
+   "en": "Bouncing burst",
+   "iconIndex": 322,
+   "description": "极具弹跳力的投射物"
+  },
+  {
+   "id": "ARROW",
+   "zh": "箭矢",
+   "en": "Arrow",
+   "iconIndex": 23,
+   "description": "召唤一支箭矢"
+  },
+  {
+   "id": "POLLEN",
+   "zh": "孢子球",
+   "en": "Pollen",
+   "iconIndex": 295,
+   "description": "一个小小的漂浮孢子球，缓慢向敌人飞去，被击中时会破裂"
+  },
+  {
+   "id": "LANCE",
+   "zh": "闪耀投枪",
+   "en": "Glowing lance",
+   "iconIndex": 212,
+   "description": "能够穿透柔软材料的魔法长枪"
+  },
+  {
+   "id": "LANCE_HOLY",
+   "zh": "神圣投枪",
+   "en": "Holy Lance",
+   "iconIndex": 213,
+   "description": "迅捷而又带有穿透力的投枪，闪耀着圣洁的力量"
+  },
+  {
+   "id": "ROCKET",
+   "zh": "魔法飞弹",
+   "en": "Magic missile",
+   "iconIndex": 317,
+   "description": "炽烈易爆的投射物"
+  },
+  {
+   "id": "ROCKET_TIER_2",
+   "zh": "大型魔法飞弹",
+   "en": "Large magic missile",
+   "iconIndex": 320,
+   "description": "魔法飞弹的更强大版本"
+  },
+  {
+   "id": "ROCKET_TIER_3",
+   "zh": "巨型魔法飞弹",
+   "en": "Giant magic missile",
+   "iconIndex": 321,
+   "description": "最强大形式的魔法飞弹"
+  },
+  {
+   "id": "GRENADE",
+   "zh": "火焰弹",
+   "en": "Firebolt",
+   "iconIndex": 162,
+   "description": "具备弹跳能力的爆炸性魔法弹"
+  },
+  {
+   "id": "GRENADE_TRIGGER",
+   "zh": "触发火焰弹",
+   "en": "Firebolt with trigger",
+   "iconIndex": 167,
+   "description": "在碰撞时释放另一法术的火焰弹"
+  },
+  {
+   "id": "GRENADE_TIER_2",
+   "zh": "大型火焰弹",
+   "en": "Large firebolt",
+   "iconIndex": 165,
+   "description": "火焰弹的更强大版本"
+  },
+  {
+   "id": "GRENADE_TIER_3",
+   "zh": "巨型火焰弹",
+   "en": "Giant firebolt",
+   "iconIndex": 166,
+   "description": "最强大形式的火焰弹"
+  },
+  {
+   "id": "GRENADE_ANTI",
+   "zh": "怪异火焰弹",
+   "en": "Odd Firebolt",
+   "iconIndex": 163,
+   "description": "不要试图理解它的飞行方式"
+  },
+  {
+   "id": "GRENADE_LARGE",
+   "zh": "下坠火焰弹",
+   "en": "Dropper bolt",
+   "iconIndex": 164,
+   "description": "极为沉重的爆炸魔法弹"
+  },
+  {
+   "id": "MINE",
+   "zh": "不稳晶体",
+   "en": "Unstable crystal",
+   "iconIndex": 255,
+   "description": "水晶制作的地雷，在有生物靠近、被攻击或者一段时间后爆炸"
+  },
+  {
+   "id": "MINE_DEATH_TRIGGER",
+   "zh": "失效触发不稳晶体",
+   "en": "Unstable crystal with trigger",
+   "iconIndex": 256,
+   "description": "在失效时释放另一法术的不稳晶体"
+  },
+  {
+   "id": "PIPE_BOMB",
+   "zh": "休眠晶体",
+   "en": "Dormant crystal",
+   "iconIndex": 291,
+   "description": "只有在被击碎时才会爆炸的晶体"
+  },
+  {
+   "id": "PIPE_BOMB_DEATH_TRIGGER",
+   "zh": "失效触发休眠晶体",
+   "en": "Dormant crystal with trigger",
+   "iconIndex": 292,
+   "description": "在失效时释放另一法术的休眠晶体"
+  },
+  {
+   "id": "FISH",
+   "zh": "召唤鱼",
+   "en": "Summon fish",
+   "iconIndex": 145,
+   "description": "红鲤鱼绿鲤鱼与鱼"
+  },
+  {
+   "id": "EXPLODING_DEER",
+   "zh": "召唤诱饵鹿",
+   "en": "Summon deercoy",
+   "iconIndex": 130,
+   "description": "召唤一只人畜无害的小鹿"
+  },
+  {
+   "id": "EXPLODING_DUCKS",
+   "zh": "召唤鸭群",
+   "en": "Flock of Ducks",
+   "iconIndex": 131,
+   "description": "鸭子，更多鸭子，鸭子持续增长..."
+  },
+  {
+   "id": "WORM_SHOT",
+   "zh": "蠕虫发射器",
+   "en": "Worm Launcher",
+   "iconIndex": 415,
+   "description": "召唤一条蠕虫大闹特闹！"
+  },
+  {
+   "id": "BOMB_DETONATOR",
+   "zh": "引爆器",
+   "en": "Explosive Detonator",
+   "iconIndex": 39,
+   "description": "立即引爆空中的所有投射物"
+  },
+  {
+   "id": "LASER",
+   "zh": "激光",
+   "en": "Concentrated light",
+   "iconIndex": 219,
+   "description": "一束魔法激光"
+  },
+  {
+   "id": "MEGALASER",
+   "zh": "高能激光",
+   "en": "Intense concentrated light",
+   "iconIndex": 252,
+   "description": "召唤一个射出巨大光束的魔杖幻影"
+  },
+  {
+   "id": "LIGHTNING",
+   "zh": "闪电",
+   "en": "Lightning bolt",
+   "iconIndex": 236,
+   "description": "大自然的原始力量"
+  },
+  {
+   "id": "BALL_LIGHTNING",
+   "zh": "球状闪电",
+   "en": "Ball Lightning",
+   "iconIndex": 26,
+   "description": "召唤三个短射程带电球体"
+  },
+  {
+   "id": "LASER_EMITTER",
+   "zh": "电浆束",
+   "en": "Plasma beam",
+   "iconIndex": 220,
+   "description": "一束持续短时间的致命光线"
+  },
+  {
+   "id": "LASER_EMITTER_FOUR",
+   "zh": "电浆束十字",
+   "en": "Plasma Beam Cross",
+   "iconIndex": 222,
+   "description": "四道致命电浆束组成的十字"
+  },
+  {
+   "id": "LASER_EMITTER_CUTTER",
+   "zh": "电浆切割器",
+   "en": "Plasma Cutter",
+   "iconIndex": 221,
+   "description": "切削材料更为高效的电浆束"
+  },
+  {
+   "id": "DIGGER",
+   "zh": "挖掘魔弹",
+   "en": "Digging bolt",
+   "iconIndex": 110,
+   "description": "采矿作业的理想魔弹"
+  },
+  {
+   "id": "POWERDIGGER",
+   "zh": "挖掘爆破",
+   "en": "Digging blast",
+   "iconIndex": 297,
+   "description": "挖掘力更强，且对生物无害的挖掘魔弹"
+  },
+  {
+   "id": "CHAINSAW",
+   "zh": "链锯",
+   "en": "Chainsaw",
+   "iconIndex": 69,
+   "description": "用于切肉的魔法，并且会将当前的施放延迟归零"
+  },
+  {
+   "id": "LUMINOUS_DRILL",
+   "zh": "光剑",
+   "en": "Luminous drill",
+   "iconIndex": 242,
+   "description": "一束精确的短程集聚光束"
+  },
+  {
+   "id": "LASER_LUMINOUS_DRILL",
+   "zh": "定时光剑",
+   "en": "Luminous drill with timer",
+   "iconIndex": 225,
+   "description": "在极短时间后释放另一法术的集聚光束"
+  },
+  {
+   "id": "TENTACLE",
+   "zh": "召唤触手",
+   "en": "Summon Tentacle",
+   "iconIndex": 377,
+   "description": "召唤一条来自异次元的绵延之物"
+  },
+  {
+   "id": "TENTACLE_TIMER",
+   "zh": "定时触手",
+   "en": "Summon Tentacle with timer",
+   "iconIndex": 381,
+   "description": "在定时结束后释放另一法术的触手"
+  },
+  {
+   "id": "HEAL_BULLET",
+   "zh": "治疗魔弹",
+   "en": "Healing bolt",
+   "iconIndex": 169,
+   "description": "带有再生之力的魔弹"
+  },
+  {
+   "id": "ANTIHEAL",
+   "zh": "致命治愈",
+   "en": "Deadly heal",
+   "iconIndex": 17,
+   "description": "一种先造成伤害，然后给予生命恢复效果的投射物"
+  },
+  {
+   "id": "SPIRAL_SHOT",
+   "zh": "螺旋魔弹",
+   "en": "Spiral shot",
+   "iconIndex": 345,
+   "description": "由四颗魔法火花组成的神秘旋涡"
+  },
+  {
+   "id": "MAGIC_SHIELD",
+   "zh": "魔法护卫",
+   "en": "Magic guard",
+   "iconIndex": 243,
+   "description": "四道护卫之光在你周围旋转一段时间"
+  },
+  {
+   "id": "BIG_MAGIC_SHIELD",
+   "zh": "大型魔法护卫",
+   "en": "Big magic guard",
+   "iconIndex": 28,
+   "description": "八道护卫之光在你周围环绕一段时间"
+  },
+  {
+   "id": "CHAIN_BOLT",
+   "zh": "连锁魔弹",
+   "en": "Chain bolt",
+   "iconIndex": 67,
+   "description": "会在敌人之间跳跃的神秘魔弹"
+  },
+  {
+   "id": "FIREBALL",
+   "zh": "火球",
+   "en": "Fireball",
+   "iconIndex": 139,
+   "description": "火魔同款！"
+  },
+  {
+   "id": "METEOR",
+   "zh": "陨石",
+   "en": "Meteor",
+   "iconIndex": 253,
+   "description": "从天而降的毁灭性投射物！"
+  },
+  {
+   "id": "FLAMETHROWER",
+   "zh": "火焰喷射器",
+   "en": "Flamethrower",
+   "iconIndex": 147,
+   "description": "一道火流！"
+  },
+  {
+   "id": "ICEBALL",
+   "zh": "冰球",
+   "en": "Iceball",
+   "iconIndex": 198,
+   "description": "冰魔同款！"
+  },
+  {
+   "id": "SLIMEBALL",
+   "zh": "黏液球",
+   "en": "Slimeball",
+   "iconIndex": 337,
+   "description": "有毒粘液的湿漉漉球体"
+  },
+  {
+   "id": "DARKFLAME",
+   "zh": "黑焰",
+   "en": "Path of dark flame",
+   "iconIndex": 104,
+   "description": "致命黑焰组成的轨迹"
+  },
+  {
+   "id": "MISSILE",
+   "zh": "导弹",
+   "en": "Summon missile",
+   "iconIndex": 257,
+   "description": "一枚会自动追踪并扑向敌人的导弹"
+  },
+  {
+   "id": "FUNKY_SPELL",
+   "zh": "神秘法术",
+   "en": "???",
+   "iconIndex": 421,
+   "description": "发射一枚小而快速的黄色子弹，并在每次射击后抛出一个黄铜弹壳"
+  },
+  {
+   "id": "PEBBLE",
+   "zh": "召唤岩石精灵",
+   "en": "Summon rock spirit",
+   "iconIndex": 284,
+   "description": "召唤一个自主行动的岩石伙伴"
+  },
+  {
+   "id": "DYNAMITE",
+   "zh": "炸药",
+   "en": "Dynamite",
+   "iconIndex": 122,
+   "description": "召唤一枚小型爆炸物"
+  },
+  {
+   "id": "GLITTER_BOMB",
+   "zh": "闪烁炸弹",
+   "en": "Glitter bomb",
+   "iconIndex": 156,
+   "description": "召唤一枚会爆裂成大量易燃碎片的炸弹"
+  },
+  {
+   "id": "BUCKSHOT",
+   "zh": "三联魔弹",
+   "en": "Triplicate bolt",
+   "iconIndex": 55,
+   "description": "三颗高速且带有弹性的小子弹"
+  },
+  {
+   "id": "FREEZING_GAZE",
+   "zh": "冰冷凝视",
+   "en": "Freezing gaze",
+   "iconIndex": 153,
+   "description": "一片令人后背发凉（物理）的气场"
+  },
+  {
+   "id": "GLOWING_BOLT",
+   "zh": "聚爆光束",
+   "en": "Pinpoint of light",
+   "iconIndex": 157,
+   "description": "极度凝聚的一道光束，穿透所有敌人，并在一段时间后爆炸"
+  },
+  {
+   "id": "SPORE_POD",
+   "zh": "多刺孢子荚",
+   "en": "Prickly Spore Pod",
+   "iconIndex": 353,
+   "description": "召唤一个会附着在物体表面的孢子荚，之后它会生长并爆出尖刺"
+  },
+  {
+   "id": "GLUE_SHOT",
+   "zh": "胶球",
+   "en": "Glue Ball",
+   "iconIndex": 158,
+   "description": "投射物爆炸为黏嗒嗒的一片"
+  },
+  {
+   "id": "BOMB_HOLY",
+   "zh": "神圣炸弹",
+   "en": "Holy Bomb",
+   "iconIndex": 40,
+   "description": "召唤一枚炸弹，效果嘛...呃..."
+  },
+  {
+   "id": "BOMB_HOLY_GIGA",
+   "zh": "巨型神圣炸弹",
+   "en": "Giga Holy Bomb",
+   "iconIndex": 41,
+   "description": "更大，更好，更神圣"
+  },
+  {
+   "id": "PROPANE_TANK",
+   "zh": "丙烷罐",
+   "en": "Propane tank",
+   "iconIndex": 301,
+   "description": "召唤一个丙烷罐，用之前要想清楚..."
+  },
+  {
+   "id": "BOMB_CART",
+   "zh": "炸弹矿车",
+   "en": "Bomb cart",
+   "iconIndex": 38,
+   "description": "召唤一辆满载炸药的自推进矿车"
+  },
+  {
+   "id": "CURSED_ORB",
+   "zh": "诅咒球",
+   "en": "Cursed sphere",
+   "iconIndex": 100,
+   "description": "将厄运带给被击中者的神秘球体"
+  },
+  {
+   "id": "EXPANDING_ORB",
+   "zh": "扩张能量球",
+   "en": "Expanding Sphere",
+   "iconIndex": 129,
+   "description": "缓慢前行的魔法球体，伤害随时间推移逐渐增长，直至达到上限"
+  },
+  {
+   "id": "CRUMBLING_EARTH",
+   "zh": "召唤地震",
+   "en": "Earthquake",
+   "iconIndex": 93,
+   "description": "呼唤大地的愤怒"
+  },
+  {
+   "id": "SUMMON_ROCK",
+   "zh": "召唤岩石",
+   "en": "Rock",
+   "iconIndex": 359,
+   "description": "凭空创造一块巨大的岩石"
+  },
+  {
+   "id": "SUMMON_EGG",
+   "zh": "召唤蛋",
+   "en": "Summon egg",
+   "iconIndex": 356,
+   "description": "召唤一个育有友好生物的蛋"
+  },
+  {
+   "id": "SUMMON_HOLLOW_EGG",
+   "zh": "召唤空心蛋",
+   "en": "Summon hollow egg",
+   "iconIndex": 357,
+   "description": "召唤一个空的蛋，可被拾起，在裂开时释放另一法术"
+  },
+  {
+   "id": "TNTBOX",
+   "zh": "炸药箱",
+   "en": "Summon Explosive Box",
+   "iconIndex": 385,
+   "description": "召唤一箱炸药"
+  },
+  {
+   "id": "TNTBOX_BIG",
+   "zh": "大炸药箱",
+   "en": "Summon Large Explosive Box",
+   "iconIndex": 386,
+   "description": "召唤一大箱炸药"
+  },
+  {
+   "id": "SWARM_FLY",
+   "zh": "召唤苍蝇群",
+   "en": "Summon fly swarm",
+   "iconIndex": 364,
+   "description": "召唤五只苍蝇伙伴"
+  },
+  {
+   "id": "SWARM_FIREBUG",
+   "zh": "召唤萤火虫群",
+   "en": "Summon Firebug swarm",
+   "iconIndex": 363,
+   "description": "召唤四只萤火虫伙伴"
+  },
+  {
+   "id": "SWARM_WASP",
+   "zh": "召唤黄蜂群",
+   "en": "Summon Wasp swarm",
+   "iconIndex": 365,
+   "description": "召唤六只黄蜂伙伴"
+  },
+  {
+   "id": "FRIEND_FLY",
+   "zh": "召唤苍蝇伙伴",
+   "en": "Summon Friendly fly",
+   "iconIndex": 154,
+   "description": "召唤一只友好的苍蝇，攻击你的敌人！"
+  },
+  {
+   "id": "ACIDSHOT",
+   "zh": "酸液球",
+   "en": "Acid ball",
+   "iconIndex": 2,
+   "description": "包裹有酸液的空心粘液球，爆炸时释放出可怕的酸液"
+  },
+  {
+   "id": "THUNDERBALL",
+   "zh": "雷霆冲击",
+   "en": "Thunder charge",
+   "iconIndex": 383,
+   "description": "储存有强大电力的投射物"
+  },
+  {
+   "id": "FIREBOMB",
+   "zh": "小火球",
+   "en": "Firebomb",
+   "iconIndex": 143,
+   "description": "缓慢但轻盈的迷你版火焰弹"
+  },
+  {
+   "id": "SOILBALL",
+   "zh": "一把泥土",
+   "en": "Chunk of soil",
+   "iconIndex": 342,
+   "description": "别把自己弄脏了"
+  },
+  {
+   "id": "DEATH_CROSS",
+   "zh": "死亡十字",
+   "en": "Death cross",
+   "iconIndex": 105,
+   "description": "会自动扑向猎物的致命能量十字，并在失效时爆炸"
+  },
+  {
+   "id": "DEATH_CROSS_BIG",
+   "zh": "巨型死亡十字",
+   "en": "Giga death cross",
+   "iconIndex": 106,
+   "description": "更强大的死亡十字，爆炸时射出四发破坏性的穿刺魔弹"
+  },
+  {
+   "id": "INFESTATION",
+   "zh": "侵扰",
+   "en": "Infestation",
+   "iconIndex": 205,
+   "description": "六发带有弹性的魔法火花向随机方向飞出"
+  },
+  {
+   "id": "WALL_HORIZONTAL",
+   "zh": "水平粒子屏障",
+   "en": "Horizontal barrier",
+   "iconIndex": 406,
+   "description": "创造一道水平分布的粒子，伤害通过的生物，也包括你"
+  },
+  {
+   "id": "WALL_VERTICAL",
+   "zh": "垂直粒子屏障",
+   "en": "Vertical barrier",
+   "iconIndex": 408,
+   "description": "创造一道垂直分布的粒子，伤害通过的生物，也包括你"
+  },
+  {
+   "id": "WALL_SQUARE",
+   "zh": "方形粒子屏障",
+   "en": "Square barrier",
+   "iconIndex": 407,
+   "description": "创造一圈方形分布的粒子，伤害通过的生物，也包括你"
+  },
+  {
+   "id": "TEMPORARY_WALL",
+   "zh": "召唤墙壁",
+   "en": "Summon Wall",
+   "iconIndex": 376,
+   "description": "召唤一面临时存在的魔法墙壁"
+  },
+  {
+   "id": "TEMPORARY_PLATFORM",
+   "zh": "召唤平台",
+   "en": "Summon Platform",
+   "iconIndex": 375,
+   "description": "召唤一个临时存在的魔法平台"
+  },
+  {
+   "id": "PURPLE_EXPLOSION_FIELD",
+   "zh": "盛大场面",
+   "en": "Glittering field",
+   "iconIndex": 302,
+   "description": "在大区域内随机出现小型爆炸"
+  },
+  {
+   "id": "DELAYED_SPELL",
+   "zh": "延迟施法",
+   "en": "Delayed spellcast",
+   "iconIndex": 108,
+   "description": "静态的魔法现象，在失效时释放另外三个法术"
+  },
+  {
+   "id": "LONG_DISTANCE_CAST",
+   "zh": "远程施法",
+   "en": "Long-distance cast",
+   "iconIndex": 241,
+   "description": "在与施法者一定距离的位置施放法术"
+  },
+  {
+   "id": "TELEPORT_CAST",
+   "zh": "传送施法",
+   "en": "Teleporting cast",
+   "iconIndex": 369,
+   "description": "从最近的敌人位置施法，如果附近没有敌人，则仍然在施法者面前施法"
+  },
+  {
+   "id": "SUPER_TELEPORT_CAST",
+   "zh": "折跃施法",
+   "en": "Warp cast",
+   "iconIndex": 361,
+   "description": "令法术在空中跳跃一段较长距离后释放，可被墙壁阻挡"
+  },
+  {
+   "id": "CASTER_CAST",
+   "zh": "内在施法",
+   "en": "Inner spell",
+   "iconIndex": 65,
+   "description": "从施法者身体所在的地方施放法术"
+  },
+  {
+   "id": "MIST_RADIOACTIVE",
+   "zh": "毒雾",
+   "en": "Toxic mist",
+   "iconIndex": 260,
+   "description": "一团剧毒的雾气"
+  },
+  {
+   "id": "MIST_ALCOHOL",
+   "zh": "酒雾",
+   "en": "mist of spirits",
+   "iconIndex": 258,
+   "description": "一团烈酒组成的雾气"
+  },
+  {
+   "id": "MIST_SLIME",
+   "zh": "黏液雾",
+   "en": "Slime mist",
+   "iconIndex": 261,
+   "description": "一团黏糊糊的雾气"
+  },
+  {
+   "id": "MIST_BLOOD",
+   "zh": "血雾",
+   "en": "Blood mist",
+   "iconIndex": 259,
+   "description": "一团充满血腥味的雾气"
+  },
+  {
+   "id": "CIRCLE_FIRE",
+   "zh": "烈火之环",
+   "en": "Circle of fire",
+   "iconIndex": 73,
+   "description": "炽烈空气组成的扩散之环"
+  },
+  {
+   "id": "CIRCLE_ACID",
+   "zh": "酸液之环",
+   "en": "Circle of acid",
+   "iconIndex": 72,
+   "description": "酸液组成的扩散之环"
+  },
+  {
+   "id": "CIRCLE_OIL",
+   "zh": "油液之环",
+   "en": "Circle of oil",
+   "iconIndex": 74,
+   "description": "粘滑油液组成的扩散之环"
+  },
+  {
+   "id": "CIRCLE_WATER",
+   "zh": "清水之环",
+   "en": "Circle of water",
+   "iconIndex": 76,
+   "description": "清水组成的扩散之环"
+  },
+  {
+   "id": "MATERIAL_WATER",
+   "zh": "水",
+   "en": "Water",
+   "iconIndex": 250,
+   "description": "凭空产生一滴水，并令投射物击中的敌人沾水"
+  },
+  {
+   "id": "MATERIAL_OIL",
+   "zh": "油",
+   "en": "Oil",
+   "iconIndex": 249,
+   "description": "凭空产生一滴油，并令投射物击中的敌人染油"
+  },
+  {
+   "id": "MATERIAL_BLOOD",
+   "zh": "血",
+   "en": "Blood",
+   "iconIndex": 247,
+   "description": "血！血！血！"
+  },
+  {
+   "id": "MATERIAL_ACID",
+   "zh": "酸",
+   "en": "Acid",
+   "iconIndex": 246,
+   "description": "凭空出现的酸液滴"
+  },
+  {
+   "id": "MATERIAL_CEMENT",
+   "zh": "水泥",
+   "en": "Cement",
+   "iconIndex": 248,
+   "description": "凭空产生一滴湿水泥！"
+  },
+  {
+   "id": "TELEPORT_PROJECTILE",
+   "zh": "传送魔弹",
+   "en": "Teleport bolt",
+   "iconIndex": 370,
+   "description": "将你传送到其失效时的位置"
+  },
+  {
+   "id": "TELEPORT_PROJECTILE_SHORT",
+   "zh": "小传送弹",
+   "en": "Small Teleport Bolt",
+   "iconIndex": 372,
+   "description": "存在时间更短、速度更快的传送魔弹"
+  },
+  {
+   "id": "TELEPORT_PROJECTILE_STATIC",
+   "zh": "闪回",
+   "en": "Return",
+   "iconIndex": 373,
+   "description": "不会移动、持续时间更长的传送魔弹"
+  },
+  {
+   "id": "SWAPPER_PROJECTILE",
+   "zh": "移形换位",
+   "en": "Swapper",
+   "iconIndex": 362,
+   "description": "理论上，只有感质的本源会被转移... 但实际总是牵一发而动全身"
+  },
+  {
+   "id": "TELEPORT_PROJECTILE_CLOSER",
+   "zh": "抓取魔弹",
+   "en": "Homebringer Teleport Bolt",
+   "iconIndex": 371,
+   "description": "将被击中的目标传送到这个魔弹产生的地方"
+  },
+  {
+   "id": "NUKE",
+   "zh": "核弹",
+   "en": "Nuke",
+   "iconIndex": 266,
+   "description": "快找掩体！"
+  },
+  {
+   "id": "NUKE_GIGA",
+   "zh": "巨型核弹",
+   "en": "Giga Nuke",
+   "iconIndex": 267,
+   "description": "你在期待什么呢？"
+  },
+  {
+   "id": "FIREWORK",
+   "zh": "烟花！",
+   "en": "Fireworks!",
+   "iconIndex": 144,
+   "description": "用它来祝你的敌人新年快乐"
+  },
+  {
+   "id": "SUMMON_WANDGHOST",
+   "zh": "召唤魔杖灵",
+   "en": "Summon Taikasauva",
+   "iconIndex": 360,
+   "description": "召唤一只寿命短暂的友好魔杖灵，为你提供支援，或者..."
+  },
+  {
+   "id": "TOUCH_GOLD",
+   "zh": "黄金之触",
+   "en": "Touch of Gold",
+   "iconIndex": 391,
+   "description": "将小范围内的一切转化为黄金，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_WATER",
+   "zh": "清水之触",
+   "en": "Touch of Water",
+   "iconIndex": 396,
+   "description": "将小范围内的一切转化为清水，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_OIL",
+   "zh": "油液之触",
+   "en": "Touch of Oil",
+   "iconIndex": 393,
+   "description": "将小范围内的一切转化为油液，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_ALCOHOL",
+   "zh": "烈酒之触",
+   "en": "Touch of Spirits",
+   "iconIndex": 389,
+   "description": "将小范围内的一切转化为烈酒，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_PISS",
+   "zh": "黄金之触？",
+   "en": "Touch of Gold?",
+   "iconIndex": 394,
+   "description": "将小范围内的一切转化为尿液，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_GRASS",
+   "zh": "草之触",
+   "en": "Touch of Grass",
+   "iconIndex": 392,
+   "description": "将小范围内的一切转化为草，包括墙壁、生物... 还有你自己。除非..."
+  },
+  {
+   "id": "TOUCH_BLOOD",
+   "zh": "鲜血之触",
+   "en": "Touch of Blood",
+   "iconIndex": 390,
+   "description": "将小范围内的一切转化为鲜血，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "TOUCH_SMOKE",
+   "zh": "烟雾之触",
+   "en": "Touch of Smoke",
+   "iconIndex": 395,
+   "description": "将小范围内的一切转化为烟雾，包括墙壁、生物... 还有你自己"
+  },
+  {
+   "id": "DESTRUCTION",
+   "zh": "毁灭",
+   "en": "Destruction",
+   "iconIndex": 109,
+   "description": "以自己的生命值为代价，立刻清除周围的敌人"
+  },
+  {
+   "id": "MASS_POLYMORPH",
+   "zh": "变形",
+   "en": "Muodonmuutos",
+   "iconIndex": 245,
+   "description": "咩啊~"
+  },
+  {
+   "id": "BURST_2",
+   "zh": "二重施法",
+   "en": "Double spell",
+   "iconIndex": 60,
+   "description": "同时施放2个法术"
+  },
+  {
+   "id": "BURST_3",
+   "zh": "三重施法",
+   "en": "Triple spell",
+   "iconIndex": 61,
+   "description": "同时施放3个法术"
+  },
+  {
+   "id": "BURST_4",
+   "zh": "四重施法",
+   "en": "Quadruple spell",
+   "iconIndex": 62,
+   "description": "同时施放4个法术"
+  },
+  {
+   "id": "BURST_8",
+   "zh": "八重施法",
+   "en": "Octuple spell",
+   "iconIndex": 63,
+   "description": "同时施放8个法术"
+  },
+  {
+   "id": "BURST_X",
+   "zh": "穷尽施法",
+   "en": "Myriad Spell",
+   "iconIndex": 64,
+   "description": "同时施放魔杖中剩余的所有法术"
+  },
+  {
+   "id": "SCATTER_2",
+   "zh": "二重散射施法",
+   "en": "Double scatter spell",
+   "iconIndex": 323,
+   "description": "同时施放2个法术，但增加散射"
+  },
+  {
+   "id": "SCATTER_3",
+   "zh": "三重散射施法",
+   "en": "Triple scatter spell",
+   "iconIndex": 324,
+   "description": "同时施放3个法术，但增加散射"
+  },
+  {
+   "id": "SCATTER_4",
+   "zh": "四重散射施法",
+   "en": "Quadruple scatter spell",
+   "iconIndex": 325,
+   "description": "同时施放4个法术，但增加散射"
+  },
+  {
+   "id": "I_SHAPE",
+   "zh": "阵型 - 前后",
+   "en": "Formation - behind your back",
+   "iconIndex": 196,
+   "description": "同时施放两个法术，并令投射物在圆周内均匀分布"
+  },
+  {
+   "id": "Y_SHAPE",
+   "zh": "阵型 - 分叉",
+   "en": "Formation - bifurcated",
+   "iconIndex": 417,
+   "description": "同时施放2个法术，并令投射物的初始方向在±45°范围内均匀分布"
+  },
+  {
+   "id": "T_SHAPE",
+   "zh": "阵型 - T",
+   "en": "Formation - above and below",
+   "iconIndex": 366,
+   "description": "同时施放3个法术，并令投射物的初始方向在±90°范围内均匀分布"
+  },
+  {
+   "id": "W_SHAPE",
+   "zh": "阵型 - 三叉",
+   "en": "Formation - trifurcated",
+   "iconIndex": 404,
+   "description": "同时施放3个法术，并令投射物的初始方向在±20°范围内均匀分布"
+  },
+  {
+   "id": "CIRCLE_SHAPE",
+   "zh": "阵型 - 六边形",
+   "en": "Formation - hexagon",
+   "iconIndex": 75,
+   "description": "同时施放六个法术，并令投射物在圆周内均匀分布"
+  },
+  {
+   "id": "PENTAGRAM_SHAPE",
+   "zh": "阵型 - 五边形",
+   "en": "Formation - pentagon",
+   "iconIndex": 286,
+   "description": "同时施放五个法术，并令投射物在圆周内均匀分布"
+  },
+  {
+   "id": "I_SHOT",
+   "zh": "复制法术-前后",
+   "en": "Iplicate Spell",
+   "iconIndex": 197,
+   "description": "向后方射出投射物的复制品，复制品依然消耗法力"
+  },
+  {
+   "id": "Y_SHOT",
+   "zh": "复制法术 - 分叉",
+   "en": "Yplicate Spell",
+   "iconIndex": 418,
+   "description": "射出一个投射物的复制品，形成二叉阵型，复制品依然消耗法力"
+  },
+  {
+   "id": "T_SHOT",
+   "zh": "复制法术 - T",
+   "en": "Tiplicate Spell",
+   "iconIndex": 367,
+   "description": "向垂直于投射物的方向射出两个复制品，复制品依然消耗法力"
+  },
+  {
+   "id": "W_SHOT",
+   "zh": "复制法术 - 三叉",
+   "en": "Wuplicate Spell",
+   "iconIndex": 405,
+   "description": "向两个方向射出投射物的复制品，形成三叉阵型，复制品依然消耗法力"
+  },
+  {
+   "id": "QUAD_SHOT",
+   "zh": "复制法术 - 十字",
+   "en": "Quplicate Spell",
+   "iconIndex": 303,
+   "description": "以十字阵型射出投射物的三个复制品，复制品依然消耗法力"
+  },
+  {
+   "id": "PENTA_SHOT",
+   "zh": "复制法术 - 五边形",
+   "en": "Peplicate Spell",
+   "iconIndex": 285,
+   "description": "以五边形阵型射出投射物的四个复制品，复制品依然消耗法力"
+  },
+  {
+   "id": "HEXA_SHOT",
+   "zh": "复制法术 - 六边形",
+   "en": "Heplicate Spell",
+   "iconIndex": 175,
+   "description": "以六边形阵型射出投射物的五个复制品，复制品依然消耗法力"
+  },
+  {
+   "id": "SPREAD_REDUCE",
+   "zh": "降低散射",
+   "en": "Reduce spread",
+   "iconIndex": 354,
+   "description": "降低投射物的散射"
+  },
+  {
+   "id": "HEAVY_SPREAD",
+   "zh": "全向散射",
+   "en": "Heavy spread",
+   "iconIndex": 174,
+   "description": "减少法术施放的时间间隔，但会极大增加散射"
+  },
+  {
+   "id": "RECHARGE",
+   "zh": "缩减充能时间",
+   "en": "Reduce recharge time",
+   "iconIndex": 311,
+   "description": "缩减施放之间的时间间隔"
+  },
+  {
+   "id": "LIFETIME",
+   "zh": "延长存在时间",
+   "en": "Increase lifetime",
+   "iconIndex": 228,
+   "description": "延长法术的存在时间"
+  },
+  {
+   "id": "LIFETIME_DOWN",
+   "zh": "缩减存在时间",
+   "en": "Reduce lifetime",
+   "iconIndex": 229,
+   "description": "缩短法术的存在时间"
+  },
+  {
+   "id": "NOLLA",
+   "zh": "归零",
+   "en": "Nolla",
+   "iconIndex": 265,
+   "description": "在投射物产生一帧后令其立即失效"
+  },
+  {
+   "id": "SLOW_BUT_STEADY",
+   "zh": "缓慢但坚定",
+   "en": "Slow But Steady",
+   "iconIndex": 341,
+   "description": "将魔杖的装填时间设定为 1.5 秒，并稍微减小施法后座力"
+  },
+  {
+   "id": "EXPLOSION_REMOVE",
+   "zh": "爆炸移除",
+   "en": "Remove Explosion",
+   "iconIndex": 134,
+   "description": "令通常会爆炸的投射物不再爆炸"
+  },
+  {
+   "id": "EXPLOSION_TINY",
+   "zh": "爆炸汇聚",
+   "en": "Concentrated Explosion",
+   "iconIndex": 135,
+   "description": "将投射物的爆炸范围缩小为一个点，并提高爆炸伤害"
+  },
+  {
+   "id": "LASER_EMITTER_WIDER",
+   "zh": "电浆束增强",
+   "en": "Plasma Beam Enhancer",
+   "iconIndex": 224,
+   "description": "让电浆束更长，更宽，伤害更高"
+  },
+  {
+   "id": "MANA_REDUCE",
+   "zh": "额外法力",
+   "en": "Add mana",
+   "iconIndex": 244,
+   "description": "立即向魔杖注入30法力（可使法力暂时超过魔杖上限）"
+  },
+  {
+   "id": "BLOOD_MAGIC",
+   "zh": "血魔法",
+   "en": "Blood magic",
+   "iconIndex": 33,
+   "description": "以 4 点生命值为代价，大幅减少法力消耗，并缩短施法间隔"
+  },
+  {
+   "id": "MONEY_MAGIC",
+   "zh": "黄金变力量",
+   "en": "Gold to Power",
+   "iconIndex": 262,
+   "description": "你想要变强吗？"
+  },
+  {
+   "id": "BLOOD_TO_POWER",
+   "zh": "生命变力量",
+   "en": "Blood to Power",
+   "iconIndex": 35,
+   "description": "承受相当于你 20% 生命值的诅咒伤害，并以此来大幅增加投射物伤害"
+  },
+  {
+   "id": "DUPLICATE",
+   "zh": "法术复制",
+   "en": "Spell duplication",
+   "iconIndex": 121,
+   "description": "复制本次施法中已被施放的所有法术，除了另一个法术复制"
+  },
+  {
+   "id": "QUANTUM_SPLIT",
+   "zh": "量子纠缠",
+   "en": "Quantum Split",
+   "iconIndex": 304,
+   "description": "令一个投射物分裂为三个纠缠状态的投射物"
+  },
+  {
+   "id": "GRAVITY",
+   "zh": "重力",
+   "en": "Gravity",
+   "iconIndex": 159,
+   "description": "提高作用于投射物的重力"
+  },
+  {
+   "id": "GRAVITY_ANTI",
+   "zh": "反重力",
+   "en": "Anti-gravity",
+   "iconIndex": 160,
+   "description": "对投射物施加垂直向上的力"
+  },
+  {
+   "id": "SINEWAVE",
+   "zh": "蛇形路径",
+   "en": "Slithering path",
+   "iconIndex": 336,
+   "description": "令投射物像蛇一样在空气中高速穿行"
+  },
+  {
+   "id": "CHAOTIC_ARC",
+   "zh": "混沌路径",
+   "en": "Chaotic path",
+   "iconIndex": 71,
+   "description": "令投射物随心所欲地无序飞行"
+  },
+  {
+   "id": "PINGPONG_PATH",
+   "zh": "乒乓路径",
+   "en": "Ping-pong path",
+   "iconIndex": 290,
+   "description": "令投射物每隔一段时间翻转方向，并增加其持续时间"
+  },
+  {
+   "id": "AVOIDING_ARC",
+   "zh": "规避路径",
+   "en": "Avoiding arc",
+   "iconIndex": 25,
+   "description": "令投射物回避障碍物"
+  },
+  {
+   "id": "FLOATING_ARC",
+   "zh": "悬浮路径",
+   "en": "Floating arc",
+   "iconIndex": 148,
+   "description": "令投射物在地面之上悬浮"
+  },
+  {
+   "id": "FLY_DOWNWARDS",
+   "zh": "延时下坠",
+   "en": "Fly downwards",
+   "iconIndex": 149,
+   "description": "令投射物产生短暂时间后垂直下坠"
+  },
+  {
+   "id": "FLY_UPWARDS",
+   "zh": "延时上冲",
+   "en": "Fly upwards",
+   "iconIndex": 150,
+   "description": "令投射物产生短暂时间后垂直上升"
+  },
+  {
+   "id": "HORIZONTAL_ARC",
+   "zh": "水平路径",
+   "en": "Horizontal path",
+   "iconIndex": 195,
+   "description": "强制投射物以水平路径行进，但会增加其伤害"
+  },
+  {
+   "id": "LINE_ARC",
+   "zh": "线性路径",
+   "en": "Linear arc",
+   "iconIndex": 239,
+   "description": "强制投射物以横竖或对角线方向直线飞行，但增加其伤害"
+  },
+  {
+   "id": "ORBIT_SHOT",
+   "zh": "环绕路径",
+   "en": "Orbiting Arc",
+   "iconIndex": 283,
+   "description": "令投射物做圆周运动，并增加其持续时间"
+  },
+  {
+   "id": "SPIRALING_SHOT",
+   "zh": "螺旋路径",
+   "en": "Spiral Arc",
+   "iconIndex": 346,
+   "description": "令投射物以螺旋方式飞行，并增加其持续时间"
+  },
+  {
+   "id": "PHASING_ARC",
+   "zh": "相位",
+   "en": "Phasing Arc",
+   "iconIndex": 287,
+   "description": "令投射物的飞行速度大幅减慢，但增加其持续时间，且在飞行过程中会不断向前跃迁"
+  },
+  {
+   "id": "TRUE_ORBIT",
+   "zh": "行星环绕",
+   "en": "True Orbit",
+   "iconIndex": 399,
+   "description": "令投射物像行星一样环绕施法者飞行"
+  },
+  {
+   "id": "BOUNCE",
+   "zh": "弹跳",
+   "en": "Bounce",
+   "iconIndex": 42,
+   "description": "令投射物在接触地形时弹跳"
+  },
+  {
+   "id": "REMOVE_BOUNCE",
+   "zh": "移除弹跳",
+   "en": "Remove Bounce",
+   "iconIndex": 315,
+   "description": "令通常会弹跳的投射物不再弹跳"
+  },
+  {
+   "id": "HOMING",
+   "zh": "追踪",
+   "en": "Homing",
+   "iconIndex": 186,
+   "description": "给予投射物向最近敌人方向的加速度"
+  },
+  {
+   "id": "ANTI_HOMING",
+   "zh": "反追踪",
+   "en": "Anti Homing",
+   "iconIndex": 16,
+   "description": "给予投射物与最近敌人方向相反的加速度"
+  },
+  {
+   "id": "HOMING_WAND",
+   "zh": "魔杖追踪",
+   "en": "Wand Homing",
+   "iconIndex": 193,
+   "description": "给予投射物向最近魔杖方向的加速度，搜索范围极广"
+  },
+  {
+   "id": "HOMING_SHORT",
+   "zh": "短距离追踪",
+   "en": "Short-range Homing",
+   "iconIndex": 192,
+   "description": "令投射物在接近时快速扑向目标"
+  },
+  {
+   "id": "HOMING_ROTATE",
+   "zh": "自动制导",
+   "en": "Rotate towards foes",
+   "iconIndex": 190,
+   "description": "令投射物向最近的敌人方向偏转"
+  },
+  {
+   "id": "HOMING_SHOOTER",
+   "zh": "回旋镖",
+   "en": "Boomerang",
+   "iconIndex": 191,
+   "description": "令投射物追踪施法者"
+  },
+  {
+   "id": "AUTOAIM",
+   "zh": "自动瞄准",
+   "en": "Auto-Aim",
+   "iconIndex": 24,
+   "description": "令投射物射出后朝向最近敌人位置，而非鼠标位置"
+  },
+  {
+   "id": "HOMING_ACCELERATING",
+   "zh": "加速追踪",
+   "en": "Accelerative Homing",
+   "iconIndex": 187,
+   "description": "令投射物追踪目标，追踪过程中速度大小不断增加"
+  },
+  {
+   "id": "HOMING_CURSOR",
+   "zh": "手动制导",
+   "en": "Aiming Arc",
+   "iconIndex": 189,
+   "description": "令投射物向你瞄准的方向偏转"
+  },
+  {
+   "id": "HOMING_AREA",
+   "zh": "迫近传送",
+   "en": "Projectile Area Teleport",
+   "iconIndex": 188,
+   "description": "如果在投射物附近出现有效目标，投射物会立即传送到目标的位置"
+  },
+  {
+   "id": "PIERCING_SHOT",
+   "zh": "穿刺",
+   "en": "Piercing shot",
+   "iconIndex": 289,
+   "description": "投射物击中目标时不会消失，但也会击中自己"
+  },
+  {
+   "id": "CLIPPING_SHOT",
+   "zh": "穿透射击",
+   "en": "Drilling shot",
+   "iconIndex": 77,
+   "description": "投射物可以进入并缓慢穿过材料"
+  },
+  {
+   "id": "DAMAGE",
+   "zh": "伤害增强",
+   "en": "Damage Plus",
+   "iconIndex": 101,
+   "description": "提高法术造成的投射物伤害"
+  },
+  {
+   "id": "DAMAGE_RANDOM",
+   "zh": "随机伤害",
+   "en": "Random damage",
+   "iconIndex": 103,
+   "description": "随机提高或降低投射物造成的伤害和后座力"
+  },
+  {
+   "id": "BLOODLUST",
+   "zh": "嗜血",
+   "en": "Bloodlust",
+   "iconIndex": 36,
+   "description": "提供极大伤害加成，代价是投射物也可能伤到你自己"
+  },
+  {
+   "id": "DAMAGE_FOREVER",
+   "zh": "法力转伤害",
+   "en": "Mana To Damage",
+   "iconIndex": 102,
+   "description": "如果魔杖此时剩余法力超过50，则剩余的法力转化为投射物伤害"
+  },
+  {
+   "id": "CRITICAL_HIT",
+   "zh": "暴击率+",
+   "en": "Critical Plus",
+   "iconIndex": 92,
+   "description": "提高投射物的暴击率"
+  },
+  {
+   "id": "AREA_DAMAGE",
+   "zh": "伤害领域",
+   "en": "Damage field",
+   "iconIndex": 22,
+   "description": "赋予投射物伤害光环，对其范围内的敌人持续造成伤害"
+  },
+  {
+   "id": "SPELLS_TO_POWER",
+   "zh": "法术变力量",
+   "en": "Spells to Power",
+   "iconIndex": 344,
+   "description": "吸收施法者周围由自己施放的投射物，并将其投射物伤害和爆炸伤害增加到法术中"
+  },
+  {
+   "id": "ESSENCE_TO_POWER",
+   "zh": "精华变力量",
+   "en": "Essence to Power",
+   "iconIndex": 128,
+   "description": "根据周围生物的生命值来增加投射物伤害"
+  },
+  {
+   "id": "ZERO_DAMAGE",
+   "zh": "无害化",
+   "en": "Null shot",
+   "iconIndex": 419,
+   "description": "显著增加投射物的存在时间，但移除伤害和爆炸效果"
+  },
+  {
+   "id": "HEAVY_SHOT",
+   "zh": "沉重一击",
+   "en": "Heavy Shot",
+   "iconIndex": 173,
+   "description": "大幅提高投射物伤害，但降低投射物初速度"
+  },
+  {
+   "id": "LIGHT_SHOT",
+   "zh": "轻盈一击",
+   "en": "Light shot",
+   "iconIndex": 235,
+   "description": "大幅提高投射物的初速度，但降低投射物伤害"
+  },
+  {
+   "id": "KNOCKBACK",
+   "zh": "击退",
+   "en": "Knockback",
+   "iconIndex": 211,
+   "description": "增加投射物的击退力度"
+  },
+  {
+   "id": "RECOIL",
+   "zh": "后座力",
+   "en": "Recoil",
+   "iconIndex": 312,
+   "description": "提高施法时的后座力"
+  },
+  {
+   "id": "RECOIL_DAMPER",
+   "zh": "后座阻尼器",
+   "en": "Recoil Damper",
+   "iconIndex": 313,
+   "description": "降低施法时的后座力"
+  },
+  {
+   "id": "SPEED",
+   "zh": "加速",
+   "en": "Speed Up",
+   "iconIndex": 343,
+   "description": "增加投射物的初始速度"
+  },
+  {
+   "id": "ACCELERATING_SHOT",
+   "zh": "逐渐加速",
+   "en": "Accelerating shot",
+   "iconIndex": 0,
+   "description": "降低投射物初速度，但提高投射物的加速度"
+  },
+  {
+   "id": "DECELERATING_SHOT",
+   "zh": "逐渐减速",
+   "en": "Decelerating shot",
+   "iconIndex": 107,
+   "description": "增加投射物的初速度，但也增加飞行时受到的阻力"
+  },
+  {
+   "id": "EXPLOSIVE_PROJECTILE",
+   "zh": "易爆",
+   "en": "Explosive projectile",
+   "iconIndex": 136,
+   "description": "增加投射物的爆炸伤害和爆炸半径"
+  },
+  {
+   "id": "CLUSTERMOD",
+   "zh": "集束弹",
+   "en": "Clusterbolt",
+   "iconIndex": 83,
+   "description": "令投射物命中时释放出数发爆炸子弹"
+  },
+  {
+   "id": "WATER_TO_POISON",
+   "zh": "化水为毒",
+   "en": "Water to poison",
+   "iconIndex": 409,
+   "description": "令投射物将周围的所有水化为紫色毒液"
+  },
+  {
+   "id": "BLOOD_TO_ACID",
+   "zh": "溶血为酸",
+   "en": "Blood to acid",
+   "iconIndex": 34,
+   "description": "令投射物周围的所有血液化为酸液"
+  },
+  {
+   "id": "LAVA_TO_BLOOD",
+   "zh": "熔岩化血",
+   "en": "Lava to blood",
+   "iconIndex": 226,
+   "description": "令投射物周围所有岩浆化为血液"
+  },
+  {
+   "id": "LIQUID_TO_EXPLOSION",
+   "zh": "液体引爆",
+   "en": "Liquid Detonation",
+   "iconIndex": 240,
+   "description": "令投射物周围的所有常见液体化为强力火药"
+  },
+  {
+   "id": "TOXIC_TO_ACID",
+   "zh": "绿毒化酸",
+   "en": "Toxic sludge to acid",
+   "iconIndex": 397,
+   "description": "令投射物周围的所有绿色毒液和毒雾滴化为酸液"
+  },
+  {
+   "id": "STATIC_TO_SAND",
+   "zh": "化地为沙",
+   "en": "Ground to sand",
+   "iconIndex": 355,
+   "description": "令投射物周围的所有坚硬材料化为沙子"
+  },
+  {
+   "id": "TRANSMUTATION",
+   "zh": "混沌转化",
+   "en": "Chaotic transmutation",
+   "iconIndex": 398,
+   "description": "令投射物范围内的液体和粉末变为一系列特定材料中的一种"
+  },
+  {
+   "id": "RANDOM_EXPLOSION",
+   "zh": "混沌魔法",
+   "en": "Chaos magic",
+   "iconIndex": 306,
+   "description": "令投射物在击中物体时放出一个有选择的随机法术"
+  },
+  {
+   "id": "NECROMANCY",
+   "zh": "死灵术",
+   "en": "Necromancy",
+   "iconIndex": 264,
+   "description": "被击中的生物若在短时间内死亡，则其尸体有几率变为活的肉块，并试图帮助你"
+  },
+  {
+   "id": "LIGHT",
+   "zh": "光",
+   "en": "Light",
+   "iconIndex": 230,
+   "description": "令投射物可照亮周围的黑暗"
+  },
+  {
+   "id": "EXPLOSION",
+   "zh": "爆炸",
+   "en": "Explosion",
+   "iconIndex": 132,
+   "description": "只是个爆炸而已"
+  },
+  {
+   "id": "EXPLOSION_LIGHT",
+   "zh": "魔法爆炸",
+   "en": "Magical Explosion",
+   "iconIndex": 133,
+   "description": "不会破坏材料的大型爆炸"
+  },
+  {
+   "id": "FIRE_BLAST",
+   "zh": "硫磺爆炸",
+   "en": "Explosion of brimstone",
+   "iconIndex": 137,
+   "description": "炽烈的爆炸"
+  },
+  {
+   "id": "POISON_BLAST",
+   "zh": "紫毒爆炸",
+   "en": "Explosion of poison",
+   "iconIndex": 293,
+   "description": "一团爆发开的紫色毒液"
+  },
+  {
+   "id": "ALCOHOL_BLAST",
+   "zh": "烈酒爆炸",
+   "en": "Explosion of spirits",
+   "iconIndex": 7,
+   "description": "一团爆发开的烈酒"
+  },
+  {
+   "id": "THUNDER_BLAST",
+   "zh": "雷霆爆炸",
+   "en": "Explosion of thunder",
+   "iconIndex": 382,
+   "description": "强大的带电爆炸"
+  },
+  {
+   "id": "BERSERK_FIELD",
+   "zh": "狂暴之环",
+   "en": "Circle of fervour",
+   "iconIndex": 27,
+   "description": "狂暴魔法的领域"
+  },
+  {
+   "id": "POLYMORPH_FIELD",
+   "zh": "变形之环",
+   "en": "Circle of transmogrification",
+   "iconIndex": 296,
+   "description": "变羊魔法的领域"
+  },
+  {
+   "id": "CHAOS_POLYMORPH_FIELD",
+   "zh": "混沌变形之环",
+   "en": "Circle of unstable metamorphosis",
+   "iconIndex": 70,
+   "description": "混沌变形魔法的领域"
+  },
+  {
+   "id": "ELECTROCUTION_FIELD",
+   "zh": "雷电之环",
+   "en": "Circle of thunder",
+   "iconIndex": 124,
+   "description": "电击魔法的领域"
+  },
+  {
+   "id": "FREEZE_FIELD",
+   "zh": "静止之环",
+   "en": "Circle of stillness",
+   "iconIndex": 152,
+   "description": "冻结魔法的领域"
+  },
+  {
+   "id": "REGENERATION_FIELD",
+   "zh": "活力之环",
+   "en": "Circle of vigour",
+   "iconIndex": 314,
+   "description": "再生魔法的领域，在范围内可回复生命值"
+  },
+  {
+   "id": "TELEPORTATION_FIELD",
+   "zh": "位移之环",
+   "en": "Circle of displacement",
+   "iconIndex": 374,
+   "description": "传送魔法的领域"
+  },
+  {
+   "id": "LEVITATION_FIELD",
+   "zh": "浮力之环",
+   "en": "Circle of buoyancy",
+   "iconIndex": 227,
+   "description": "飘浮魔法的领域"
+  },
+  {
+   "id": "SHIELD_FIELD",
+   "zh": "保护之环",
+   "en": "Circle of shielding",
+   "iconIndex": 334,
+   "description": "防护魔法的领域"
+  },
+  {
+   "id": "PROJECTILE_TRANSMUTATION_FIELD",
+   "zh": "投射物变形领域",
+   "en": "Projectile transmutation field",
+   "iconIndex": 300,
+   "description": "领域捕获到的投射物会转化为无害的小生物"
+  },
+  {
+   "id": "PROJECTILE_THUNDER_FIELD",
+   "zh": "投射物雷电领域",
+   "en": "Projectile thunder field",
+   "iconIndex": 299,
+   "description": "领域捕获到的投射物会转化为向外射出的一道闪电"
+  },
+  {
+   "id": "PROJECTILE_GRAVITY_FIELD",
+   "zh": "投射物引力领域",
+   "en": "Projectile gravity field",
+   "iconIndex": 298,
+   "description": "领域捕获到的投射物会向领域中心聚拢"
+  },
+  {
+   "id": "VACUUM_POWDER",
+   "zh": "粉末真空场",
+   "en": "Powder Vacuum Field",
+   "iconIndex": 403,
+   "description": "吸收附近的粉末材料，并在定时结束后将它们释放"
+  },
+  {
+   "id": "VACUUM_LIQUID",
+   "zh": "液体真空场",
+   "en": "Liquid Vacuum Field",
+   "iconIndex": 402,
+   "description": "吸收附近的液体材料，并在定时结束后将它们释放"
+  },
+  {
+   "id": "VACUUM_ENTITIES",
+   "zh": "实体真空场",
+   "en": "Vacuum Field",
+   "iconIndex": 401,
+   "description": "立即将附近的投射物和生物吸入真空场的中心"
+  },
+  {
+   "id": "SEA_LAVA",
+   "zh": "岩浆之海",
+   "en": "Sea of lava",
+   "iconIndex": 329,
+   "description": "在施法者下方召唤一大片岩浆"
+  },
+  {
+   "id": "SEA_ALCOHOL",
+   "zh": "酒精之海",
+   "en": "Sea of alcohol",
+   "iconIndex": 328,
+   "description": "在施法者下方召唤一大片美味的威士忌"
+  },
+  {
+   "id": "SEA_OIL",
+   "zh": "油液之海",
+   "en": "Sea of oil",
+   "iconIndex": 331,
+   "description": "在施法者下方召唤一大片油"
+  },
+  {
+   "id": "SEA_WATER",
+   "zh": "清水之海",
+   "en": "Sea of water",
+   "iconIndex": 333,
+   "description": "在施法者下方召唤一片海洋"
+  },
+  {
+   "id": "SEA_SWAMP",
+   "zh": "沼泽之海",
+   "en": "Summon Swamp",
+   "iconIndex": 332,
+   "description": "在施法者下方召唤一大片沼泽"
+  },
+  {
+   "id": "SEA_ACID",
+   "zh": "酸液之海",
+   "en": "Sea of acid",
+   "iconIndex": 326,
+   "description": "在施法者下方召唤一大片酸液"
+  },
+  {
+   "id": "SEA_ACID_GAS",
+   "zh": "燃气之海",
+   "en": "Sea of flammable gas",
+   "iconIndex": 327,
+   "description": "在施法者下方召唤一大团可燃气体"
+  },
+  {
+   "id": "SEA_MIMIC",
+   "zh": "拟态之海",
+   "en": "Sea of Mimicium",
+   "iconIndex": 330,
+   "description": "在施法者下方召唤一大片拟态液"
+  },
+  {
+   "id": "CLOUD_WATER",
+   "zh": "雨云",
+   "en": "Rain cloud",
+   "iconIndex": 82,
+   "description": "静态的降水天气现象"
+  },
+  {
+   "id": "CLOUD_OIL",
+   "zh": "油云",
+   "en": "Oil cloud",
+   "iconIndex": 80,
+   "description": "创造一片油腻腻的云"
+  },
+  {
+   "id": "CLOUD_BLOOD",
+   "zh": "血云",
+   "en": "Blood cloud",
+   "iconIndex": 79,
+   "description": "创造一片血雨云"
+  },
+  {
+   "id": "CLOUD_ACID",
+   "zh": "酸云",
+   "en": "Acid cloud",
+   "iconIndex": 78,
+   "description": "创造一片酸雨云"
+  },
+  {
+   "id": "CLOUD_THUNDER",
+   "zh": "雷云",
+   "en": "Thundercloud",
+   "iconIndex": 81,
+   "description": "创造一片雷雨云"
+  },
+  {
+   "id": "ELECTRIC_CHARGE",
+   "zh": "电荷",
+   "en": "Electric charge",
+   "iconIndex": 123,
+   "description": "令投射物在击中时释放电流"
+  },
+  {
+   "id": "MATTER_EATER",
+   "zh": "物质吞噬者",
+   "en": "Matter eater",
+   "iconIndex": 251,
+   "description": "令投射物吞噬飞行路线上的地形，但限制其存在时间"
+  },
+  {
+   "id": "FREEZE",
+   "zh": "冰冻",
+   "en": "Freeze charge",
+   "iconIndex": 151,
+   "description": "令投射物冻结附近的液体，并冰冻击中的目标"
+  },
+  {
+   "id": "HITFX_BURNING_CRITICAL_HIT",
+   "zh": "燃烧暴击",
+   "en": "Critical on burning",
+   "iconIndex": 176,
+   "description": "令投射物击中燃烧的敌人时暴击率+100%"
+  },
+  {
+   "id": "HITFX_CRITICAL_WATER",
+   "zh": "潮湿暴击",
+   "en": "Critical on wet (water) enemies",
+   "iconIndex": 179,
+   "description": "令投射物击中潮湿的敌人时暴击率+100%"
+  },
+  {
+   "id": "HITFX_CRITICAL_OIL",
+   "zh": "油污暴击",
+   "en": "Critical on oiled enemies",
+   "iconIndex": 178,
+   "description": "令投射物击中沾有油污的敌人时暴击率+100%"
+  },
+  {
+   "id": "HITFX_CRITICAL_BLOOD",
+   "zh": "染血暴击",
+   "en": "Critical on bloody enemies",
+   "iconIndex": 177,
+   "description": "令投射物击中染血的敌人时暴击率+100%"
+  },
+  {
+   "id": "HITFX_TOXIC_CHARM",
+   "zh": "绿毒魅惑",
+   "en": "Charm on toxic sludge",
+   "iconIndex": 185,
+   "description": "令投射物魅惑沾有绿色毒液的生物"
+  },
+  {
+   "id": "HITFX_EXPLOSION_SLIME",
+   "zh": "黏液引爆",
+   "en": "Explosion on slimy enemies",
+   "iconIndex": 182,
+   "description": "令投射物在击中覆盖有黏液的生物时爆炸"
+  },
+  {
+   "id": "HITFX_EXPLOSION_SLIME_GIGA",
+   "zh": "巨型黏液引爆",
+   "en": "Giant explosion on slimy enemies",
+   "iconIndex": 183,
+   "description": "令投射物在击中覆盖有黏液的生物时剧烈爆炸"
+  },
+  {
+   "id": "HITFX_EXPLOSION_ALCOHOL",
+   "zh": "烈酒引爆",
+   "en": "Explosion on drunk enemies",
+   "iconIndex": 180,
+   "description": "令投射物在击中覆盖有酒精的生物时爆炸"
+  },
+  {
+   "id": "HITFX_EXPLOSION_ALCOHOL_GIGA",
+   "zh": "巨型烈酒引爆",
+   "en": "Giant explosion on drunk enemies",
+   "iconIndex": 181,
+   "description": "令投射物在击中覆盖有酒精的生物时剧烈爆炸"
+  },
+  {
+   "id": "HITFX_PETRIFY",
+   "zh": "石化",
+   "en": "Petrify",
+   "iconIndex": 184,
+   "description": "若投射物击中的敌人剩余生命值小于40%且可被变形，则将其化为石头"
+  },
+  {
+   "id": "ROCKET_DOWNWARDS",
+   "zh": "下行集束弹",
+   "en": "Downwards bolt bundle",
+   "iconIndex": 318,
+   "description": "令投射物在向下移动时化作 5 发下坠的爆炸魔弹"
+  },
+  {
+   "id": "ROCKET_OCTAGON",
+   "zh": "八角集束弹",
+   "en": "Octagonal bolt bundle",
+   "iconIndex": 319,
+   "description": "令投射物在移动速度慢至一定程度时化作 8 发扩散的爆炸魔弹"
+  },
+  {
+   "id": "FIZZLE",
+   "zh": "闪灭",
+   "en": "Fizzle",
+   "iconIndex": 146,
+   "description": "法术飞出后有小概率消散为一团火花"
+  },
+  {
+   "id": "BOUNCE_EXPLOSION",
+   "zh": "爆炸弹跳",
+   "en": "Explosive bounce",
+   "iconIndex": 43,
+   "description": "令投射物在弹跳时产生爆炸"
+  },
+  {
+   "id": "BOUNCE_SPARK",
+   "zh": "泡泡弹跳",
+   "en": "Bubbly bounce",
+   "iconIndex": 50,
+   "description": "令投射物在弹跳时释放出泡泡火花"
+  },
+  {
+   "id": "BOUNCE_LASER",
+   "zh": "激光弹跳",
+   "en": "Concentrated light bounce",
+   "iconIndex": 46,
+   "description": "令投射物在弹跳时释放出一系列激光"
+  },
+  {
+   "id": "BOUNCE_LASER_EMITTER",
+   "zh": "电浆束弹跳",
+   "en": "Plasma Beam Bounce",
+   "iconIndex": 47,
+   "description": "令投射物在弹跳时释放出电浆束"
+  },
+  {
+   "id": "BOUNCE_LARPA",
+   "zh": "拉帕弹跳",
+   "en": "Larpa Bounce",
+   "iconIndex": 45,
+   "description": "令投射物在弹跳时释放出自己的复制品"
+  },
+  {
+   "id": "BOUNCE_SMALL_EXPLOSION",
+   "zh": "小型爆炸弹跳",
+   "en": "Sparkly bounce",
+   "iconIndex": 49,
+   "description": "令投射物弹跳时产生小型爆炸"
+  },
+  {
+   "id": "BOUNCE_LIGHTNING",
+   "zh": "闪电弹跳",
+   "en": "Lightning bounce",
+   "iconIndex": 48,
+   "description": "令投射物弹跳时释放出强力的闪电"
+  },
+  {
+   "id": "BOUNCE_HOLE",
+   "zh": "真空弹跳",
+   "en": "Vacuum bounce",
+   "iconIndex": 44,
+   "description": "令投射物弹跳时移除周围的地形"
+  },
+  {
+   "id": "FIREBALL_RAY",
+   "zh": "火球投射",
+   "en": "Fireball thrower",
+   "iconIndex": 140,
+   "description": "令投射物向随机方向发射火球"
+  },
+  {
+   "id": "LIGHTNING_RAY",
+   "zh": "闪电投射",
+   "en": "Lightning thrower",
+   "iconIndex": 237,
+   "description": "令投射物向随机方向发射闪电"
+  },
+  {
+   "id": "TENTACLE_RAY",
+   "zh": "触手怪",
+   "en": "Tentacler",
+   "iconIndex": 379,
+   "description": "令投射物在飞行时向随机方向持续射出触手"
+  },
+  {
+   "id": "LASER_EMITTER_RAY",
+   "zh": "电浆束投射",
+   "en": "Plasma Beam Thrower",
+   "iconIndex": 223,
+   "description": "令投射物向随机方向释放出电浆束"
+  },
+  {
+   "id": "FIREBALL_RAY_LINE",
+   "zh": "双向火球投射",
+   "en": "Two-way fireball thrower",
+   "iconIndex": 142,
+   "description": "令投射物发射垂直于速度方向的小火球"
+  },
+  {
+   "id": "FIREBALL_RAY_ENEMY",
+   "zh": "火球投射附身",
+   "en": "Personal fireball thrower",
+   "iconIndex": 141,
+   "description": "被击中的生物将在一段时间内向随机方向发射火球"
+  },
+  {
+   "id": "LIGHTNING_RAY_ENEMY",
+   "zh": "闪电投射附身",
+   "en": "Personal lightning caster",
+   "iconIndex": 238,
+   "description": "被击中的生物将在一段时间内向随机方向发射闪电"
+  },
+  {
+   "id": "TENTACLE_RAY_ENEMY",
+   "zh": "触手怪附身",
+   "en": "Personal tentacler",
+   "iconIndex": 380,
+   "description": "被击中的生物会在一段时间内向随机方向持续射出触手"
+  },
+  {
+   "id": "GRAVITY_FIELD_ENEMY",
+   "zh": "引力场附身",
+   "en": "Personal gravity field",
+   "iconIndex": 161,
+   "description": "令投射物击中的生物获得暂时性的重力井，吸引附近的投射物"
+  },
+  {
+   "id": "CURSE",
+   "zh": "猛毒诅咒",
+   "en": "Venomous Curse",
+   "iconIndex": 95,
+   "description": "诅咒被击中的目标，使其在一段时间不断受到诅咒伤害"
+  },
+  {
+   "id": "CURSE_WITHER_PROJECTILE",
+   "zh": "虚弱诅咒 - 投射物",
+   "en": "Weakening Curse - Projectiles",
+   "iconIndex": 99,
+   "description": "被投射物击中的目标短时间内会受到额外的25%投射物伤害"
+  },
+  {
+   "id": "CURSE_WITHER_EXPLOSION",
+   "zh": "虚弱诅咒 - 爆炸",
+   "en": "Weakening Curse - Explosives",
+   "iconIndex": 97,
+   "description": "被投射物击中的目标短时间内会受到额外的25%爆炸伤害"
+  },
+  {
+   "id": "CURSE_WITHER_MELEE",
+   "zh": "虚弱诅咒 - 近战",
+   "en": "Weakening Curse - Melee",
+   "iconIndex": 98,
+   "description": "被投射物击中的目标短时间内会受到额外的25%近战伤害"
+  },
+  {
+   "id": "CURSE_WITHER_ELECTRICITY",
+   "zh": "虚弱诅咒 - 雷电",
+   "en": "Weakening Curse - Electricity",
+   "iconIndex": 96,
+   "description": "被投射物击中的目标短时间内会受到额外的25%雷电伤害"
+  },
+  {
+   "id": "ORBIT_DISCS",
+   "zh": "锯片环绕",
+   "en": "Sawblade Orbit",
+   "iconIndex": 278,
+   "description": "令四片大型锯片环绕一个投射物旋转"
+  },
+  {
+   "id": "ORBIT_FIREBALLS",
+   "zh": "火球环绕",
+   "en": "Fireball Orbit",
+   "iconIndex": 279,
+   "description": "令四个火球环绕一个投射物旋转"
+  },
+  {
+   "id": "ORBIT_NUKES",
+   "zh": "核弹环绕",
+   "en": "Nuke Orbit",
+   "iconIndex": 282,
+   "description": "令四个... 核弹(?!)环绕一个投射物旋转"
+  },
+  {
+   "id": "ORBIT_LASERS",
+   "zh": "电浆束环绕",
+   "en": "Plasma Beam Orbit",
+   "iconIndex": 281,
+   "description": "令四道电浆束环绕一个投射物旋转"
+  },
+  {
+   "id": "ORBIT_LARPA",
+   "zh": "环绕拉帕",
+   "en": "Orbit Larpa",
+   "iconIndex": 280,
+   "description": "令投射物的四个复制品环绕其旋转"
+  },
+  {
+   "id": "CHAIN_SHOT",
+   "zh": "连锁",
+   "en": "Chain Spell",
+   "iconIndex": 68,
+   "description": "令一个投射物在消失时释放自己的复制品，最多 5 次"
+  },
+  {
+   "id": "ARC_ELECTRIC",
+   "zh": "电弧",
+   "en": "Electric Arc",
+   "iconIndex": 18,
+   "description": "在投射物之间产生电弧，需要至少2个投射物"
+  },
+  {
+   "id": "ARC_FIRE",
+   "zh": "火焰弧",
+   "en": "Fire Arc",
+   "iconIndex": 19,
+   "description": "在投射物之间产生火焰，需要至少2个投射物"
+  },
+  {
+   "id": "ARC_GUNPOWDER",
+   "zh": "火药弧",
+   "en": "Gunpowder Arc",
+   "iconIndex": 20,
+   "description": "在投射物之间产生不稳火药，需要至少2个投射物"
+  },
+  {
+   "id": "ARC_POISON",
+   "zh": "毒液弧",
+   "en": "Poison Arc",
+   "iconIndex": 21,
+   "description": "在投射物之间产生紫色毒液，需要至少2个投射物"
+  },
+  {
+   "id": "CRUMBLING_EARTH_PROJECTILE",
+   "zh": "裂地",
+   "en": "Earthquake shot",
+   "iconIndex": 94,
+   "description": "令投射物击中的土地分崩离析"
+  },
+  {
+   "id": "X_RAY",
+   "zh": "全知之眼",
+   "en": "All-seeing eye",
+   "iconIndex": 416,
+   "description": "窥视未曾探索的区域，但并非毫无限制..."
+  },
+  {
+   "id": "UNSTABLE_GUNPOWDER",
+   "zh": "爆竹",
+   "en": "Firecrackers",
+   "iconIndex": 400,
+   "description": "令投射物在消失时放出不稳火药"
+  },
+  {
+   "id": "ACID_TRAIL",
+   "zh": "酸液轨迹",
+   "en": "Acid trail",
+   "iconIndex": 1,
+   "description": "令投射物飞行时留下酸液轨迹"
+  },
+  {
+   "id": "POISON_TRAIL",
+   "zh": "紫毒轨迹",
+   "en": "Poison trail",
+   "iconIndex": 294,
+   "description": "投射物留下紫色毒液轨迹，并令击中的敌人中毒"
+  },
+  {
+   "id": "OIL_TRAIL",
+   "zh": "油液轨迹",
+   "en": "Oil trail",
+   "iconIndex": 276,
+   "description": "投射物留下油液轨迹，并令击中的敌人沾染油污"
+  },
+  {
+   "id": "WATER_TRAIL",
+   "zh": "清水轨迹",
+   "en": "Water trail",
+   "iconIndex": 410,
+   "description": "令投射物留下清水轨迹"
+  },
+  {
+   "id": "GUNPOWDER_TRAIL",
+   "zh": "火药轨迹",
+   "en": "Gunpowder trail",
+   "iconIndex": 168,
+   "description": "令投射物留下火药轨迹"
+  },
+  {
+   "id": "FIRE_TRAIL",
+   "zh": "火焰轨迹",
+   "en": "Fire trail",
+   "iconIndex": 138,
+   "description": "投射物留下炽热粒子的轨迹，并点燃击中的敌人"
+  },
+  {
+   "id": "BURN_TRAIL",
+   "zh": "燃烧轨迹",
+   "en": "Burning trail",
+   "iconIndex": 59,
+   "description": "令投射物不断燃烧，并点燃击中的敌人"
+  },
+  {
+   "id": "TORCH",
+   "zh": "火把",
+   "en": "Torch",
+   "iconIndex": 387,
+   "description": "让你的魔杖亮起来！"
+  },
+  {
+   "id": "TORCH_ELECTRIC",
+   "zh": "电子火把",
+   "en": "Electric Torch",
+   "iconIndex": 388,
+   "description": "为魔杖赋予明亮而极度危险的光！"
+  },
+  {
+   "id": "ENERGY_SHIELD",
+   "zh": "能量盾",
+   "en": "Energy shield",
+   "iconIndex": 125,
+   "description": "反弹射来的投射物"
+  },
+  {
+   "id": "ENERGY_SHIELD_SECTOR",
+   "zh": "半能量盾",
+   "en": "Energy shield sector",
+   "iconIndex": 126,
+   "description": "反弹射来的投射物"
+  },
+  {
+   "id": "ENERGY_SHIELD_SHOT",
+   "zh": "投射物能量盾",
+   "en": "Projectile energy shield",
+   "iconIndex": 127,
+   "description": "为投射物赋予能量盾，反弹其他投射物，但限制其存在时间"
+  },
+  {
+   "id": "TINY_GHOST",
+   "zh": "召唤小幽灵",
+   "en": "Summon Tiny Ghost",
+   "iconIndex": 384,
+   "description": "召唤一个小小的灵体，你已经受到的伤害越多，它释放的魔法也就越强大"
+  },
+  {
+   "id": "OCARINA_A",
+   "zh": "陶笛 - 音符 A",
+   "en": "Ocarina - note A",
+   "iconIndex": 268,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_B",
+   "zh": "陶笛 - 音符 B",
+   "en": "Ocarina - note B",
+   "iconIndex": 270,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_C",
+   "zh": "陶笛 - 音符 C",
+   "en": "Ocarina - note C",
+   "iconIndex": 271,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_D",
+   "zh": "陶笛 - 音符 D",
+   "en": "Ocarina - note D",
+   "iconIndex": 272,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_E",
+   "zh": "陶笛 - 音符 E",
+   "en": "Ocarina - note E",
+   "iconIndex": 273,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_F",
+   "zh": "陶笛 - 音符 F",
+   "en": "Ocarina - note F",
+   "iconIndex": 274,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_GSHARP",
+   "zh": "陶笛 - 音符 G#",
+   "en": "Ocarina - note G#",
+   "iconIndex": 275,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "OCARINA_A2",
+   "zh": "陶笛 - 音符 A2",
+   "en": "Ocarina - note A2",
+   "iconIndex": 269,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "KANTELE_A",
+   "zh": "康特勒琴 - 音符A",
+   "en": "Kantele - note A",
+   "iconIndex": 206,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "KANTELE_D",
+   "zh": "康特勒琴 - 音符D",
+   "en": "Kantele - note D",
+   "iconIndex": 207,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "KANTELE_DIS",
+   "zh": "康特勒琴 - 音符D#",
+   "en": "Kantele - note D#",
+   "iconIndex": 208,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "KANTELE_E",
+   "zh": "康特勒琴 - 音符E",
+   "en": "Kantele - note E",
+   "iconIndex": 209,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "KANTELE_G",
+   "zh": "康特勒琴 - 音符G",
+   "en": "Kantele - note G",
+   "iconIndex": 210,
+   "description": "悦耳的音乐！"
+  },
+  {
+   "id": "RANDOM_SPELL",
+   "zh": "随机法术",
+   "en": "Random spell",
+   "iconIndex": 309,
+   "description": "随机施放一个法术，任何法术都有可能！"
+  },
+  {
+   "id": "RANDOM_PROJECTILE",
+   "zh": "随机投射物",
+   "en": "Random projectile spell",
+   "iconIndex": 308,
+   "description": "随机施放一个投射物法术"
+  },
+  {
+   "id": "RANDOM_MODIFIER",
+   "zh": "随机修正",
+   "en": "Random modifier spell",
+   "iconIndex": 307,
+   "description": "随机施放一个修正法术"
+  },
+  {
+   "id": "RANDOM_STATIC_PROJECTILE",
+   "zh": "随机静态投射物",
+   "en": "Random static projectile spell",
+   "iconIndex": 310,
+   "description": "随机施放一个静态投射物法术"
+  },
+  {
+   "id": "DRAW_RANDOM",
+   "zh": "复制随机法术",
+   "en": "Copy random spell",
+   "iconIndex": 119,
+   "description": "随机施放魔杖中一个未用完或无次数限制法术的复制品，依然会扣除次数"
+  },
+  {
+   "id": "DRAW_RANDOM_X3",
+   "zh": "复制随机法术三次",
+   "en": "Copy random spell thrice",
+   "iconIndex": 120,
+   "description": "随机施放三次魔杖中一个未用完或无次数限制法术的复制品，只会扣除一次使用次数"
+  },
+  {
+   "id": "DRAW_3_RANDOM",
+   "zh": "复制三个随机法术",
+   "en": "Copy three random spells",
+   "iconIndex": 118,
+   "description": "随机施放魔杖中三个未用完或无次数限制法术的复制品，三次随机可能重复选择，复制的法术各扣除一次使用次数"
+  },
+  {
+   "id": "ALL_NUKES",
+   "zh": "核弹置换术",
+   "en": "Spells to nukes",
+   "iconIndex": 12,
+   "description": "将存在的绝大多数投射物化为核弹（请勿尝试）"
+  },
+  {
+   "id": "ALL_DISCS",
+   "zh": "巨型圆锯置换术",
+   "en": "Spells to giga sawblades",
+   "iconIndex": 11,
+   "description": "将存在的绝大多数投射物化为巨型锯片"
+  },
+  {
+   "id": "ALL_ROCKETS",
+   "zh": "魔法飞弹置换术",
+   "en": "Spells to magic missiles",
+   "iconIndex": 13,
+   "description": "将存在的绝大多数投射物化为魔法飞弹"
+  },
+  {
+   "id": "ALL_DEATHCROSSES",
+   "zh": "死亡十字置换术",
+   "en": "Spells to death crosses",
+   "iconIndex": 10,
+   "description": "将存在的绝大多数投射物化为死亡十字"
+  },
+  {
+   "id": "ALL_BLACKHOLES",
+   "zh": "黑洞置换术",
+   "en": "Spells to black holes",
+   "iconIndex": 9,
+   "description": "将存在的绝大多数投射物化为黑洞"
+  },
+  {
+   "id": "ALL_ACID",
+   "zh": "酸液置换术",
+   "en": "Spells to acid",
+   "iconIndex": 8,
+   "description": "将存在的绝大多数投射物化为一团酸液"
+  },
+  {
+   "id": "ALL_SPELLS",
+   "zh": "万物之终结",
+   "en": "The end of everything",
+   "iconIndex": 14,
+   "description": "请勿尝试该法术"
+  },
+  {
+   "id": "SUMMON_PORTAL",
+   "zh": "召唤传送门",
+   "en": "Summon portal",
+   "iconIndex": 358,
+   "description": "召唤一个奇特的传送门，只有在四方佛像同时加持下才能维持稳定"
+  },
+  {
+   "id": "ADD_TRIGGER",
+   "zh": "追加触发",
+   "en": "Add trigger",
+   "iconIndex": 5,
+   "description": "令投射物在碰撞时施放另一法术"
+  },
+  {
+   "id": "ADD_TIMER",
+   "zh": "追加定时",
+   "en": "Add timer",
+   "iconIndex": 4,
+   "description": "令投射物在短暂时间后施放另一法术"
+  },
+  {
+   "id": "ADD_DEATH_TRIGGER",
+   "zh": "追加失效触发",
+   "en": "Add expiration trigger",
+   "iconIndex": 3,
+   "description": "令投射物在失效时施放另一法术"
+  },
+  {
+   "id": "LARPA_CHAOS",
+   "zh": "混沌拉帕",
+   "en": "Chaos larpa",
+   "iconIndex": 214,
+   "description": "令投射物向随机方向释放自身的复制品"
+  },
+  {
+   "id": "LARPA_DOWNWARDS",
+   "zh": "下方向拉帕",
+   "en": "Downwards larpa",
+   "iconIndex": 217,
+   "description": "令投射物向下射出自身的复制品"
+  },
+  {
+   "id": "LARPA_UPWARDS",
+   "zh": "上方向拉帕",
+   "en": "Upwards larpa",
+   "iconIndex": 218,
+   "description": "令投射物向上射出自身的复制品"
+  },
+  {
+   "id": "LARPA_CHAOS_2",
+   "zh": "轨迹拉帕",
+   "en": "Copy trail",
+   "iconIndex": 215,
+   "description": "令投射物留下由自身复制品构成的轨迹"
+  },
+  {
+   "id": "LARPA_DEATH",
+   "zh": "爆炸拉帕",
+   "en": "Larpa Explosion",
+   "iconIndex": 216,
+   "description": "令投射物在消失或击中地面时会射出自身的8个复制品"
+  },
+  {
+   "id": "ALPHA",
+   "zh": "阿尔法",
+   "en": "Alpha",
+   "iconIndex": 15,
+   "description": "施放当前魔杖中第一个法术的复制品"
+  },
+  {
+   "id": "GAMMA",
+   "zh": "伽马",
+   "en": "Gamma",
+   "iconIndex": 155,
+   "description": "施放当前魔杖中最后一个法术的复制品"
+  },
+  {
+   "id": "TAU",
+   "zh": "陶",
+   "en": "Tau",
+   "iconIndex": 368,
+   "description": "施放它后面两个法术的复制品"
+  },
+  {
+   "id": "OMEGA",
+   "zh": "欧米伽",
+   "en": "Omega",
+   "iconIndex": 277,
+   "description": "施放当前魔杖中所有法术的复制品，跳过它自己和“魔杖刷新”法术"
+  },
+  {
+   "id": "MU",
+   "zh": "缪",
+   "en": "Mu",
+   "iconIndex": 263,
+   "description": "施放当前魔杖中所有修正法术的复制品，无视它们对延迟、充能与法力的影响，然后抽取一个法术"
+  },
+  {
+   "id": "PHI",
+   "zh": "斐",
+   "en": "Phi",
+   "iconIndex": 288,
+   "description": "施放当前魔杖中所有投射物法术的复制品，无视它们对延迟、充能与法力的影响"
+  },
+  {
+   "id": "SIGMA",
+   "zh": "西格玛",
+   "en": "Sigma",
+   "iconIndex": 335,
+   "description": "施放当前魔杖中所有静态投射物法术的复制品，无视它们对延迟、充能与法力的影响，然后抽取一个法术"
+  },
+  {
+   "id": "ZETA",
+   "zh": "泽塔",
+   "en": "Zeta",
+   "iconIndex": 420,
+   "description": "随机施放你另一魔杖中某个法术的复制品"
+  },
+  {
+   "id": "DIVIDE_2",
+   "zh": "一分为二",
+   "en": "Divide by 2",
+   "iconIndex": 115,
+   "description": "施放魔杖中下一个法术的复制品两次"
+  },
+  {
+   "id": "DIVIDE_3",
+   "zh": "一分为三",
+   "en": "Divide by 3",
+   "iconIndex": 116,
+   "description": "施放魔杖中下一个法术的复制品三次"
+  },
+  {
+   "id": "DIVIDE_4",
+   "zh": "一分为四",
+   "en": "Divide by 4",
+   "iconIndex": 117,
+   "description": "施放魔杖中下一个法术的复制品四次"
+  },
+  {
+   "id": "DIVIDE_10",
+   "zh": "一分为十",
+   "en": "Divide by 10",
+   "iconIndex": 114,
+   "description": "施放魔杖中下一个法术的复制品十次"
+  },
+  {
+   "id": "METEOR_RAIN",
+   "zh": "陨石雨",
+   "en": "Meteorisade",
+   "iconIndex": 254,
+   "description": "“骰子已被掷下”"
+  },
+  {
+   "id": "WORM_RAIN",
+   "zh": "蠕虫雨",
+   "en": "Matosade",
+   "iconIndex": 414,
+   "description": "“骰子已被掷下”"
+  },
+  {
+   "id": "RESET",
+   "zh": "魔杖刷新",
+   "en": "Wand Refresh",
+   "iconIndex": 316,
+   "description": "立即无视充能时间并重新装填魔杖，但同时施放两个该法术会强制进入正常的充能阶段"
+  },
+  {
+   "id": "IF_ENEMY",
+   "zh": "条件 - 敌人数量",
+   "en": "Requirement - Enemies",
+   "iconIndex": 201,
+   "description": "如果附近的敌人少于15个，则跳过下一法术"
+  },
+  {
+   "id": "IF_PROJECTILE",
+   "zh": "条件 - 投射物数量",
+   "en": "Requirement - Projectile Spells",
+   "iconIndex": 204,
+   "description": "如果附近的投射物少于20个，则跳过下一法术"
+  },
+  {
+   "id": "IF_HP",
+   "zh": "条件 - 低生命值",
+   "en": "Requirement - Low Health",
+   "iconIndex": 203,
+   "description": "如果剩余的生命值超过25%，则跳过下一法术"
+  },
+  {
+   "id": "IF_HALF",
+   "zh": "条件 - 间隔",
+   "en": "Requirement - Every Other",
+   "iconIndex": 202,
+   "description": "每隔两次这种法术被执行时，下个法术被跳过"
+  },
+  {
+   "id": "IF_END",
+   "zh": "条件 - 结束",
+   "en": "Requirement - Endpoint",
+   "iconIndex": 200,
+   "description": "上一个条件法术的作用范围向后扩展到这里"
+  },
+  {
+   "id": "IF_ELSE",
+   "zh": "条件 - 否则",
+   "en": "Requirement - Otherwise",
+   "iconIndex": 199,
+   "description": "上一个条件法术的作用范围向后扩展到这里，若判断结果为是，则跳过下一法术"
+  },
+  {
+   "id": "COLOUR_RED",
+   "zh": "红色闪光",
+   "en": "Red Glimmer",
+   "iconIndex": 90,
+   "description": "将投射物产生的粒子效果替换为红色"
+  },
+  {
+   "id": "COLOUR_ORANGE",
+   "zh": "橙色闪光",
+   "en": "Orange Glimmer",
+   "iconIndex": 87,
+   "description": "将投射物产生的粒子效果替换为橙色"
+  },
+  {
+   "id": "COLOUR_GREEN",
+   "zh": "绿色闪光",
+   "en": "Green Glimmer",
+   "iconIndex": 85,
+   "description": "将投射物产生的粒子效果替换为绿色"
+  },
+  {
+   "id": "COLOUR_YELLOW",
+   "zh": "黄色闪光",
+   "en": "Yellow Glimmer",
+   "iconIndex": 91,
+   "description": "将投射物产生的粒子效果替换为黄色"
+  },
+  {
+   "id": "COLOUR_PURPLE",
+   "zh": "紫色闪光",
+   "en": "Purple Glimmer",
+   "iconIndex": 88,
+   "description": "将投射物产生的粒子效果替换为紫色"
+  },
+  {
+   "id": "COLOUR_BLUE",
+   "zh": "蓝色闪光",
+   "en": "Blue Glimmer",
+   "iconIndex": 84,
+   "description": "将投射物产生的粒子效果替换为蓝色"
+  },
+  {
+   "id": "COLOUR_RAINBOW",
+   "zh": "彩虹闪光",
+   "en": "Rainbow Glimmer",
+   "iconIndex": 89,
+   "description": "将投射物产生的粒子效果替换为随机颜色"
+  },
+  {
+   "id": "COLOUR_INVIS",
+   "zh": "隐形法术",
+   "en": "Invisible Spell",
+   "iconIndex": 86,
+   "description": "将一个投射物及其粒子效果隐形"
+  },
+  {
+   "id": "RAINBOW_TRAIL",
+   "zh": "彩虹轨迹",
+   "en": "Rainbow trail",
+   "iconIndex": 305,
+   "description": "投射物留下彩虹轨迹"
+  },
+  {
+   "id": "CESSATION",
+   "zh": "遁入虚空",
+   "en": "Cessation",
+   "iconIndex": 66,
+   "description": "施法者进入无界之界"
+  }
+ ],
+ "perks": [
+  {
+   "id": "CRITICAL_HIT",
+   "zh": "暴击率 +",
+   "en": "Critical Hit +",
+   "iconIndex": 436,
+   "description": "提高你所有法术的暴击率"
+  },
+  {
+   "id": "BREATH_UNDERWATER",
+   "zh": "屏息静气",
+   "en": "Breathless",
+   "iconIndex": 433,
+   "description": "你不再需要呼吸，并且可在液体中轻松移动"
+  },
+  {
+   "id": "EXTRA_MONEY",
+   "zh": "贪婪",
+   "en": "Greed",
+   "iconIndex": 447,
+   "description": "新产生的每块黄金价值翻倍"
+  },
+  {
+   "id": "EXTRA_MONEY_TRICK_KILL",
+   "zh": "技巧贪婪",
+   "en": "Trick Greed",
+   "iconIndex": 448,
+   "description": "生物意外死亡时，掉落的金块数量翻倍"
+  },
+  {
+   "id": "GOLD_IS_FOREVER",
+   "zh": "永恒黄金",
+   "en": "Gold Is Forever",
+   "iconIndex": 464,
+   "description": "新产生的金块不再会自然消失"
+  },
+  {
+   "id": "TRICK_BLOOD_MONEY",
+   "zh": "技巧血金",
+   "en": "Trick Blood Money",
+   "iconIndex": 520,
+   "description": "造成敌人意外死亡时，掉落血金"
+  },
+  {
+   "id": "EXPLODING_GOLD",
+   "zh": "爆炸黄金",
+   "en": "Exploding Gold",
+   "iconIndex": 443,
+   "description": "新产生的金块会在消失或被捡起时爆炸，该爆炸不会对你直接造成伤害"
+  },
+  {
+   "id": "HOVER_BOOST",
+   "zh": "更强漂浮",
+   "en": "Strong Levitation",
+   "iconIndex": 467,
+   "description": "你的浮空能量最大值翻倍"
+  },
+  {
+   "id": "FASTER_LEVITATION",
+   "zh": "更快漂浮",
+   "en": "Faster Levitation",
+   "iconIndex": 453,
+   "description": "你的上升速度加快 40%（上限为正常速度的 1.68 倍）"
+  },
+  {
+   "id": "MOVEMENT_FASTER",
+   "zh": "更快移动",
+   "en": "Faster Movement",
+   "iconIndex": 484,
+   "description": "你的移动速度增加 50%"
+  },
+  {
+   "id": "STRONG_KICK",
+   "zh": "坚持练腿",
+   "en": "Never Skip Leg Day",
+   "iconIndex": 516,
+   "description": "你的踢击会造成额外的 60 伤害和更强的击退"
+  },
+  {
+   "id": "TELEKINESIS",
+   "zh": "念力踢击",
+   "en": "Telekinetic Kick",
+   "iconIndex": 517,
+   "description": "获得用念力操控物体的能力"
+  },
+  {
+   "id": "REPELLING_CAPE",
+   "zh": "驱散斗篷",
+   "en": "Repelling Cape",
+   "iconIndex": 506,
+   "description": "移动时，你身上的污渍会更快消散"
+  },
+  {
+   "id": "EXPLODING_CORPSES",
+   "zh": "尸爆",
+   "en": "Exploding Corpses",
+   "iconIndex": 442,
+   "description": "大多生物被你杀死后，尸体会爆炸，但你获得爆炸免疫"
+  },
+  {
+   "id": "SAVING_GRACE",
+   "zh": "死里逃生",
+   "en": "Saving Grace",
+   "iconIndex": 513,
+   "description": "生命值高于 1 时，将以生命值降为 1 代替死亡"
+  },
+  {
+   "id": "INVISIBILITY",
+   "zh": "隐身",
+   "en": "Invisibility",
+   "iconIndex": 469,
+   "description": "你获得永久的隐身效果，但依然会因为脏污、受伤、施法和踢击显形"
+  },
+  {
+   "id": "GLOBAL_GORE",
+   "zh": "更多血液",
+   "en": "More Blood",
+   "iconIndex": 463,
+   "description": "血！血！血！"
+  },
+  {
+   "id": "REMOVE_FOG_OF_WAR",
+   "zh": "全视之眼",
+   "en": "All-Seeing Eye",
+   "iconIndex": 505,
+   "description": "看清一切被黑暗笼罩的空间"
+  },
+  {
+   "id": "LEVITATION_TRAIL",
+   "zh": "悬浮尾迹",
+   "en": "Levitation Trail",
+   "iconIndex": 474,
+   "description": "漂浮时，你留下一串魔法粒子轨迹，伤害经过的生物"
+  },
+  {
+   "id": "VAMPIRISM",
+   "zh": "吸血术",
+   "en": "Vampirism",
+   "iconIndex": 522,
+   "description": "你丧失 25% 最大生命值，但饮用血液可以补充生命值，血液不再影响饱食度，你也不再会食物中毒"
+  },
+  {
+   "id": "EXTRA_HP",
+   "zh": "额外生命值（一次性）",
+   "en": "Extra Health (One-off)",
+   "iconIndex": 444,
+   "description": "获得额外 50% 生命值上限"
+  },
+  {
+   "id": "HEARTS_MORE_EXTRA_HP",
+   "zh": "更强大的心",
+   "en": "Stronger Hearts",
+   "iconIndex": 465,
+   "description": "心会增加更多生命值上限"
+  },
+  {
+   "id": "GLASS_CANNON",
+   "zh": "玻璃大炮",
+   "en": "Glass Cannon",
+   "iconIndex": 462,
+   "description": "你的法术威力 x5，但生命值上限变为 50，且无法通过普通血上限增加"
+  },
+  {
+   "id": "LOW_HP_DAMAGE_BOOST",
+   "zh": "刀尖舔血",
+   "en": "Living on the Edge",
+   "iconIndex": 475,
+   "description": "生命值少于 25 或 25% 时，法术造成 3 倍伤害"
+  },
+  {
+   "id": "RESPAWN",
+   "zh": "额外生命（一次性）",
+   "en": "Extra Life (One-off)",
+   "iconIndex": 507,
+   "description": "死亡时，你将以 100 生命值重生"
+  },
+  {
+   "id": "WORM_ATTRACTOR",
+   "zh": "蠕虫吸引",
+   "en": "Worm Attractor",
+   "iconIndex": 526,
+   "description": "蠕虫认为你魅力非凡"
+  },
+  {
+   "id": "RADAR_ENEMY",
+   "zh": "敌人雷达",
+   "en": "Enemy Radar",
+   "iconIndex": 504,
+   "description": "感知并显示附近敌人的位置"
+  },
+  {
+   "id": "FOOD_CLOCK",
+   "zh": "素食主义",
+   "en": "Eat Your Vegetables",
+   "iconIndex": 456,
+   "description": "越饱足时造成的伤害越高，但如果腹中空空就会开始丧失生命值"
+  },
+  {
+   "id": "IRON_STOMACH",
+   "zh": "铁胃",
+   "en": "Iron Stomach",
+   "iconIndex": 470,
+   "description": "你不再因食用物品而受到负面效果"
+  },
+  {
+   "id": "WAND_RADAR",
+   "zh": "魔杖雷达",
+   "en": "Wand Radar",
+   "iconIndex": 525,
+   "description": "感知并显示附近魔杖的位置"
+  },
+  {
+   "id": "ITEM_RADAR",
+   "zh": "物品雷达",
+   "en": "Item Radar",
+   "iconIndex": 471,
+   "description": "感知并显示附近物品的位置"
+  },
+  {
+   "id": "MOON_RADAR",
+   "zh": "探月雷达",
+   "en": "Moon Radar",
+   "iconIndex": 483,
+   "description": "感知月亮所在的方向"
+  },
+  {
+   "id": "MAP",
+   "zh": "空间感知",
+   "en": "Spatial Awareness",
+   "iconIndex": 480,
+   "description": "如果些许驻足，便可感受自己相对于雪山的位置"
+  },
+  {
+   "id": "PROTECTION_FIRE",
+   "zh": "火焰免疫",
+   "en": "Fire Immunity",
+   "iconIndex": 501,
+   "description": "火焰不再会对你造成伤害"
+  },
+  {
+   "id": "PROTECTION_RADIOACTIVITY",
+   "zh": "绿毒免疫",
+   "en": "Toxic Immunity",
+   "iconIndex": 503,
+   "description": "绿毒不再会对你造成伤害，但你不会沾染绿色毒液"
+  },
+  {
+   "id": "PROTECTION_EXPLOSION",
+   "zh": "爆炸免疫",
+   "en": "Explosion Immunity",
+   "iconIndex": 500,
+   "description": "爆炸不再会对你造成直接伤害"
+  },
+  {
+   "id": "PROTECTION_MELEE",
+   "zh": "近战免疫",
+   "en": "Melee Immunity",
+   "iconIndex": 502,
+   "description": "敌人的近战不会对你造成伤害"
+  },
+  {
+   "id": "PROTECTION_ELECTRICITY",
+   "zh": "雷电免疫",
+   "en": "Electricity Immunity",
+   "iconIndex": 499,
+   "description": "电击不再会对你造成伤害"
+  },
+  {
+   "id": "TELEPORTITIS",
+   "zh": "受伤传送",
+   "en": "Teleportitis",
+   "iconIndex": 518,
+   "description": "受到伤害减少 20%，每次受到伤害时，传送自身"
+  },
+  {
+   "id": "TELEPORTITIS_DODGE",
+   "zh": "传送闪避",
+   "en": "Teleportitis Dodge",
+   "iconIndex": 519,
+   "description": "敌人的投射物接近时，你会传送一小段距离"
+  },
+  {
+   "id": "STAINLESS_ARMOUR",
+   "zh": "光洁铠甲",
+   "en": "Stainless Armour",
+   "iconIndex": 515,
+   "description": "没有沾染液体时，你受到伤害减少 50%"
+  },
+  {
+   "id": "EDIT_WANDS_EVERYWHERE",
+   "zh": "随时修改魔杖",
+   "en": "Tinker With Wands Everywhere",
+   "iconIndex": 440,
+   "description": "神圣祝福令你能够随时随地修改魔杖"
+  },
+  {
+   "id": "NO_WAND_EDITING",
+   "zh": "无法修改魔杖",
+   "en": "No Wand Tinkering",
+   "iconIndex": 487,
+   "description": "魔杖再也无法被编辑，但生物会有概率掉落血金块"
+  },
+  {
+   "id": "WAND_EXPERIMENTER",
+   "zh": "魔杖实验家",
+   "en": "Wand Experimenter",
+   "iconIndex": 524,
+   "description": "使用新找到并且未经修改的魔杖可以恢复生命值"
+  },
+  {
+   "id": "ADVENTURER",
+   "zh": "健康探索",
+   "en": "Healthy Exploration",
+   "iconIndex": 423,
+   "description": "每次进入新的区域，获得 60 点生命值"
+  },
+  {
+   "id": "ABILITY_ACTIONS_MATERIALIZED",
+   "zh": "手持炸弹",
+   "en": "Bombs Materialized",
+   "iconIndex": 422,
+   "description": "类似炸弹的法术可放置于物品栏中，如同投掷物品一般使用"
+  },
+  {
+   "id": "PROJECTILE_HOMING",
+   "zh": "追踪法术",
+   "en": "Homing Shots",
+   "iconIndex": 494,
+   "description": "你所有法术都会轻微追踪敌人"
+  },
+  {
+   "id": "PROJECTILE_HOMING_SHOOTER",
+   "zh": "回旋法术",
+   "en": "Boomerang Spells",
+   "iconIndex": 495,
+   "description": "你放出的法术会追踪你自己，但持续时间更长，速度更快，并且你受到的投射物和爆炸伤害减少"
+  },
+  {
+   "id": "UNLIMITED_SPELLS",
+   "zh": "无限法术",
+   "en": "Unlimited Spells",
+   "iconIndex": 521,
+   "description": "大多法术不再拥有次数限制"
+  },
+  {
+   "id": "FREEZE_FIELD",
+   "zh": "冰冻领域",
+   "en": "Freeze Field",
+   "iconIndex": 457,
+   "description": "你周围的液体和火焰会被冻结，并且你获得火焰免疫"
+  },
+  {
+   "id": "FIRE_GAS",
+   "zh": "气体自燃",
+   "en": "Gas fire",
+   "iconIndex": 455,
+   "description": "你附近的所有气体自发转变为火焰"
+  },
+  {
+   "id": "DISSOLVE_POWDERS",
+   "zh": "粉末消融",
+   "en": "Dissolve Powders",
+   "iconIndex": 438,
+   "description": "大部分粉末材料会在你附近快速消融"
+  },
+  {
+   "id": "BLEED_SLIME",
+   "zh": "粘稠血液",
+   "en": "Slime Blood",
+   "iconIndex": 431,
+   "description": "将你的血液变为黏液，黏液不再令你减速，并且你受到的投射物伤害降低"
+  },
+  {
+   "id": "BLEED_OIL",
+   "zh": "油性血液",
+   "en": "Oil Blood",
+   "iconIndex": 430,
+   "description": "将你的血液变为可燃的油，并获得火焰免疫"
+  },
+  {
+   "id": "BLEED_GAS",
+   "zh": "瓦斯血液",
+   "en": "Gas Blood",
+   "iconIndex": 429,
+   "description": "将你的血液变为可燃气体，你变得更轻盈，并且获得绿毒免疫"
+  },
+  {
+   "id": "SHIELD",
+   "zh": "永久护盾",
+   "en": "Permanent Shield",
+   "iconIndex": 514,
+   "description": "获得一面永久性的小型能量盾"
+  },
+  {
+   "id": "REVENGE_EXPLOSION",
+   "zh": "复仇爆炸",
+   "en": "Revenge Explosion",
+   "iconIndex": 509,
+   "description": "受伤时，你会放出不会伤害你自己的魔法爆炸，并且你受到的爆炸伤害减少"
+  },
+  {
+   "id": "REVENGE_TENTACLE",
+   "zh": "复仇触手",
+   "en": "Revenge Tentacle",
+   "iconIndex": 511,
+   "description": "受伤时召唤一条巨大的触手，并且受到的投射物伤害减少"
+  },
+  {
+   "id": "REVENGE_RATS",
+   "zh": "复仇鼠群",
+   "en": "Revenge Rats",
+   "iconIndex": 510,
+   "description": "受伤时有几率召唤一只老鼠仆从帮忙"
+  },
+  {
+   "id": "REVENGE_BULLET",
+   "zh": "复仇子弹",
+   "en": "Revenge bullets",
+   "iconIndex": 508,
+   "description": "你被投射物击中时会射出子弹回击，并且你受到的投射物和爆炸伤害减少"
+  },
+  {
+   "id": "ATTACK_FOOT",
+   "zh": "蛛腿突变",
+   "en": "Lukki Mutation",
+   "iconIndex": 427,
+   "description": "牺牲你的浮空能力，生长出奇特的肢体，它们会为你而战"
+  },
+  {
+   "id": "LEGGY_FEET",
+   "zh": "怪腿变异",
+   "en": "Leggy Mutation",
+   "iconIndex": 473,
+   "description": "你生长出奇奇怪怪的肢体"
+  },
+  {
+   "id": "PLAGUE_RATS",
+   "zh": "瘟疫鼠群",
+   "en": "Plague Rats",
+   "iconIndex": 492,
+   "description": "生物死亡时释放出鼠群为你服务！所有鼠鼠成为你的好朋友！"
+  },
+  {
+   "id": "VOMIT_RATS",
+   "zh": "自然再生",
+   "en": "Spontaneous Generation",
+   "iconIndex": 523,
+   "description": "你附近的呕吐物变为好用的鼠鼠"
+  },
+  {
+   "id": "CORDYCEPS",
+   "zh": "虫草",
+   "en": "Cordyceps",
+   "iconIndex": 435,
+   "description": "从被你击杀的敌人尸体上长出真菌生物"
+  },
+  {
+   "id": "MOLD",
+   "zh": "真菌种群",
+   "en": "Fungal Colony",
+   "iconIndex": 482,
+   "description": "你附近的黏液会化为真菌生物"
+  },
+  {
+   "id": "WORM_SMALLER_HOLES",
+   "zh": "移除虫洞",
+   "en": "Feared by Worms",
+   "iconIndex": 527,
+   "description": "蠕虫会逃避你，同时蠕虫和蜘蛛不再会破坏地形"
+  },
+  {
+   "id": "PROJECTILE_REPULSION",
+   "zh": "投射物排斥领域",
+   "en": "Projectile Repulsion Field",
+   "iconIndex": 496,
+   "description": "在你周围产生向外排斥投射物的力场，但你受到的投射物伤害增加"
+  },
+  {
+   "id": "RISKY_CRITICAL",
+   "zh": "千钧一发",
+   "en": "Close Call",
+   "iconIndex": 512,
+   "description": "靠近敌人时获得额外的暴击率"
+  },
+  {
+   "id": "FUNGAL_DISEASE",
+   "zh": "真菌疾病",
+   "en": "Fungal Disease",
+   "iconIndex": 458,
+   "description": "靠近敌人时，你身上将会生长出大量孢子"
+  },
+  {
+   "id": "PROJECTILE_SLOW_FIELD",
+   "zh": "投射物减速领域",
+   "en": "Projectile Slower",
+   "iconIndex": 498,
+   "description": "接近你的投射物速度变慢"
+  },
+  {
+   "id": "PROJECTILE_REPULSION_SECTOR",
+   "zh": "投射物排斥扇面",
+   "en": "Projectile Repulsion Sector",
+   "iconIndex": 497,
+   "description": "你面前一小片扇形的投射物将受到强烈的排斥力"
+  },
+  {
+   "id": "PROJECTILE_EATER_SECTOR",
+   "zh": "投射物吞噬扇面",
+   "en": "Projectile Eater",
+   "iconIndex": 493,
+   "description": "飞入你后方小片扇形区域的投射物会消失"
+  },
+  {
+   "id": "ORBIT",
+   "zh": "相位穿越",
+   "en": "Phasing",
+   "iconIndex": 488,
+   "description": "慢速飞行的投射物有概率以相位形式穿过你，但你受到的投射物和爆炸伤害增加"
+  },
+  {
+   "id": "ANGRY_GHOST",
+   "zh": "愤怒幽灵",
+   "en": "Angry ghost",
+   "iconIndex": 425,
+   "description": "召唤一个愤怒的幽灵来帮助你，复制附近的投射物并跟随你同步攻击"
+  },
+  {
+   "id": "HUNGRY_GHOST",
+   "zh": "饥饿幽灵",
+   "en": "Hungry Ghost",
+   "iconIndex": 468,
+   "description": "召唤一个快乐的仆从，它会不时吃掉敌人的投射物，并给予你暂时的伤害加成"
+  },
+  {
+   "id": "DEATH_GHOST",
+   "zh": "哀伤灵魂",
+   "en": "Mournful Spirit",
+   "iconIndex": 437,
+   "description": "生物死后留下灵魂徘徊一段时间，对接触到的生物造成诅咒伤害"
+  },
+  {
+   "id": "HOMUNCULUS",
+   "zh": "人造生命",
+   "en": "Homunculus",
+   "iconIndex": 466,
+   "description": "每次离开神圣之山时，召唤一个人造人提供帮助"
+  },
+  {
+   "id": "LUKKI_MINION",
+   "zh": "蜘蛛仆从",
+   "en": "Lukki Minion",
+   "iconIndex": 478,
+   "description": "召唤一只小蜘蛛协助你战斗"
+  },
+  {
+   "id": "ELECTRICITY",
+   "zh": "雷电御体",
+   "en": "Electricity",
+   "iconIndex": 441,
+   "description": "获得雷电免疫，但你附近的金属和液体经常会通电"
+  },
+  {
+   "id": "ATTRACT_ITEMS",
+   "zh": "吸金大法",
+   "en": "Attract Gold",
+   "iconIndex": 428,
+   "description": "你可以吸引附近的金块"
+  },
+  {
+   "id": "EXTRA_KNOCKBACK",
+   "zh": "击退法术",
+   "en": "Extra Knockback on Spells",
+   "iconIndex": 445,
+   "description": "增加法术对敌人的击退力度"
+  },
+  {
+   "id": "LOWER_SPREAD",
+   "zh": "汇聚法术",
+   "en": "Concentrated Spells",
+   "iconIndex": 477,
+   "description": "你的法术散射更小，伤害更高，但施放延迟和后座力增加"
+  },
+  {
+   "id": "LOW_RECOIL",
+   "zh": "低后座力",
+   "en": "Low Recoil",
+   "iconIndex": 476,
+   "description": "你的法术造成的后座力大幅下降，但飞行速度略微减慢"
+  },
+  {
+   "id": "BOUNCE",
+   "zh": "弹跳法术",
+   "en": "Bouncing Spells",
+   "iconIndex": 432,
+   "description": "几乎你的所有法术都能够弹跳，且持续时间更久"
+  },
+  {
+   "id": "FAST_PROJECTILES",
+   "zh": "投射物加速",
+   "en": "Faster Projectiles",
+   "iconIndex": 452,
+   "description": "你的投射物飞行速度加快"
+  },
+  {
+   "id": "ALWAYS_CAST",
+   "zh": "始终施放（一次性）",
+   "en": "Always Cast (One-off)",
+   "iconIndex": 424,
+   "description": "为你手持的魔杖追加随机的始终施放法术，最多 4 个"
+  },
+  {
+   "id": "EXTRA_MANA",
+   "zh": "高魔低容（一次性）",
+   "en": "High Mana, Low Capacity (One-off)",
+   "iconIndex": 446,
+   "description": "你手持的魔杖丧失一半容量，但获得更多的法力"
+  },
+  {
+   "id": "NO_MORE_SHUFFLE",
+   "zh": "不再乱序",
+   "en": "No More Shuffle",
+   "iconIndex": 486,
+   "description": "所有新生成的魔杖都不再乱序，你持有的所有魔杖也会变为有序"
+  },
+  {
+   "id": "NO_MORE_KNOCKBACK",
+   "zh": "不再击退",
+   "en": "No More Knockback",
+   "iconIndex": 485,
+   "description": "敌人不再可将你击退或从空中击落"
+  },
+  {
+   "id": "DUPLICATE_PROJECTILE",
+   "zh": "投射物复制",
+   "en": "Projectile duplication",
+   "iconIndex": 439,
+   "description": "你的投射物法术一定几率复制，但你受到的投射物伤害增加"
+  },
+  {
+   "id": "FASTER_WANDS",
+   "zh": "魔杖优化（一次性）",
+   "en": "Faster Wands (One-off)",
+   "iconIndex": 454,
+   "description": "当前携带的所有魔杖施放延迟和充能时间减少，并稍微增加法力恢复速度"
+  },
+  {
+   "id": "EXTRA_SLOTS",
+   "zh": "魔杖扩容（一次性）",
+   "en": "Extra Wand Capacity (One-off)",
+   "iconIndex": 451,
+   "description": "当前携带的所有魔杖获得 1-3 额外法术槽（直至上限 25）"
+  },
+  {
+   "id": "CONTACT_DAMAGE",
+   "zh": "伤害领域",
+   "en": "Contact Damage",
+   "iconIndex": 434,
+   "description": "接近你的敌人受到持续近战伤害，你的生命值越低，伤害越高"
+  },
+  {
+   "id": "EXTRA_PERK",
+   "zh": "更多天赋选项",
+   "en": "Extra Perk",
+   "iconIndex": 449,
+   "description": "在未造访的神圣之山中额外生成一个可选天赋"
+  },
+  {
+   "id": "PERKS_LOTTERY",
+   "zh": "天赋博彩",
+   "en": "Perk Lottery",
+   "iconIndex": 490,
+   "description": "挑选天赋时，有 50% 概率其它天赋不会消失"
+  },
+  {
+   "id": "GAMBLE",
+   "zh": "赌博 （一次性）",
+   "en": "Gamble (One-off)",
+   "iconIndex": 459,
+   "description": "获得两个随机天赋"
+  },
+  {
+   "id": "EXTRA_SHOP_ITEM",
+   "zh": "额外圣山物品",
+   "en": "Extra Item In Holy Mountain",
+   "iconIndex": 450,
+   "description": "在未造访的神圣之山中额外生成一件可选商品"
+  },
+  {
+   "id": "GENOME_MORE_HATRED",
+   "zh": "更多仇恨",
+   "en": "More Hatred",
+   "iconIndex": 460,
+   "description": "生物之间变得更加“核”平"
+  },
+  {
+   "id": "GENOME_MORE_LOVE",
+   "zh": "更多友爱",
+   "en": "More Love",
+   "iconIndex": 461,
+   "description": "生物之间变得更加和平"
+  },
+  {
+   "id": "PEACE_WITH_GODS",
+   "zh": "与神和解",
+   "en": "Peace with Gods",
+   "iconIndex": 489,
+   "description": "你与你的神同在"
+  },
+  {
+   "id": "MANA_FROM_KILLS",
+   "zh": "化尸为魔",
+   "en": "Kills to mana",
+   "iconIndex": 479,
+   "description": "每当你附近的敌人死亡时，你获得暂时的法力恢复效果"
+  },
+  {
+   "id": "ANGRY_LEVITATION",
+   "zh": "怒气漂浮",
+   "en": "Rage-fueled Levitation",
+   "iconIndex": 426,
+   "description": "杀死敌人可补充部分浮空能量"
+  },
+  {
+   "id": "LASER_AIM",
+   "zh": "激光瞄具",
+   "en": "Pinpointer",
+   "iconIndex": 472,
+   "description": "你的法术飞行更快、散射更小，并且获得了一条方便的瞄准线"
+  },
+  {
+   "id": "PERSONAL_LASER",
+   "zh": "镭射眼",
+   "en": "Personal Plasma Beam",
+   "iconIndex": 491,
+   "description": "你手持魔杖时持续放出电浆束，但施放延迟增加"
+  },
+  {
+   "id": "MEGA_BEAM_STONE",
+   "zh": "召唤光石 （一次性）",
+   "en": "Summon Sädekivi (One-off)",
+   "iconIndex": 481,
+   "description": "获得一件神器，让你可以呼唤天怒"
+  }
+ ],
+ "wands": [
+  {
+   "id": "STARTER",
+   "zh": "初始法杖",
+   "en": "Starting Wand",
+   "iconIndex": -1
+  },
+  {
+   "id": "STARTER_BOMB",
+   "zh": "初始炸弹法杖",
+   "en": "Starting Bomb Wand",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_1",
+   "zh": "乱序法杖：等级 1",
+   "en": "Shuffle Wand Level 1",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_1_BETTER",
+   "zh": "优质乱序法杖：等级 1",
+   "en": "Better Shuffle Wand Level 1",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_2",
+   "zh": "乱序法杖：等级 2",
+   "en": "Shuffle Wand Level 2",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_2_BETTER",
+   "zh": "优质乱序法杖：等级 2",
+   "en": "Better Shuffle Wand Level 2",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_3",
+   "zh": "乱序法杖：等级 3",
+   "en": "Shuffle Wand Level 3",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_3_BETTER",
+   "zh": "优质乱序法杖：等级 3",
+   "en": "Better Shuffle Wand Level 3",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_4",
+   "zh": "乱序法杖：等级 4",
+   "en": "Shuffle Wand Level 4",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_4_BETTER",
+   "zh": "优质乱序法杖：等级 4",
+   "en": "Better Shuffle Wand Level 4",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_5",
+   "zh": "乱序法杖：等级 5",
+   "en": "Shuffle Wand Level 5",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_5_BETTER",
+   "zh": "优质乱序法杖：等级 5",
+   "en": "Better Shuffle Wand Level 5",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_6",
+   "zh": "乱序法杖：等级 6",
+   "en": "Shuffle Wand Level 6",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_6_BETTER",
+   "zh": "优质乱序法杖：等级 6",
+   "en": "Better Shuffle Wand Level 6",
+   "iconIndex": -1
+  },
+  {
+   "id": "SHUFFLE_10",
+   "zh": "乱序法杖：等级 10",
+   "en": "Shuffle Wand Level 10",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_1",
+   "zh": "不乱序法杖：等级 1",
+   "en": "No-shuffle Wand Level 1",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_2",
+   "zh": "不乱序法杖：等级 2",
+   "en": "No-shuffle Wand Level 2",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_3",
+   "zh": "不乱序法杖：等级 3",
+   "en": "No-shuffle Wand Level 3",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_4",
+   "zh": "不乱序法杖：等级 4",
+   "en": "No-shuffle Wand Level 4",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_5",
+   "zh": "不乱序法杖：等级 5",
+   "en": "No-shuffle Wand Level 5",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_6",
+   "zh": "不乱序法杖：等级 6",
+   "en": "No-shuffle Wand Level 6",
+   "iconIndex": -1
+  },
+  {
+   "id": "NOSHUFFLE_10",
+   "zh": "不乱序法杖：等级 10",
+   "en": "No-shuffle Wand Level 10",
+   "iconIndex": -1
+  },
+  {
+   "id": "KIEKURAKEPPI",
+   "zh": "螺旋杖（Kiekurakeppi）",
+   "en": "Kiekurakeppi",
+   "iconIndex": -1
+  },
+  {
+   "id": "LEUKALUU",
+   "zh": "颚骨杖（Leukaluu）",
+   "en": "Leukaluu",
+   "iconIndex": -1
+  },
+  {
+   "id": "RUUSU",
+   "zh": "玫瑰杖（Ruusu）",
+   "en": "Ruusu",
+   "iconIndex": -1
+  },
+  {
+   "id": "VALTIKKA",
+   "zh": "权杖（Valtikka）",
+   "en": "Valtikka",
+   "iconIndex": -1
+  },
+  {
+   "id": "VARPULUUTA",
+   "zh": "麻雀扫帚（Varpuluuta）",
+   "en": "Varpuluuta",
+   "iconIndex": -1
+  },
+  {
+   "id": "VASTA",
+   "zh": "白桦束（Vasta）",
+   "en": "Vasta",
+   "iconIndex": -1
+  },
+  {
+   "id": "VIHTA",
+   "zh": "白桦束（Vihta）",
+   "en": "Vihta",
+   "iconIndex": -1
+  }
+ ],
+ "events": [
+  {
+   "id": "HEALTH_PLUS",
+   "zh": "生命增加",
+   "en": "Health Plus",
+   "iconIndex": -1,
+   "description": "你获得 80 生命值"
+  },
+  {
+   "id": "SPEEDY_ENEMIES",
+   "zh": "快速生物",
+   "en": "Speedy Creatures",
+   "iconIndex": -1,
+   "description": "附近的生物移动变快"
+  },
+  {
+   "id": "PROTECT_ENEMIES",
+   "zh": "保护生物",
+   "en": "Protect Creatures",
+   "iconIndex": -1,
+   "description": "附近的生物暂时不受任何外来伤害"
+  },
+  {
+   "id": "TELEPORTING_ENEMIES",
+   "zh": "传送生物",
+   "en": "Teleporting Creatures",
+   "iconIndex": -1,
+   "description": "附近的生物开始四处传送"
+  },
+  {
+   "id": "POLYMORPH_ENEMIES",
+   "zh": "变形生物",
+   "en": "Polymorph Creatures",
+   "iconIndex": -1,
+   "description": "附近的生物变形为随机的存在"
+  },
+  {
+   "id": "TINY_GHOST_PLAYER",
+   "zh": "召唤友好幽灵",
+   "en": "Summon Friendly Ghosts",
+   "iconIndex": -1,
+   "description": "你获得几个迷你幽灵朋友"
+  },
+  {
+   "id": "TINY_GHOST_ENEMY",
+   "zh": "召唤敌对幽灵",
+   "en": "Summon Hostile Ghosts",
+   "iconIndex": -1,
+   "description": "附近的生物获得迷你幽灵朋友"
+  },
+  {
+   "id": "HOMING_ENEMY_PROJECTILES",
+   "zh": "追踪敌意",
+   "en": "Homing for Hostiles",
+   "iconIndex": -1,
+   "description": "附近敌人的投射物会向你加速飞来"
+  },
+  {
+   "id": "HEALTH_MINUS",
+   "zh": "生命减少",
+   "en": "Health Minus",
+   "iconIndex": -1,
+   "description": "你失去 40 生命值"
+  },
+  {
+   "id": "MAX_HEALTH_PLUS",
+   "zh": "最大生命增加",
+   "en": "Max Health Plus",
+   "iconIndex": -1,
+   "description": "生命值上限提升 50"
+  },
+  {
+   "id": "MAX_HEALTH_MINUS",
+   "zh": "最大生命减少",
+   "en": "Max Health Minus",
+   "iconIndex": -1,
+   "description": "生命值上限减少 25"
+  },
+  {
+   "id": "REGENERATION_FIELD",
+   "zh": "再生领域",
+   "en": "Regeneration Field",
+   "iconIndex": -1,
+   "description": "你获得一个再生领域"
+  },
+  {
+   "id": "PROTECT_PLAYER",
+   "zh": "暂时不死",
+   "en": "Temporary Immortality",
+   "iconIndex": -1,
+   "description": "你一段时间内无敌"
+  },
+  {
+   "id": "SHIELD_ENEMIES",
+   "zh": "护盾生物",
+   "en": "Shielded Creatures",
+   "iconIndex": -1,
+   "description": "所有生物均获得一面护盾"
+  },
+  {
+   "id": "SHIELD_PLAYER",
+   "zh": "友方护盾",
+   "en": "Friendly Shield",
+   "iconIndex": -1,
+   "description": "你获得一面护盾"
+  },
+  {
+   "id": "FASTER_PLAYER",
+   "zh": "快速移动",
+   "en": "Speedy Movement",
+   "iconIndex": -1,
+   "description": "一段时间内可以移动更快"
+  },
+  {
+   "id": "SLIMY_PLAYER",
+   "zh": "粘液",
+   "en": "Slimy",
+   "iconIndex": -1,
+   "description": "每个人都覆盖一层粘液"
+  },
+  {
+   "id": "WET_PLAYER",
+   "zh": "淋浴",
+   "en": "Shower",
+   "iconIndex": -1,
+   "description": "你的头顶出现了一片乌云"
+  },
+  {
+   "id": "OILED_PLAYER",
+   "zh": "闪闪发亮",
+   "en": "Glisten",
+   "iconIndex": -1,
+   "description": "你的头顶出现了一片油云"
+  },
+  {
+   "id": "DRUNK_PLAYER",
+   "zh": "酒气冲天",
+   "en": "Booze",
+   "iconIndex": -1,
+   "description": "你喝醉了"
+  },
+  {
+   "id": "DRUNK_ENEMIES",
+   "zh": "醉酒生物",
+   "en": "Drunk Creatures",
+   "iconIndex": -1,
+   "description": "附近的生物醉酒了"
+  },
+  {
+   "id": "SPELL_REFRESH",
+   "zh": "法术刷新",
+   "en": "Spell Refresh",
+   "iconIndex": -1,
+   "description": "你的法术刷新了"
+  },
+  {
+   "id": "SEA_OF_X",
+   "zh": "随机之海",
+   "en": "Sea of Random",
+   "iconIndex": -1,
+   "description": "召唤一大片随机液体"
+  },
+  {
+   "id": "SEA_OF_WATER",
+   "zh": "水之海",
+   "en": "Sea of Water",
+   "iconIndex": -1,
+   "description": "召唤一大片的水"
+  },
+  {
+   "id": "SEA_OF_OIL",
+   "zh": "油脂之海",
+   "en": "Sea of Oil",
+   "iconIndex": -1,
+   "description": "召唤一大片的油"
+  },
+  {
+   "id": "SEA_OF_LAVA",
+   "zh": "岩浆之海",
+   "en": "Sea of Lava",
+   "iconIndex": -1,
+   "description": "召唤一大片的岩浆"
+  },
+  {
+   "id": "NUKE",
+   "zh": "轰！",
+   "en": "Boom!",
+   "iconIndex": -1,
+   "description": "快找掩体！"
+  },
+  {
+   "id": "SPAWN_WORM",
+   "zh": "召唤蠕虫",
+   "en": "Summon Worm",
+   "iconIndex": -1,
+   "description": "出现一条巨大的蠕虫"
+  },
+  {
+   "id": "SPAWN_SHOPKEEPER",
+   "zh": "召唤斯特瓦里",
+   "en": "Summon Stevari",
+   "iconIndex": -1,
+   "description": "斯特瓦里出现"
+  },
+  {
+   "id": "BOUNCY_SHOTS",
+   "zh": "弹跳法术",
+   "en": "Bouncy Spells",
+   "iconIndex": -1,
+   "description": "一段时间内，你的投射物可以弹跳"
+  },
+  {
+   "id": "BOOMERANG_SHOTS",
+   "zh": "回旋的法术",
+   "en": "Boomerang Spells",
+   "iconIndex": -1,
+   "description": "一段时间内，你的投射物会飞回你自己"
+  },
+  {
+   "id": "FIZZLE",
+   "zh": "闪灭法术",
+   "en": "Fizzle Spells",
+   "iconIndex": -1,
+   "description": "一段时间内，你的投射物一定几率闪灭"
+  },
+  {
+   "id": "GRAVITY",
+   "zh": "投射物重力",
+   "en": "Projectile Gravity",
+   "iconIndex": -1,
+   "description": "你的投射物获得额外的重力"
+  },
+  {
+   "id": "ANTIGRAVITY",
+   "zh": "投射物反重力",
+   "en": "Projectile Antigravity",
+   "iconIndex": -1,
+   "description": "你的投射物获得反重力"
+  },
+  {
+   "id": "EXPLOSIVE_PROJECTILE",
+   "zh": "易爆法术",
+   "en": "Explosive Spells",
+   "iconIndex": -1,
+   "description": "一段时间内，你的投射物变得易爆"
+  },
+  {
+   "id": "GIVE_WAND_TO_ENEMY",
+   "zh": "武装生物",
+   "en": "Armed Creature",
+   "iconIndex": -1,
+   "description": "附近的一个生物获得一支随机魔杖"
+  },
+  {
+   "id": "GIVE_WAND_TO_PLAYER",
+   "zh": "新魔杖",
+   "en": "New Wand",
+   "iconIndex": -1,
+   "description": "出现一支随机魔杖"
+  },
+  {
+   "id": "REMOVE_LIQUID",
+   "zh": "移除液体",
+   "en": "Remove Liquids",
+   "iconIndex": -1,
+   "description": "附近的所有液体消失"
+  },
+  {
+   "id": "REMOVE_GROUND",
+   "zh": "移除地面",
+   "en": "Remove Ground",
+   "iconIndex": -1,
+   "description": "附近的所有坚实地面消失"
+  },
+  {
+   "id": "BERSERK",
+   "zh": "暴怒",
+   "en": "Rage",
+   "iconIndex": -1,
+   "description": "全体狂暴"
+  },
+  {
+   "id": "FIREBALL_THROWER_PLAYER",
+   "zh": "火球发射器",
+   "en": "Fireball Thrower",
+   "iconIndex": -1,
+   "description": "一段时间内，你开始喷吐火球"
+  },
+  {
+   "id": "FIREBALL_THROWER_ENEMIES",
+   "zh": "火球发射器生物",
+   "en": "Fireball Thrower Creatures",
+   "iconIndex": -1,
+   "description": "一段时间内，生物开始喷吐火球"
+  },
+  {
+   "id": "SPAWN_CHEST",
+   "zh": "战利品！",
+   "en": "Loot!",
+   "iconIndex": -1,
+   "description": "出现一个宝箱！"
+  },
+  {
+   "id": "TRANSFORM_GIGA_DISCS",
+   "zh": "到处都是巨大锯刃",
+   "en": "Giga Sawblades Everywhere",
+   "iconIndex": -1,
+   "description": "一段时间内，所有投射物都变成巨大锯刃(!)"
+  },
+  {
+   "id": "TRANSFORM_NUKES",
+   "zh": "投射物变核弹",
+   "en": "Projectiles Into Nukes",
+   "iconIndex": -1,
+   "description": "所有飞行中投射物都变成核弹(!!!)"
+  },
+  {
+   "id": "RAIN_GOLD",
+   "zh": "财宝雨",
+   "en": "Treasure Rain",
+   "iconIndex": -1,
+   "description": "天降黄金"
+  },
+  {
+   "id": "RAIN_WORM",
+   "zh": "蠕虫之雨",
+   "en": "Worm Rain",
+   "iconIndex": -1,
+   "description": "蠕虫凭空出现"
+  },
+  {
+   "id": "RAIN_BOMB",
+   "zh": "炸弹之雨",
+   "en": "Bomb Rain",
+   "iconIndex": -1,
+   "description": "炸弹凭空出现"
+  },
+  {
+   "id": "RAIN_BLACKHOLE",
+   "zh": "重力风暴",
+   "en": "Gravity Storm",
+   "iconIndex": -1,
+   "description": "在你附近打开了复数黑洞！！"
+  },
+  {
+   "id": "RAIN_HIISI",
+   "zh": "席西之雨",
+   "en": "Hiisi Rain",
+   "iconIndex": -1,
+   "description": "一堆席西凭空出现"
+  },
+  {
+   "id": "RAIN_BARREL",
+   "zh": "天降爆桶",
+   "en": "Barrel Rain",
+   "iconIndex": -1,
+   "description": "爆桶和其他爆炸物凭空出现"
+  },
+  {
+   "id": "RAIN_POTION",
+   "zh": "魔药之雨",
+   "en": "Potion Rain",
+   "iconIndex": -1,
+   "description": "魔药凭空出现"
+  },
+  {
+   "id": "GRAVITY_PLAYER",
+   "zh": "专属重力领域",
+   "en": "Personal Gravity Field",
+   "iconIndex": -1,
+   "description": "一段时间内，你会吸引投射物"
+  },
+  {
+   "id": "GRAVITY_ENEMIES",
+   "zh": "生物重力领域",
+   "en": "Creature Gravity Field",
+   "iconIndex": -1,
+   "description": "一段时间内，生物会吸引投射物"
+  },
+  {
+   "id": "PORTAL_EAST",
+   "zh": "前往“东方”的传送门",
+   "en": "Portal to East",
+   "iconIndex": -1,
+   "description": "通往遥远之处的传送门"
+  },
+  {
+   "id": "PORTAL_BEGINNING",
+   "zh": "前往“地表”的传送门",
+   "en": "Portal to Surface",
+   "iconIndex": -1,
+   "description": "通往地表的传送门"
+  },
+  {
+   "id": "PORTAL_RANDOM",
+   "zh": "前往“某个地方”的传送门",
+   "en": "Portal to Some Place",
+   "iconIndex": -1,
+   "description": "通往某处的传送门"
+  },
+  {
+   "id": "TRAIL_WATER",
+   "zh": "清水轨迹",
+   "en": "Water Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下清水轨迹"
+  },
+  {
+   "id": "TRAIL_OIL",
+   "zh": "油液轨迹",
+   "en": "Oil Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下油液轨迹"
+  },
+  {
+   "id": "TRAIL_ALCOHOL",
+   "zh": "酒精轨迹",
+   "en": "Alcohol Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下酒液轨迹"
+  },
+  {
+   "id": "TRAIL_GUNPOWDER",
+   "zh": "火药轨迹",
+   "en": "Gunpowder Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下火药轨迹"
+  },
+  {
+   "id": "TRAIL_ACID",
+   "zh": "酸液轨迹",
+   "en": "Acid Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下酸液轨迹"
+  },
+  {
+   "id": "TRAIL_LAVA",
+   "zh": "岩浆轨迹",
+   "en": "Lava Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下岩浆轨迹"
+  },
+  {
+   "id": "TRAIL_FIRE",
+   "zh": "火焰轨迹",
+   "en": "Fire Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下火焰轨迹"
+  },
+  {
+   "id": "TRAIL_POISON",
+   "zh": "毒素轨迹",
+   "en": "Poison Trail",
+   "iconIndex": -1,
+   "description": "你的投射物留下毒素轨迹"
+  },
+  {
+   "id": "PLAYER_TRIP",
+   "zh": "旅行",
+   "en": "Trip",
+   "iconIndex": -1,
+   "description": "你要出去旅行"
+  },
+  {
+   "id": "TRANSMUTATION",
+   "zh": "转化",
+   "en": "Transmutation",
+   "iconIndex": -1,
+   "description": "一段时间内，附近的材料转化为酸液"
+  },
+  {
+   "id": "SLOW_BULLETS",
+   "zh": "子弹时间",
+   "en": "Bullet Time",
+   "iconIndex": -1,
+   "description": "投射物速度变得很慢"
+  },
+  {
+   "id": "SLOW_ENEMIES",
+   "zh": "缓慢生物",
+   "en": "Slow Creatures",
+   "iconIndex": -1,
+   "description": "生物速度变慢"
+  },
+  {
+   "id": "SLOW_PLAYER",
+   "zh": "缓慢",
+   "en": "Slowdown",
+   "iconIndex": -1,
+   "description": "你的速度变慢"
+  },
+  {
+   "id": "NOTHING",
+   "zh": "无",
+   "en": "Nothing",
+   "iconIndex": -1,
+   "description": "什么都不会发生。"
+  },
+  {
+   "id": "IMPROVE_WANDS",
+   "zh": "改进魔杖",
+   "en": "Improve wands",
+   "iconIndex": -1,
+   "description": "你附近的所有魔杖数值略微提升"
+  },
+  {
+   "id": "WEAKEN_WANDS",
+   "zh": "削弱魔杖",
+   "en": "Weaken wands",
+   "iconIndex": -1,
+   "description": "你附近的所有魔杖数值略微降低"
+  },
+  {
+   "id": "HEAL_GHOST",
+   "zh": "召唤治疗幽灵",
+   "en": "Summon Healing Ghosts",
+   "iconIndex": -1,
+   "description": "你获得几个治疗幽灵朋友"
+  },
+  {
+   "id": "SHIELD_GHOST",
+   "zh": "召唤护盾幽灵",
+   "en": "Summon Shielding Ghost",
+   "iconIndex": -1,
+   "description": "你获得一个护盾幽灵朋友"
+  },
+  {
+   "id": "HOMUNCULUS",
+   "zh": "召唤随机人造人",
+   "en": "Summon Random Homunculi",
+   "iconIndex": -1,
+   "description": "一群提供帮助的小小人造人现身，前来助你"
+  },
+  {
+   "id": "HOMUNCULUS_DARK",
+   "zh": "召唤挖掘人造人",
+   "en": "Summon Digging Homunculus",
+   "iconIndex": -1,
+   "description": "一个提供帮助的小小人造人前来助你"
+  },
+  {
+   "id": "HOMUNCULUS_HEAL",
+   "zh": "召唤治疗人造人",
+   "en": "Summon Healer Homunculus",
+   "iconIndex": -1,
+   "description": "一个提供帮助的小小人造人前来助你"
+  },
+  {
+   "id": "HOMUNCULUS_FIRE",
+   "zh": "召唤狂暴人造人",
+   "en": "Summon Fiery Homunculus",
+   "iconIndex": -1,
+   "description": "一个提供帮助的小小人造人前来助你"
+  },
+  {
+   "id": "HOMUNCULUS_LASER",
+   "zh": "召唤发光人造人",
+   "en": "Summon Glowing Homunculus",
+   "iconIndex": -1,
+   "description": "一个提供帮助的小小人造人前来助你"
+  },
+  {
+   "id": "HOMUNCULUS_PUNCH",
+   "zh": "召唤打击人造人",
+   "en": "Summon Puncher Homunculus",
+   "iconIndex": -1,
+   "description": "一个提供帮助的小小人造人前来助你"
+  },
+  {
+   "id": "PLAYER_GAS",
+   "zh": "过余气体",
+   "en": "Excess Gas",
+   "iconIndex": -1,
+   "description": "一段时间内，你的身体排出可燃气体"
+  },
+  {
+   "id": "AREADAMAGE_PLAYER",
+   "zh": "友方接触伤害",
+   "en": "Friendly Contact Damage",
+   "iconIndex": -1,
+   "description": "短时间内，你获得一个力场，对附近的敌人造成伤害。"
+  },
+  {
+   "id": "AREADAMAGE_ENEMY",
+   "zh": "敌方接触伤害",
+   "en": "Enemy Contact Damage",
+   "iconIndex": -1,
+   "description": "你附近的敌人获得力场，如果靠近敌人便会对你造成伤害。"
+  },
+  {
+   "id": "TWITCHY",
+   "zh": "抽搐！",
+   "en": "Twitchy!",
+   "iconIndex": -1,
+   "description": "一段时间内，你无法控制你的魔杖"
+  },
+  {
+   "id": "SPAWN_PERK",
+   "zh": "授予随机特性",
+   "en": "Gain Random Perk",
+   "iconIndex": -1,
+   "description": "你被授予一项随机特性"
+  },
+  {
+   "id": "MATTER_EATER",
+   "zh": "物质吞噬者",
+   "en": "Matter Eater",
+   "iconIndex": -1,
+   "description": "一段时间内，所有投射物都会吞噬地面"
+  },
+  {
+   "id": "INVISIBLE_PLAYER",
+   "zh": "专属隐身",
+   "en": "Personal Invisibility",
+   "iconIndex": -1,
+   "description": "一段时间内，你进入隐形状态"
+  },
+  {
+   "id": "INVISIBLE_ENEMY",
+   "zh": "隐形敌人",
+   "en": "Invisible Enemies",
+   "iconIndex": -1,
+   "description": "一段时间内，敌人进入隐形状态"
+  },
+  {
+   "id": "NEUTRALIZED",
+   "zh": "无效化法术",
+   "en": "Neutralized Spells",
+   "iconIndex": -1,
+   "description": "一段时间内，你附近的所有投射物都被无效化"
+  },
+  {
+   "id": "HIGH_SPREAD",
+   "zh": "极端散射",
+   "en": "Extreme Spread",
+   "iconIndex": -1,
+   "description": "一段时间内，所有投射物都具有极高的散射"
+  },
+  {
+   "id": "SPAWN_PERK_ENEMY",
+   "zh": "为敌人授予特性",
+   "en": "Give Perks To Enemies",
+   "iconIndex": -1,
+   "description": "附近的敌人获得随机特性"
+  },
+  {
+   "id": "ALL_ACCESS_TELEPORT",
+   "zh": "“自由进入”传送门",
+   "en": "Free-for-all Portals",
+   "iconIndex": -1,
+   "description": "你附近的生物获得进入神圣之山传送门的能力。"
+  },
+  {
+   "id": "HOLIDAY_MOOD",
+   "zh": "假期气氛",
+   "en": "Holiday Mood",
+   "iconIndex": -1,
+   "description": "下雪吧"
+  },
+  {
+   "id": "FIREWORKS",
+   "zh": "烟火！",
+   "en": "Fireworks!",
+   "iconIndex": -1,
+   "description": "完全安全（对于一定的安全值）"
+  },
+  {
+   "id": "ADD_ALWAYS_CAST",
+   "zh": "始终施放",
+   "en": "Always Cast",
+   "iconIndex": -1,
+   "description": "当前手持的魔杖获得一个永久性的始终施放法术！（最大 4 个）"
+  }
+ ],
+ "materials": [
+  {
+   "id": "fire",
+   "zh": "火",
+   "en": "fire",
+   "category": "spark",
+   "color": "FF6060"
+  },
+  {
+   "id": "fire_blue",
+   "zh": "蓝火",
+   "en": "fire",
+   "category": "spark",
+   "color": "FF6061"
+  },
+  {
+   "id": "flame",
+   "zh": "火焰",
+   "en": "fire",
+   "category": "spark",
+   "color": "ce0f0f"
+  },
+  {
+   "id": "spark",
+   "zh": "火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "ff6024"
+  },
+  {
+   "id": "spark_green",
+   "zh": "绿色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "96FF46"
+  },
+  {
+   "id": "spark_green_bright",
+   "zh": "绿色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "96FF47"
+  },
+  {
+   "id": "spark_blue",
+   "zh": "蓝色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "82DCFF"
+  },
+  {
+   "id": "spark_blue_dark",
+   "zh": "蓝色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "205bfe"
+  },
+  {
+   "id": "spark_red",
+   "zh": "红色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FF2813"
+  },
+  {
+   "id": "spark_red_bright",
+   "zh": "红色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FF2814"
+  },
+  {
+   "id": "spark_white",
+   "zh": "白色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FEFEFF"
+  },
+  {
+   "id": "spark_white_bright",
+   "zh": "白色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FEFEFD"
+  },
+  {
+   "id": "spark_yellow",
+   "zh": "黄色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FFF028"
+  },
+  {
+   "id": "spark_purple",
+   "zh": "紫色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "B43C1F"
+  },
+  {
+   "id": "spark_purple_bright",
+   "zh": "紫色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "B4323F"
+  },
+  {
+   "id": "spark_player",
+   "zh": "玩家火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "FFF029"
+  },
+  {
+   "id": "spark_teal",
+   "zh": "青色火花",
+   "en": "spark",
+   "category": "spark",
+   "color": "A41C1F"
+  },
+  {
+   "id": "spark_electric",
+   "zh": "电火花",
+   "en": "electric spark",
+   "category": "spark",
+   "color": "27b4f6"
+  },
+  {
+   "id": "concrete_sand",
+   "zh": "混凝土粉末",
+   "en": "concrete",
+   "category": "powder",
+   "color": "808082"
+  },
+  {
+   "id": "sand",
+   "zh": "砂",
+   "en": "sand",
+   "category": "powder",
+   "color": "ebcd00"
+  },
+  {
+   "id": "sand_blue",
+   "zh": "蓝砂",
+   "en": "blue sand",
+   "category": "powder",
+   "color": "008240"
+  },
+  {
+   "id": "sand_surface",
+   "zh": "砂",
+   "en": "sand",
+   "category": "powder",
+   "color": "009242"
+  },
+  {
+   "id": "lavasand",
+   "zh": "火山砂",
+   "en": "volcanic sand",
+   "category": "powder",
+   "color": "0A8240"
+  },
+  {
+   "id": "sand_petrify",
+   "zh": "砂",
+   "en": "sand",
+   "category": "powder",
+   "color": "433454"
+  },
+  {
+   "id": "bone",
+   "zh": "骨粉",
+   "en": "bone dust",
+   "category": "powder",
+   "color": "E6E6FF"
+  },
+  {
+   "id": "soil",
+   "zh": "土壤",
+   "en": "soil",
+   "category": "powder",
+   "color": "36311e"
+  },
+  {
+   "id": "soil_lush",
+   "zh": "葱郁土壤",
+   "en": "soil",
+   "category": "powder",
+   "color": "008040"
+  },
+  {
+   "id": "soil_lush_dark",
+   "zh": "葱郁土壤",
+   "en": "soil",
+   "category": "powder",
+   "color": "40323d"
+  },
+  {
+   "id": "soil_dead",
+   "zh": "贫瘠土壤",
+   "en": "barren soil",
+   "category": "powder",
+   "color": "708040"
+  },
+  {
+   "id": "soil_dark",
+   "zh": "贫瘠土壤",
+   "en": "barren soil",
+   "category": "powder",
+   "color": "af8040"
+  },
+  {
+   "id": "sandstone",
+   "zh": "砂岩",
+   "en": "sandstone",
+   "category": "powder",
+   "color": "90fe40"
+  },
+  {
+   "id": "sandstone_surface",
+   "zh": "砂岩",
+   "en": "sandstone",
+   "category": "powder",
+   "color": "90fe4a"
+  },
+  {
+   "id": "fungisoil",
+   "zh": "菌丝土",
+   "en": "fungal soil",
+   "category": "powder",
+   "color": "36312e"
+  },
+  {
+   "id": "honey",
+   "zh": "蜂蜜",
+   "en": "honey",
+   "category": "powder",
+   "color": "E8BD5A"
+  },
+  {
+   "id": "glue",
+   "zh": "胶",
+   "en": "Glue",
+   "category": "powder",
+   "color": "f6fce3"
+  },
+  {
+   "id": "endslime_blood",
+   "zh": "地狱黏血",
+   "en": "hell slime",
+   "category": "powder",
+   "color": "8CFF80"
+  },
+  {
+   "id": "explosion_dirt",
+   "zh": "尘土",
+   "en": "dirt",
+   "category": "powder",
+   "color": "36311f"
+  },
+  {
+   "id": "snow",
+   "zh": "雪",
+   "en": "snow",
+   "category": "powder",
+   "color": "F4F4F3"
+  },
+  {
+   "id": "snow_sticky",
+   "zh": "雪",
+   "en": "snow",
+   "category": "powder",
+   "color": "eeeeed"
+  },
+  {
+   "id": "rotten_meat",
+   "zh": "腐肉",
+   "en": "rotten meat",
+   "category": "powder",
+   "color": "ebcdd0"
+  },
+  {
+   "id": "meat_slime_sand",
+   "zh": "发黏腐肉",
+   "en": "slimy meat",
+   "category": "powder",
+   "color": "ed4c4c"
+  },
+  {
+   "id": "rotten_meat_radioactive",
+   "zh": "有毒的肉",
+   "en": "toxic meat",
+   "category": "powder",
+   "color": "00FF53"
+  },
+  {
+   "id": "ice",
+   "zh": "冰",
+   "en": "ice",
+   "category": "powder",
+   "color": "CFCFF0"
+  },
+  {
+   "id": "sand_herb",
+   "zh": "药草",
+   "en": "herb",
+   "category": "powder",
+   "color": "8300a0"
+  },
+  {
+   "id": "wax",
+   "zh": "蜡",
+   "en": "wax",
+   "category": "powder",
+   "color": "EAAAAB"
+  },
+  {
+   "id": "gold",
+   "zh": "黄金",
+   "en": "gold",
+   "category": "powder",
+   "color": "ebcd01"
+  },
+  {
+   "id": "gold_radioactive",
+   "zh": "淬毒黄金",
+   "en": "toxic gold",
+   "category": "powder",
+   "color": "fbf451"
+  },
+  {
+   "id": "silver",
+   "zh": "银",
+   "en": "silver",
+   "category": "powder",
+   "color": "4e5262"
+  },
+  {
+   "id": "steel_sand",
+   "zh": "钢粉",
+   "en": "steel",
+   "category": "powder",
+   "color": "ebf4a1"
+  },
+  {
+   "id": "metal_sand",
+   "zh": "金属粉末",
+   "en": "Metal dust",
+   "category": "powder",
+   "color": "e4f4b0"
+  },
+  {
+   "id": "copper",
+   "zh": "铜",
+   "en": "copper",
+   "category": "powder",
+   "color": "4e5265"
+  },
+  {
+   "id": "brass",
+   "zh": "黄铜",
+   "en": "brass",
+   "category": "powder",
+   "color": "4e5267"
+  },
+  {
+   "id": "diamond",
+   "zh": "钻石",
+   "en": "diamond",
+   "category": "powder",
+   "color": "82DBE2"
+  },
+  {
+   "id": "coal",
+   "zh": "煤",
+   "en": "coal",
+   "category": "powder",
+   "color": "505052"
+  },
+  {
+   "id": "sulphur",
+   "zh": "硫磺",
+   "en": "sulphur",
+   "category": "powder",
+   "color": "141415"
+  },
+  {
+   "id": "salt",
+   "zh": "盐",
+   "en": "salt",
+   "category": "powder",
+   "color": "e1e1e2"
+  },
+  {
+   "id": "sodium",
+   "zh": "钠",
+   "en": "sodium",
+   "category": "powder",
+   "color": "410F24"
+  },
+  {
+   "id": "purifying_powder",
+   "zh": "净化粉末",
+   "en": "Purifying powder",
+   "category": "powder",
+   "color": "b6d5d8"
+  },
+  {
+   "id": "burning_powder",
+   "zh": "燃烧粉末",
+   "en": "burning powder",
+   "category": "powder",
+   "color": "a10F24"
+  },
+  {
+   "id": "sodium_unstable",
+   "zh": "潮湿的钠",
+   "en": "wet sodium",
+   "category": "powder",
+   "color": "411F24"
+  },
+  {
+   "id": "gunpowder",
+   "zh": "火药",
+   "en": "gunpowder",
+   "category": "powder",
+   "color": "232324"
+  },
+  {
+   "id": "gunpowder_explosive",
+   "zh": "易爆火药",
+   "en": "gunpowder",
+   "category": "powder",
+   "color": "F7BB43"
+  },
+  {
+   "id": "gunpowder_tnt",
+   "zh": "TNT火药",
+   "en": "gunpowder",
+   "category": "powder",
+   "color": "F7BF43"
+  },
+  {
+   "id": "gunpowder_unstable",
+   "zh": "不稳火药",
+   "en": "gunpowder",
+   "category": "powder",
+   "color": "232373"
+  },
+  {
+   "id": "gunpowder_unstable_big",
+   "zh": "不稳火药",
+   "en": "gunpowder",
+   "category": "powder",
+   "color": "230f73"
+  },
+  {
+   "id": "monster_powder_test",
+   "zh": "怪物粉末",
+   "en": "Monstrous powder",
+   "category": "powder",
+   "color": "200073"
+  },
+  {
+   "id": "rat_powder",
+   "zh": "鼠鼠粉",
+   "en": "Ratty powder",
+   "category": "powder",
+   "color": "be4dff"
+  },
+  {
+   "id": "fungus_powder",
+   "zh": "菌丝土",
+   "en": "fungal soil",
+   "category": "powder",
+   "color": "becafe"
+  },
+  {
+   "id": "fungus_powder_bad",
+   "zh": "菌丝土",
+   "en": "fungal soil",
+   "category": "powder",
+   "color": "cacafe"
+  },
+  {
+   "id": "shock_powder",
+   "zh": "菌丝土",
+   "en": "fungal soil",
+   "category": "powder",
+   "color": "acacfe"
+  },
+  {
+   "id": "orb_powder",
+   "zh": "指引粉末",
+   "en": "Guiding powder",
+   "category": "powder",
+   "color": "f7f3ee"
+  },
+  {
+   "id": "gunpowder_unstable_boss_limbs",
+   "zh": "发黏的肉",
+   "en": "slimy meat",
+   "category": "powder",
+   "color": "80C850"
+  },
+  {
+   "id": "plastic_red",
+   "zh": "塑料弹壳",
+   "en": "plastic",
+   "category": "powder",
+   "color": "900000"
+  },
+  {
+   "id": "mud",
+   "zh": "淤泥",
+   "en": "mud",
+   "category": "powder",
+   "color": "363e21"
+  },
+  {
+   "id": "plasma_fading_green",
+   "zh": "绿色魔法液体",
+   "en": "magical liquid",
+   "category": "powder",
+   "color": "78F050"
+  },
+  {
+   "id": "plasma_fading_pink",
+   "zh": "紫色魔法液体",
+   "en": "magical liquid",
+   "category": "powder",
+   "color": "FF50F0"
+  },
+  {
+   "id": "grass",
+   "zh": "草",
+   "en": "grass",
+   "category": "powder",
+   "color": "3abb30"
+  },
+  {
+   "id": "grass_ice",
+   "zh": "冰",
+   "en": "ice",
+   "category": "powder",
+   "color": "3abb31"
+  },
+  {
+   "id": "grass_dry",
+   "zh": "草",
+   "en": "grass",
+   "category": "powder",
+   "color": "3abb35"
+  },
+  {
+   "id": "fungi",
+   "zh": "诡异真菌",
+   "en": "weird fungus",
+   "category": "powder",
+   "color": "3abb32"
+  },
+  {
+   "id": "fungi_green",
+   "zh": "真菌",
+   "en": "fungus",
+   "category": "powder",
+   "color": "45FF45"
+  },
+  {
+   "id": "grass_dark",
+   "zh": "草",
+   "en": "grass",
+   "category": "powder",
+   "color": "7f506d"
+  },
+  {
+   "id": "fungi_creeping",
+   "zh": "神秘真菌",
+   "en": "Mystery fungus",
+   "category": "powder",
+   "color": "46FF65"
+  },
+  {
+   "id": "fungi_creeping_secret",
+   "zh": "真菌",
+   "en": "fungus",
+   "category": "powder",
+   "color": "461FF5"
+  },
+  {
+   "id": "spore",
+   "zh": "孢子",
+   "en": "seed",
+   "category": "powder",
+   "color": "3abb33"
+  },
+  {
+   "id": "moss",
+   "zh": "苔藓",
+   "en": "moss",
+   "category": "powder",
+   "color": "33b828"
+  },
+  {
+   "id": "moss_rust",
+   "zh": "锈苔",
+   "en": "rusty moss",
+   "category": "powder",
+   "color": "45F145"
+  },
+  {
+   "id": "plant_material",
+   "zh": "灌木",
+   "en": "plant material",
+   "category": "powder",
+   "color": "33b838"
+  },
+  {
+   "id": "plant_material_red",
+   "zh": "红色灌木",
+   "en": "seed",
+   "category": "powder",
+   "color": "aa2818"
+  },
+  {
+   "id": "ceiling_plant_material",
+   "zh": "垂藤",
+   "en": "seed",
+   "category": "powder",
+   "color": "33b848"
+  },
+  {
+   "id": "mushroom_seed",
+   "zh": "蘑菇孢子",
+   "en": "fungal spore",
+   "category": "powder",
+   "color": "b89f6c"
+  },
+  {
+   "id": "plant_seed",
+   "zh": "灌木种子",
+   "en": "plant seed",
+   "category": "powder",
+   "color": "BC9B58"
+  },
+  {
+   "id": "mushroom",
+   "zh": "蘑菇",
+   "en": "fungal spore",
+   "category": "powder",
+   "color": "b89f7c"
+  },
+  {
+   "id": "mushroom_giant_red",
+   "zh": "红蘑菇",
+   "en": "fungal spore",
+   "category": "powder",
+   "color": "d9d9cd"
+  },
+  {
+   "id": "mushroom_giant_blue",
+   "zh": "蓝蘑菇",
+   "en": "fungal spore",
+   "category": "powder",
+   "color": "d9d9cc"
+  },
+  {
+   "id": "glowshroom",
+   "zh": "光菌孢子",
+   "en": "glowing fungal spore",
+   "category": "powder",
+   "color": "d9d9cb"
+  },
+  {
+   "id": "bush_seed",
+   "zh": "常绿灌木种子",
+   "en": "evergreen seed",
+   "category": "powder",
+   "color": "4d5d44"
+  },
+  {
+   "id": "poo",
+   "zh": "粪便",
+   "en": "excrement",
+   "category": "powder",
+   "color": "36315f"
+  },
+  {
+   "id": "glass_broken",
+   "zh": "玻璃",
+   "en": "glass",
+   "category": "powder",
+   "color": "aeddef"
+  },
+  {
+   "id": "mammi",
+   "zh": "曼米",
+   "en": "mämmi",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "grass_holy",
+   "zh": "神圣草",
+   "en": "Divine Ground",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "plant_material_dark",
+   "zh": "灌木",
+   "en": "plant material",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "fungi_yellow",
+   "zh": "真菌",
+   "en": "fungus",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "grass_darker",
+   "zh": "草",
+   "en": "grass",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "plastic_grey",
+   "zh": "塑料弹壳",
+   "en": "plastic",
+   "category": "powder",
+   "color": "888888"
+  },
+  {
+   "id": "air",
+   "zh": "空气",
+   "en": "air",
+   "category": "liquid",
+   "color": "000042"
+  },
+  {
+   "id": "water_static",
+   "zh": "静态水",
+   "en": "Water",
+   "category": "liquid",
+   "color": "2F554D"
+  },
+  {
+   "id": "endslime_static",
+   "zh": "地狱黏液",
+   "en": "hell slime",
+   "category": "liquid",
+   "color": "8BFF80"
+  },
+  {
+   "id": "slime_static",
+   "zh": "黏液",
+   "en": "slime",
+   "category": "liquid",
+   "color": "E8BD5C"
+  },
+  {
+   "id": "spore_pod_stalk",
+   "zh": "蓝色菌毯",
+   "en": "blue fungus",
+   "category": "liquid",
+   "color": "E8BDCB"
+  },
+  {
+   "id": "cement",
+   "zh": "水泥",
+   "en": "cement",
+   "category": "liquid",
+   "color": "808081"
+  },
+  {
+   "id": "slime",
+   "zh": "紫色黏液",
+   "en": "slime",
+   "category": "liquid",
+   "color": "E8BD5A"
+  },
+  {
+   "id": "slime_green",
+   "zh": "绿色黏液",
+   "en": "slime",
+   "category": "liquid",
+   "color": "80FF80"
+  },
+  {
+   "id": "slime_yellow",
+   "zh": "黏液",
+   "en": "slime",
+   "category": "liquid",
+   "color": "9cb32b"
+  },
+  {
+   "id": "slush",
+   "zh": "雪泥",
+   "en": "Slush",
+   "category": "liquid",
+   "color": "b5ceff"
+  },
+  {
+   "id": "pea_soup",
+   "zh": "豌豆汤",
+   "en": "pea soup",
+   "category": "liquid",
+   "color": "80FF82"
+  },
+  {
+   "id": "vomit",
+   "zh": "呕吐物",
+   "en": "Vomit",
+   "category": "liquid",
+   "color": "E8BD5B"
+  },
+  {
+   "id": "plastic_red_molten",
+   "zh": "熔融塑料弹壳",
+   "en": "molten plastic",
+   "category": "liquid",
+   "color": "9000ab"
+  },
+  {
+   "id": "plastic_molten",
+   "zh": "熔融塑料",
+   "en": "molten plastic",
+   "category": "liquid",
+   "color": "ff00ab"
+  },
+  {
+   "id": "plastic_prop_molten",
+   "zh": "熔融塑料",
+   "en": "molten plastic",
+   "category": "liquid",
+   "color": "bb00ab"
+  },
+  {
+   "id": "water",
+   "zh": "水",
+   "en": "Water",
+   "category": "liquid",
+   "color": "2F554C"
+  },
+  {
+   "id": "water_fading",
+   "zh": "水雾",
+   "en": "Water",
+   "category": "liquid",
+   "color": "2F354C"
+  },
+  {
+   "id": "water_salt",
+   "zh": "盐水",
+   "en": "brine",
+   "category": "liquid",
+   "color": "2F754C"
+  },
+  {
+   "id": "void_liquid",
+   "zh": "虚空液体",
+   "en": "Void liquid",
+   "category": "liquid",
+   "color": "a2332a"
+  },
+  {
+   "id": "water_temp",
+   "zh": "水",
+   "en": "Water",
+   "category": "liquid",
+   "color": "2F554F"
+  },
+  {
+   "id": "water_ice",
+   "zh": "冰水",
+   "en": "chilly water",
+   "category": "liquid",
+   "color": "2F557F"
+  },
+  {
+   "id": "water_swamp",
+   "zh": "沼泽水",
+   "en": "swamp",
+   "category": "liquid",
+   "color": "2F552C"
+  },
+  {
+   "id": "oil",
+   "zh": "油",
+   "en": "oil",
+   "category": "liquid",
+   "color": "3B3B3C"
+  },
+  {
+   "id": "liquid_fire",
+   "zh": "液态火",
+   "en": "fire",
+   "category": "liquid",
+   "color": "3B3B3D"
+  },
+  {
+   "id": "liquid_fire_weak",
+   "zh": "低温液态火",
+   "en": "liquid fire",
+   "category": "liquid",
+   "color": "3B3B4D"
+  },
+  {
+   "id": "alcohol",
+   "zh": "威士忌",
+   "en": "whiskey",
+   "category": "liquid",
+   "color": "d0ffe8"
+  },
+  {
+   "id": "sima",
+   "zh": "蜂蜜酒",
+   "en": "Sima",
+   "category": "liquid",
+   "color": "d0ffe9"
+  },
+  {
+   "id": "juhannussima",
+   "zh": "仲夏蜂蜜酒",
+   "en": "Juhannussima",
+   "category": "liquid",
+   "color": "d0ffe7"
+  },
+  {
+   "id": "midas",
+   "zh": "点金之水",
+   "en": "draught of midas",
+   "category": "liquid",
+   "color": "efa101"
+  },
+  {
+   "id": "midas_precursor",
+   "zh": "炼金溶液",
+   "en": "alchemic precursor",
+   "category": "liquid",
+   "color": "243CFF"
+  },
+  {
+   "id": "magic_liquid",
+   "zh": "开门魔药",
+   "en": "gate-opener",
+   "category": "liquid",
+   "color": "fffea2"
+  },
+  {
+   "id": "material_confusion",
+   "zh": "混乱魔药",
+   "en": "flummoxium",
+   "category": "liquid",
+   "color": "ff0204"
+  },
+  {
+   "id": "material_darkness",
+   "zh": "不祥液体",
+   "en": "Ominous liquid",
+   "category": "liquid",
+   "color": "563e66"
+  },
+  {
+   "id": "material_rainbow",
+   "zh": "彩虹",
+   "en": "Rainbow",
+   "category": "liquid",
+   "color": "FFA2CD"
+  },
+  {
+   "id": "magic_liquid_movement_faster",
+   "zh": "加速魔药",
+   "en": "acceleratium",
+   "category": "liquid",
+   "color": "c1dba4"
+  },
+  {
+   "id": "magic_liquid_faster_levitation",
+   "zh": "漂浮魔药",
+   "en": "levitatium",
+   "category": "liquid",
+   "color": "F6FFDC"
+  },
+  {
+   "id": "magic_liquid_faster_levitation_and_movement",
+   "zh": "迅捷魔药",
+   "en": "hastium",
+   "category": "liquid",
+   "color": "C7F865"
+  },
+  {
+   "id": "magic_liquid_worm_attractor",
+   "zh": "蠕虫信息素",
+   "en": "worm pheromone",
+   "category": "liquid",
+   "color": "687478"
+  },
+  {
+   "id": "magic_liquid_protection_all",
+   "zh": "神佑魔药",
+   "en": "ambrosia",
+   "category": "liquid",
+   "color": "df9828"
+  },
+  {
+   "id": "magic_liquid_mana_regeneration",
+   "zh": "汇聚法力",
+   "en": "concentrated mana",
+   "category": "liquid",
+   "color": "0bffe5"
+  },
+  {
+   "id": "magic_liquid_unstable_teleportation",
+   "zh": "不稳传送魔药",
+   "en": "unstable teleportatium",
+   "category": "liquid",
+   "color": "00BEE4"
+  },
+  {
+   "id": "magic_liquid_teleportation",
+   "zh": "传送魔药",
+   "en": "teleportatium",
+   "category": "liquid",
+   "color": "7fceea"
+  },
+  {
+   "id": "magic_liquid_hp_regeneration",
+   "zh": "生命基质",
+   "en": "healthium",
+   "category": "liquid",
+   "color": "a1f18b"
+  },
+  {
+   "id": "magic_liquid_hp_regeneration_unstable",
+   "zh": "活性混合物",
+   "en": "lively concoction",
+   "category": "liquid",
+   "color": "a1f18c"
+  },
+  {
+   "id": "magic_liquid_polymorph",
+   "zh": "变形魔药",
+   "en": "polymorphine",
+   "category": "liquid",
+   "color": "f18beb"
+  },
+  {
+   "id": "magic_liquid_random_polymorph",
+   "zh": "混沌变形魔药",
+   "en": "chaotic polymorphine",
+   "category": "liquid",
+   "color": "91448D"
+  },
+  {
+   "id": "magic_liquid_unstable_polymorph",
+   "zh": "不稳变形魔药",
+   "en": "unstable polymorphine",
+   "category": "liquid",
+   "color": "a3569f"
+  },
+  {
+   "id": "magic_liquid_berserk",
+   "zh": "狂暴魔药",
+   "en": "berserkium",
+   "category": "liquid",
+   "color": "f86868"
+  },
+  {
+   "id": "magic_liquid_charm",
+   "zh": "魅惑魔药",
+   "en": "pheromone",
+   "category": "liquid",
+   "color": "c23055"
+  },
+  {
+   "id": "magic_liquid_invisibility",
+   "zh": "隐形魔药",
+   "en": "invisiblium",
+   "category": "liquid",
+   "color": "306cc0"
+  },
+  {
+   "id": "cloud_radioactive",
+   "zh": "绿色毒雾",
+   "en": "toxic mist",
+   "category": "liquid",
+   "color": "01FF34"
+  },
+  {
+   "id": "cloud_blood",
+   "zh": "血雾",
+   "en": "blood mist",
+   "category": "liquid",
+   "color": "01FD34"
+  },
+  {
+   "id": "cloud_slime",
+   "zh": "黏液雾",
+   "en": "slime mist",
+   "category": "liquid",
+   "color": "01FC34"
+  },
+  {
+   "id": "swamp",
+   "zh": "黑沼泽",
+   "en": "swamp",
+   "category": "liquid",
+   "color": "2f2f0a"
+  },
+  {
+   "id": "blood",
+   "zh": "血液",
+   "en": "blood",
+   "category": "liquid",
+   "color": "830000"
+  },
+  {
+   "id": "blood_fading",
+   "zh": "挥发血液",
+   "en": "blood",
+   "category": "liquid",
+   "color": "830002"
+  },
+  {
+   "id": "blood_fading_slow",
+   "zh": "血液",
+   "en": "blood",
+   "category": "liquid",
+   "color": "F13C23"
+  },
+  {
+   "id": "blood_fungi",
+   "zh": "真菌血液",
+   "en": "fungus blood",
+   "category": "liquid",
+   "color": "830001"
+  },
+  {
+   "id": "blood_worm",
+   "zh": "蠕虫血液",
+   "en": "worm blood",
+   "category": "liquid",
+   "color": "C8BC00"
+  },
+  {
+   "id": "porridge",
+   "zh": "暖心白粥",
+   "en": "Hearty Porridge",
+   "category": "liquid",
+   "color": "d7cfae"
+  },
+  {
+   "id": "blood_cold",
+   "zh": "冰冻液体",
+   "en": "freezing liquid",
+   "category": "liquid",
+   "color": "830023"
+  },
+  {
+   "id": "radioactive_liquid",
+   "zh": "绿色毒液",
+   "en": "toxic sludge",
+   "category": "liquid",
+   "color": "00FF33"
+  },
+  {
+   "id": "poison",
+   "zh": "紫色毒液",
+   "en": "Poison",
+   "category": "liquid",
+   "color": "B43CFF"
+  },
+  {
+   "id": "cursed_liquid",
+   "zh": "贪婪诅咒液体",
+   "en": "Greed-cursed liquid",
+   "category": "liquid",
+   "color": "369244"
+  },
+  {
+   "id": "radioactive_liquid_yellow",
+   "zh": "黄色毒液",
+   "en": "toxic sludge",
+   "category": "liquid",
+   "color": "B4FF10"
+  },
+  {
+   "id": "radioactive_liquid_fading",
+   "zh": "挥发绿色毒液",
+   "en": "toxic sludge",
+   "category": "liquid",
+   "color": "00FF34"
+  },
+  {
+   "id": "plasma_fading",
+   "zh": "蓝色魔法液体",
+   "en": "magical liquid",
+   "category": "liquid",
+   "color": "34bfff"
+  },
+  {
+   "id": "plasma_fading_bright",
+   "zh": "蓝色魔法液体",
+   "en": "magical liquid",
+   "category": "liquid",
+   "color": "36cdff"
+  },
+  {
+   "id": "gold_molten",
+   "zh": "熔融黄金",
+   "en": "molten gold",
+   "category": "liquid",
+   "color": "ebcd04"
+  },
+  {
+   "id": "steel_static_molten",
+   "zh": "熔融钢液",
+   "en": "molten steel",
+   "category": "liquid",
+   "color": "404042"
+  },
+  {
+   "id": "steelmoss_slanted_molten",
+   "zh": "熔融苔钢",
+   "en": "molten steel",
+   "category": "liquid",
+   "color": "404043"
+  },
+  {
+   "id": "steelmoss_static_molten",
+   "zh": "熔融苔钢",
+   "en": "molten steel",
+   "category": "liquid",
+   "color": "404044"
+  },
+  {
+   "id": "steelsmoke_static_molten",
+   "zh": "熔融烟钢",
+   "en": "molten steel",
+   "category": "liquid",
+   "color": "404045"
+  },
+  {
+   "id": "metal_sand_molten",
+   "zh": "熔融金属粉末",
+   "en": "Molten metal",
+   "category": "liquid",
+   "color": "4b4045"
+  },
+  {
+   "id": "metal_molten",
+   "zh": "熔融金属",
+   "en": "molten metal",
+   "category": "liquid",
+   "color": "404046"
+  },
+  {
+   "id": "metal_rust_molten",
+   "zh": "熔融铁锈",
+   "en": "molten metal",
+   "category": "liquid",
+   "color": "404047"
+  },
+  {
+   "id": "metal_nohit_molten",
+   "zh": "熔融铁链",
+   "en": "molten metal",
+   "category": "liquid",
+   "color": "404048"
+  },
+  {
+   "id": "aluminium_molten",
+   "zh": "熔融铝液",
+   "en": "molten aluminium",
+   "category": "liquid",
+   "color": "404049"
+  },
+  {
+   "id": "aluminium_robot_molten",
+   "zh": "熔融铝壳",
+   "en": "molten aluminium",
+   "category": "liquid",
+   "color": "404050"
+  },
+  {
+   "id": "metal_prop_molten",
+   "zh": "熔融铁块",
+   "en": "molten metal",
+   "category": "liquid",
+   "color": "404051"
+  },
+  {
+   "id": "steel_rust_molten",
+   "zh": "熔融钢锈",
+   "en": "molten steel",
+   "category": "liquid",
+   "color": "404052"
+  },
+  {
+   "id": "aluminium_oxide_molten",
+   "zh": "熔融氧化铝",
+   "en": "molten aluminium",
+   "category": "liquid",
+   "color": "404053"
+  },
+  {
+   "id": "wax_molten",
+   "zh": "蜡油",
+   "en": "molten wax",
+   "category": "liquid",
+   "color": "EAACAB"
+  },
+  {
+   "id": "silver_molten",
+   "zh": "熔融银液",
+   "en": "molten silver",
+   "category": "liquid",
+   "color": "4e5263"
+  },
+  {
+   "id": "copper_molten",
+   "zh": "熔融铜液",
+   "en": "molten copper",
+   "category": "liquid",
+   "color": "4e5264"
+  },
+  {
+   "id": "brass_molten",
+   "zh": "熔融黄铜",
+   "en": "molten brass",
+   "category": "liquid",
+   "color": "4e5285"
+  },
+  {
+   "id": "glass_molten",
+   "zh": "熔融玻璃",
+   "en": "molten glass",
+   "category": "liquid",
+   "color": "4e5266"
+  },
+  {
+   "id": "glass_broken_molten",
+   "zh": "熔融玻璃",
+   "en": "molten glass",
+   "category": "liquid",
+   "color": "4e5237"
+  },
+  {
+   "id": "steel_molten",
+   "zh": "熔融钢板",
+   "en": "molten metal",
+   "category": "liquid",
+   "color": "ebcd08"
+  },
+  {
+   "id": "creepy_liquid",
+   "zh": "恐怖液体",
+   "en": "creepy liquid",
+   "category": "liquid",
+   "color": "381774"
+  },
+  {
+   "id": "peat",
+   "zh": "泥炭",
+   "en": "Peat",
+   "category": "liquid",
+   "color": "45AA45"
+  },
+  {
+   "id": "acid",
+   "zh": "酸液",
+   "en": "acid",
+   "category": "liquid",
+   "color": "00ff12"
+  },
+  {
+   "id": "lava",
+   "zh": "岩浆",
+   "en": "lava",
+   "category": "liquid",
+   "color": "ff6000"
+  },
+  {
+   "id": "urine",
+   "zh": "尿液",
+   "en": "urine",
+   "category": "liquid",
+   "color": "FFEE00"
+  },
+  {
+   "id": "rocket_particles",
+   "zh": "烟",
+   "en": "smoke",
+   "category": "liquid",
+   "color": "FFFFFE"
+  },
+  {
+   "id": "mimic_liquid",
+   "zh": "拟态液",
+   "en": "mimicium",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "just_death",
+   "zh": "死亡黑质",
+   "en": "instant deathium",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "beer",
+   "zh": "啤酒",
+   "en": "beer",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "milk",
+   "zh": "牛奶",
+   "en": "milk",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "pus",
+   "zh": "脓液",
+   "en": "pus",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "magic_liquid_weakness",
+   "zh": "虚弱魔药",
+   "en": "diminution",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "molut",
+   "zh": "奶啤酒",
+   "en": "molut",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "plastic_grey_molten",
+   "zh": "熔融塑料弹壳",
+   "en": "molten plastic",
+   "category": "liquid",
+   "color": "888888"
+  },
+  {
+   "id": "alcohol_gas",
+   "zh": "威士忌蒸汽",
+   "en": "Whiskey fumes",
+   "category": "gas",
+   "color": "01FD13"
+  },
+  {
+   "id": "smoke",
+   "zh": "烟",
+   "en": "smoke",
+   "category": "gas",
+   "color": "848485"
+  },
+  {
+   "id": "cloud",
+   "zh": "云",
+   "en": "cloud",
+   "category": "gas",
+   "color": "AFAFBF"
+  },
+  {
+   "id": "cloud_lighter",
+   "zh": "云",
+   "en": "cloud",
+   "category": "gas",
+   "color": "AFAFE5"
+  },
+  {
+   "id": "smoke_magic",
+   "zh": "烟",
+   "en": "smoke",
+   "category": "gas",
+   "color": "c1e5ff"
+  },
+  {
+   "id": "smoke_explosion",
+   "zh": "烟",
+   "en": "smoke",
+   "category": "gas",
+   "color": "848486"
+  },
+  {
+   "id": "steam",
+   "zh": "水蒸汽",
+   "en": "steam",
+   "category": "gas",
+   "color": "c5c5ff"
+  },
+  {
+   "id": "steam_trailer",
+   "zh": "水蒸汽",
+   "en": "steam",
+   "category": "gas",
+   "color": "c6c5ff"
+  },
+  {
+   "id": "acid_gas",
+   "zh": "可燃气体",
+   "en": "flammable gas",
+   "category": "gas",
+   "color": "4eb815"
+  },
+  {
+   "id": "acid_gas_static",
+   "zh": "可燃气体",
+   "en": "flammable gas",
+   "category": "gas",
+   "color": "4eb817"
+  },
+  {
+   "id": "smoke_static",
+   "zh": "烟",
+   "en": "smoke",
+   "category": "gas",
+   "color": "848487"
+  },
+  {
+   "id": "poison_gas",
+   "zh": "紫色可燃气体",
+   "en": "poison gas",
+   "category": "gas",
+   "color": "B42CFF"
+  },
+  {
+   "id": "fungal_gas",
+   "zh": "真菌气体",
+   "en": "fungal gas",
+   "category": "gas",
+   "color": "EA1CAF"
+  },
+  {
+   "id": "poo_gas",
+   "zh": "恶臭气体",
+   "en": "Nauseating gas",
+   "category": "gas",
+   "color": "724f43"
+  },
+  {
+   "id": "blood_cold_vapour",
+   "zh": "冰冻蒸汽",
+   "en": "freezing vapour",
+   "category": "gas",
+   "color": "5C98CD"
+  },
+  {
+   "id": "sand_herb_vapour",
+   "zh": "迷幻蒸汽",
+   "en": "funky vapour",
+   "category": "gas",
+   "color": "6E8C3B"
+  },
+  {
+   "id": "radioactive_gas",
+   "zh": "绿色毒液蒸汽",
+   "en": "toxic gas",
+   "category": "gas",
+   "color": "43b815"
+  },
+  {
+   "id": "radioactive_gas_static",
+   "zh": "绿色毒液蒸汽",
+   "en": "toxic gas",
+   "category": "gas",
+   "color": "43b818"
+  },
+  {
+   "id": "magic_gas_hp_regeneration",
+   "zh": "活性蒸汽",
+   "en": "Healium",
+   "category": "gas",
+   "color": "A1F18C"
+  },
+  {
+   "id": "rainbow_gas",
+   "zh": "彩虹屁",
+   "en": "Unicorn farts",
+   "category": "gas",
+   "color": "F2E604"
+  },
+  {
+   "id": "magic_gas_midas",
+   "zh": "点金气体",
+   "en": "gas of midas",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "magic_gas_weakness",
+   "zh": "虚弱云雾",
+   "en": "diminution cloud",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "magic_gas_teleport",
+   "zh": "传送云雾",
+   "en": "teleportatium cloud",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "magic_gas_fungus",
+   "zh": "致幻云雾",
+   "en": "funky cloud",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "magic_gas_worm_blood",
+   "zh": "蠕虫气体",
+   "en": "worm gas",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "magic_gas_polymorph",
+   "zh": "变形云雾",
+   "en": "polymorphine cloud",
+   "category": "gas",
+   "color": "888888"
+  },
+  {
+   "id": "sand_static",
+   "zh": "泥土",
+   "en": "ground",
+   "category": "solid",
+   "color": "524f2d"
+  },
+  {
+   "id": "sand_static_rainforest",
+   "zh": "葱郁泥土",
+   "en": "lush ground",
+   "category": "solid",
+   "color": "524F00"
+  },
+  {
+   "id": "sand_static_rainforest_dark",
+   "zh": "葱郁泥土",
+   "en": "lush ground",
+   "category": "solid",
+   "color": "261f26"
+  },
+  {
+   "id": "bone_static",
+   "zh": "骨墙",
+   "en": "bone wall",
+   "category": "solid",
+   "color": "523F03"
+  },
+  {
+   "id": "rust_static",
+   "zh": "锈蚀金属",
+   "en": "rusted metal",
+   "category": "solid",
+   "color": "ee8F49"
+  },
+  {
+   "id": "sand_static_bright",
+   "zh": "花岗岩泥土",
+   "en": "granite ground",
+   "category": "solid",
+   "color": "ef8F49"
+  },
+  {
+   "id": "sand_static_red",
+   "zh": "红土",
+   "en": "rusty ground",
+   "category": "solid",
+   "color": "ff8F47"
+  },
+  {
+   "id": "nest_static",
+   "zh": "巢穴",
+   "en": "nest",
+   "category": "solid",
+   "color": "A83E29"
+  },
+  {
+   "id": "bluefungi_static",
+   "zh": "蓝色菌毯",
+   "en": "blue fungus",
+   "category": "solid",
+   "color": "435495"
+  },
+  {
+   "id": "rock_static",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "353923"
+  },
+  {
+   "id": "rock_hard",
+   "zh": "致密岩石",
+   "en": "dense rock",
+   "category": "solid",
+   "color": "003344"
+  },
+  {
+   "id": "rock_hard_border",
+   "zh": "极度致密岩石",
+   "en": "extremely dense rock",
+   "category": "solid",
+   "color": "104344"
+  },
+  {
+   "id": "rock_static_cursed",
+   "zh": "诅咒岩石",
+   "en": "Cursed rock",
+   "category": "solid",
+   "color": "3f4d3e"
+  },
+  {
+   "id": "rock_magic_gate",
+   "zh": "魔法门",
+   "en": "magic gate",
+   "category": "solid",
+   "color": "ab3347"
+  },
+  {
+   "id": "rock_magic_bottom",
+   "zh": "魔法墙",
+   "en": "magic wall",
+   "category": "solid",
+   "color": "abb346"
+  },
+  {
+   "id": "rock_vault",
+   "zh": "拱顶岩",
+   "en": "vault rock",
+   "category": "solid",
+   "color": "003349"
+  },
+  {
+   "id": "rock_static_wet",
+   "zh": "潮湿岩石",
+   "en": "damp rock",
+   "category": "solid",
+   "color": "103344"
+  },
+  {
+   "id": "coal_static",
+   "zh": "煤矿脉",
+   "en": "coal vein",
+   "category": "solid",
+   "color": "124444"
+  },
+  {
+   "id": "rock_static_fungal",
+   "zh": "菌丝土",
+   "en": "fungal soil",
+   "category": "solid",
+   "color": "00a244"
+  },
+  {
+   "id": "rock_static_intro",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "0a3344"
+  },
+  {
+   "id": "rock_static_trip_secret",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "0abba4"
+  },
+  {
+   "id": "rock_static_trip_secret2",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "0baab4"
+  },
+  {
+   "id": "rock_static_purple",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "272224"
+  },
+  {
+   "id": "rock_static_noedge",
+   "zh": "岩石",
+   "en": "rock",
+   "category": "solid",
+   "color": "003345"
+  },
+  {
+   "id": "rock_static_intro_breakable",
+   "zh": "钟乳石",
+   "en": "rock",
+   "category": "solid",
+   "color": "0a3355"
+  },
+  {
+   "id": "rock_static_grey",
+   "zh": "灰色岩石",
+   "en": "grey rock",
+   "category": "solid",
+   "color": "1244a4"
+  },
+  {
+   "id": "rock_static_radioactive",
+   "zh": "绿毒岩石",
+   "en": "toxic rock",
+   "category": "solid",
+   "color": "00f344"
+  },
+  {
+   "id": "rock_static_cursed_green",
+   "zh": "贪婪诅咒岩石",
+   "en": "Greed-cursed rock",
+   "category": "solid",
+   "color": "659244"
+  },
+  {
+   "id": "rock_static_poison",
+   "zh": "紫毒岩石",
+   "en": "poisonous rock",
+   "category": "solid",
+   "color": "00fa44"
+  },
+  {
+   "id": "corruption_static",
+   "zh": "腐化岩石",
+   "en": "corrupted rock",
+   "category": "solid",
+   "color": "7D0067"
+  },
+  {
+   "id": "wood_tree",
+   "zh": "木头",
+   "en": "wood",
+   "category": "solid",
+   "color": "005345"
+  },
+  {
+   "id": "the_end",
+   "zh": "地狱岩",
+   "en": "hell rock",
+   "category": "solid",
+   "color": "026C05"
+  },
+  {
+   "id": "skullrock",
+   "zh": "骷髅岩",
+   "en": "hell rock",
+   "category": "solid",
+   "color": "00a344"
+  },
+  {
+   "id": "templerock_static",
+   "zh": "石砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "6F5439"
+  },
+  {
+   "id": "templebrick_static",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "786C42"
+  },
+  {
+   "id": "templebrick_static_broken",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "9e8438"
+  },
+  {
+   "id": "templebrick_static_soft",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "af9f6a"
+  },
+  {
+   "id": "templebrick_noedge_static",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "786C44"
+  },
+  {
+   "id": "templerock_soft",
+   "zh": "石砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "6A54A9"
+  },
+  {
+   "id": "templebrick_thick_static",
+   "zh": "致密砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "646C58"
+  },
+  {
+   "id": "templebrick_thick_static_noedge",
+   "zh": "致密砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "606C5A"
+  },
+  {
+   "id": "templeslab_static",
+   "zh": "石砖",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "947059"
+  },
+  {
+   "id": "templeslab_crumbling_static",
+   "zh": "脆弱石砖",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "846049"
+  },
+  {
+   "id": "templebrickdark_static",
+   "zh": "暗色砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "5B5047"
+  },
+  {
+   "id": "templebrick_red",
+   "zh": "红色砖块",
+   "en": "brickwork",
+   "category": "solid",
+   "color": "78AC42"
+  },
+  {
+   "id": "creepy_liquid_emitter",
+   "zh": "恐怖砖墙",
+   "en": "brick wall",
+   "category": "solid",
+   "color": "41AF41"
+  },
+  {
+   "id": "templebrick_moss_static",
+   "zh": "生苔砖块",
+   "en": "mossy brickwork",
+   "category": "solid",
+   "color": "786C45"
+  },
+  {
+   "id": "templebrick_diamond_static",
+   "zh": "钻石砖块",
+   "en": "Diamond brickwork",
+   "category": "solid",
+   "color": "5e9ab5"
+  },
+  {
+   "id": "templebrick_static_ruined",
+   "zh": "残破砖块",
+   "en": "Ruined brick wall",
+   "category": "solid",
+   "color": "78cace"
+  },
+  {
+   "id": "glowstone",
+   "zh": "发光砖块",
+   "en": "glowing stone",
+   "category": "solid",
+   "color": "AAF06E"
+  },
+  {
+   "id": "glowstone_altar",
+   "zh": "发光砖块",
+   "en": "glowing stone",
+   "category": "solid",
+   "color": "ffc931"
+  },
+  {
+   "id": "glowstone_altar_hdr",
+   "zh": "发光砖块",
+   "en": "glowing stone",
+   "category": "solid",
+   "color": "ffc932"
+  },
+  {
+   "id": "glowstone_potion",
+   "zh": "发光砖块",
+   "en": "glowing stone",
+   "category": "solid",
+   "color": "A3F06E"
+  },
+  {
+   "id": "templebrick_golden_static",
+   "zh": "愚人金砖",
+   "en": "Fool's gold",
+   "category": "solid",
+   "color": "b07e13"
+  },
+  {
+   "id": "wizardstone",
+   "zh": "奇异砖块",
+   "en": "Odd brickwork",
+   "category": "solid",
+   "color": "4c4356"
+  },
+  {
+   "id": "lavarock_static",
+   "zh": "火山岩",
+   "en": "volcanic rock",
+   "category": "solid",
+   "color": "5F2621"
+  },
+  {
+   "id": "meteorite_static",
+   "zh": "陨石",
+   "en": "meteorite",
+   "category": "solid",
+   "color": "1D1010"
+  },
+  {
+   "id": "steel_static",
+   "zh": "钢",
+   "en": "steel",
+   "category": "solid",
+   "color": "404041"
+  },
+  {
+   "id": "steelmoss_static",
+   "zh": "锈蚀的钢",
+   "en": "rusted steel",
+   "category": "solid",
+   "color": "787A55"
+  },
+  {
+   "id": "steel_rusted_no_holes",
+   "zh": "锈蚀的钢",
+   "en": "rusted steel",
+   "category": "solid",
+   "color": "904F3A"
+  },
+  {
+   "id": "steel_grey_static",
+   "zh": "灰钢",
+   "en": "dense steel",
+   "category": "solid",
+   "color": "9B4A3F"
+  },
+  {
+   "id": "steelfrost_static",
+   "zh": "冻结的钢",
+   "en": "Frozen steel",
+   "category": "solid",
+   "color": "787B34"
+  },
+  {
+   "id": "steelmoss_slanted",
+   "zh": "生苔的钢",
+   "en": "mossy steel",
+   "category": "solid",
+   "color": "787A85"
+  },
+  {
+   "id": "steelsmoke_static",
+   "zh": "发烟钢",
+   "en": "smoking steel",
+   "category": "solid",
+   "color": "646455"
+  },
+  {
+   "id": "steelpipe_static",
+   "zh": "钢管",
+   "en": "metal pipe",
+   "category": "solid",
+   "color": "64c455"
+  },
+  {
+   "id": "steel_static_strong",
+   "zh": "灰钢",
+   "en": "dense steel",
+   "category": "solid",
+   "color": "404a41"
+  },
+  {
+   "id": "steel_static_unmeltable",
+   "zh": "高熔点钢",
+   "en": "hardened steel",
+   "category": "solid",
+   "color": "404F50"
+  },
+  {
+   "id": "rock_static_glow",
+   "zh": "盐石",
+   "en": "glowing matter",
+   "category": "solid",
+   "color": "145014"
+  },
+  {
+   "id": "snow_static",
+   "zh": "压实的雪",
+   "en": "packed snow",
+   "category": "solid",
+   "color": "EBEBEC"
+  },
+  {
+   "id": "ice_static",
+   "zh": "冰",
+   "en": "ice",
+   "category": "solid",
+   "color": "CFF7C8"
+  },
+  {
+   "id": "ice_blood_static",
+   "zh": "血冰",
+   "en": "frozen blood",
+   "category": "solid",
+   "color": "cb7070"
+  },
+  {
+   "id": "ice_slime_static",
+   "zh": "黏液冰",
+   "en": "Frozen slime",
+   "category": "solid",
+   "color": "cba270"
+  },
+  {
+   "id": "ice_acid_static",
+   "zh": "酸冰",
+   "en": "frozen acid",
+   "category": "solid",
+   "color": "CFFFC8"
+  },
+  {
+   "id": "ice_cold_static",
+   "zh": "寒冰",
+   "en": "ice",
+   "category": "solid",
+   "color": "AFFFC8"
+  },
+  {
+   "id": "ice_radioactive_static",
+   "zh": "绿色毒冰",
+   "en": "toxic ice",
+   "category": "solid",
+   "color": "BFFFC8"
+  },
+  {
+   "id": "ice_poison_static",
+   "zh": "紫色毒冰",
+   "en": "Frozen poison",
+   "category": "solid",
+   "color": "ba2de0"
+  },
+  {
+   "id": "ice_meteor_static",
+   "zh": "彗星",
+   "en": "ice",
+   "category": "solid",
+   "color": "CF1FC8"
+  },
+  {
+   "id": "tubematerial",
+   "zh": "霓虹灯管",
+   "en": "neon tube",
+   "category": "solid",
+   "color": "CFF7C5"
+  },
+  {
+   "id": "glass_static",
+   "zh": "玻璃",
+   "en": "glass",
+   "category": "solid",
+   "color": "a16065"
+  },
+  {
+   "id": "snowrock_static",
+   "zh": "冻结岩石",
+   "en": "frozen rock",
+   "category": "solid",
+   "color": "DBDBDC"
+  },
+  {
+   "id": "concrete_static",
+   "zh": "混凝土",
+   "en": "concrete",
+   "category": "solid",
+   "color": "767677"
+  },
+  {
+   "id": "wood_static",
+   "zh": "木材",
+   "en": "wood",
+   "category": "solid",
+   "color": "413F24"
+  },
+  {
+   "id": "wood_static_vertical",
+   "zh": "木材",
+   "en": "wood",
+   "category": "solid",
+   "color": "413F3A"
+  },
+  {
+   "id": "wood_burns_forever",
+   "zh": "木材",
+   "en": "wood",
+   "category": "solid",
+   "color": "413F43"
+  },
+  {
+   "id": "root_growth",
+   "zh": "藤蔓",
+   "en": "vine",
+   "category": "solid",
+   "color": "412D41"
+  },
+  {
+   "id": "wood_static_wet",
+   "zh": "潮湿木材",
+   "en": "damp wood",
+   "category": "solid",
+   "color": "413F41"
+  },
+  {
+   "id": "wood_static_gas",
+   "zh": "耐压木材",
+   "en": "pressurized wood",
+   "category": "solid",
+   "color": "414F41"
+  },
+  {
+   "id": "cheese_static",
+   "zh": "奶酪",
+   "en": "cheese",
+   "category": "solid",
+   "color": "F3CD67"
+  },
+  {
+   "id": "gold_static",
+   "zh": "金矿脉",
+   "en": "gold vein",
+   "category": "solid",
+   "color": "4AAF41"
+  },
+  {
+   "id": "gold_static_radioactive",
+   "zh": "淬毒黄金",
+   "en": "toxic gold",
+   "category": "solid",
+   "color": "4AAF45"
+  },
+  {
+   "id": "gold_static_dark",
+   "zh": "亮金矿脉",
+   "en": "vibrant gold vein",
+   "category": "solid",
+   "color": "4ACF41"
+  },
+  {
+   "id": "endslime",
+   "zh": "地狱黏液",
+   "en": "hell slime",
+   "category": "solid",
+   "color": "8AFF80"
+  },
+  {
+   "id": "vine",
+   "zh": "藤蔓",
+   "en": "vine",
+   "category": "solid",
+   "color": "526F40"
+  },
+  {
+   "id": "root",
+   "zh": "藤蔓",
+   "en": "vine",
+   "category": "solid",
+   "color": "2A724A"
+  },
+  {
+   "id": "wood_player",
+   "zh": "玩家木材",
+   "en": "wood",
+   "category": "solid",
+   "color": "613e03"
+  },
+  {
+   "id": "trailer_text",
+   "zh": "文本",
+   "en": "text",
+   "category": "solid",
+   "color": "c0ffe1"
+  },
+  {
+   "id": "blood_thick",
+   "zh": "致密血液",
+   "en": "blood",
+   "category": "solid",
+   "color": "ff7674"
+  },
+  {
+   "id": "static_magic_material",
+   "zh": "澳元素",
+   "en": "australium",
+   "category": "solid",
+   "color": "888888"
+  },
+  {
+   "id": "meat_static",
+   "zh": "肉",
+   "en": "meat",
+   "category": "solid",
+   "color": "888888"
+  },
+  {
+   "id": "rock_eroding",
+   "zh": "侵蚀岩石",
+   "en": "eroding rock",
+   "category": "box2d",
+   "color": "afb146"
+  },
+  {
+   "id": "waterrock",
+   "zh": "水岩",
+   "en": "rock",
+   "category": "box2d",
+   "color": "1a43f4"
+  },
+  {
+   "id": "ice_glass",
+   "zh": "冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "aedde3"
+  },
+  {
+   "id": "tube_physics",
+   "zh": "霓虹灯管",
+   "en": "neon tube",
+   "category": "box2d",
+   "color": "413F42"
+  },
+  {
+   "id": "ice_acid_glass",
+   "zh": "酸冰",
+   "en": "frozen acid",
+   "category": "box2d",
+   "color": "41FF42"
+  },
+  {
+   "id": "ice_cold_glass",
+   "zh": "寒冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "A1FF42"
+  },
+  {
+   "id": "ice_radioactive_glass",
+   "zh": "绿色毒冰",
+   "en": "toxic ice",
+   "category": "box2d",
+   "color": "B1FF42"
+  },
+  {
+   "id": "ice_poison_glass",
+   "zh": "紫色毒冰",
+   "en": "Frozen poison",
+   "category": "box2d",
+   "color": "bc3ae0"
+  },
+  {
+   "id": "ice_blood_glass",
+   "zh": "血冰",
+   "en": "Frozen blood",
+   "category": "box2d",
+   "color": "bc40e2"
+  },
+  {
+   "id": "ice_slime_glass",
+   "zh": "黏液冰",
+   "en": "Frozen slime",
+   "category": "box2d",
+   "color": "bc10e2"
+  },
+  {
+   "id": "ice_glass_b2",
+   "zh": "冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "aedde5"
+  },
+  {
+   "id": "glass_brittle",
+   "zh": "易碎玻璃",
+   "en": "brittle glass",
+   "category": "box2d",
+   "color": "aeddd3"
+  },
+  {
+   "id": "meat_slime",
+   "zh": "发黏的肉",
+   "en": "slimy meat",
+   "category": "box2d",
+   "color": "f2ddb3"
+  },
+  {
+   "id": "meat_slime_green",
+   "zh": "绿色黏肉",
+   "en": "green slimy meat",
+   "category": "box2d",
+   "color": "ed4d4c"
+  },
+  {
+   "id": "meat_slime_orange",
+   "zh": "橙色黏肉",
+   "en": "slimy meat",
+   "category": "box2d",
+   "color": "feaf2c"
+  },
+  {
+   "id": "meat",
+   "zh": "肉",
+   "en": "meat",
+   "category": "box2d",
+   "color": "f2ddb2"
+  },
+  {
+   "id": "meat_worm",
+   "zh": "蠕虫肉",
+   "en": "worm meat",
+   "category": "box2d",
+   "color": "ebcda1"
+  },
+  {
+   "id": "meat_helpless",
+   "zh": "无辜生命的肉",
+   "en": "Meat of an innocent creature",
+   "category": "box2d",
+   "color": "e3c3a2"
+  },
+  {
+   "id": "meat_trippy",
+   "zh": "怪异的肉",
+   "en": "Weird meat",
+   "category": "box2d",
+   "color": "e2c2a4"
+  },
+  {
+   "id": "meat_frog",
+   "zh": "蛙肉",
+   "en": "frog meat",
+   "category": "box2d",
+   "color": "e2c2a5"
+  },
+  {
+   "id": "meat_cursed",
+   "zh": "诅咒的肉",
+   "en": "Cursed meat",
+   "category": "box2d",
+   "color": "e3c1a1"
+  },
+  {
+   "id": "meat_cursed_dry",
+   "zh": "诅咒的肉",
+   "en": "Cursed meat",
+   "category": "box2d",
+   "color": "e3c1a4"
+  },
+  {
+   "id": "meat_slime_cursed",
+   "zh": "诅咒黏肉",
+   "en": "Slimy cursed meat",
+   "category": "box2d",
+   "color": "e2cbb0"
+  },
+  {
+   "id": "meat_teleport",
+   "zh": "虚无的肉",
+   "en": "Ethereal meat",
+   "category": "box2d",
+   "color": "bbc1a1"
+  },
+  {
+   "id": "meat_fast",
+   "zh": "长毛的肉",
+   "en": "Wobbly meat",
+   "category": "box2d",
+   "color": "bbf111"
+  },
+  {
+   "id": "meat_polymorph",
+   "zh": "不稳的肉",
+   "en": "Unstable meat",
+   "category": "box2d",
+   "color": "b3a181"
+  },
+  {
+   "id": "meat_polymorph_protection",
+   "zh": "发臭的肉",
+   "en": "Stinky meat",
+   "category": "box2d",
+   "color": "b4a282"
+  },
+  {
+   "id": "meat_confusion",
+   "zh": "迷糊的肉",
+   "en": "Ambiguous meat",
+   "category": "box2d",
+   "color": "b3a070"
+  },
+  {
+   "id": "wood_player_b2",
+   "zh": "木材",
+   "en": "wood",
+   "category": "box2d",
+   "color": "613e02"
+  },
+  {
+   "id": "wood_player_b2_vertical",
+   "zh": "木材",
+   "en": "wood",
+   "category": "box2d",
+   "color": "a13f02"
+  },
+  {
+   "id": "wood",
+   "zh": "木头",
+   "en": "wood",
+   "category": "box2d",
+   "color": "613e00"
+  },
+  {
+   "id": "wax_b2",
+   "zh": "蜡",
+   "en": "wax",
+   "category": "box2d",
+   "color": "EAAAAC"
+  },
+  {
+   "id": "fuse",
+   "zh": "炸弹",
+   "en": "bomb",
+   "category": "box2d",
+   "color": "EAAAAD"
+  },
+  {
+   "id": "fuse_bright",
+   "zh": "炸弹",
+   "en": "bomb",
+   "category": "box2d",
+   "color": "EA151E"
+  },
+  {
+   "id": "fuse_tnt",
+   "zh": "TNT",
+   "en": "tnt",
+   "category": "box2d",
+   "color": "EAAAAE"
+  },
+  {
+   "id": "fuse_holy",
+   "zh": "神圣的东西",
+   "en": "holy matter",
+   "category": "box2d",
+   "color": "EAABAE"
+  },
+  {
+   "id": "templebrick_box2d",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "box2d",
+   "color": "644620"
+  },
+  {
+   "id": "wood_loose",
+   "zh": "疏松木材",
+   "en": "wood",
+   "category": "box2d",
+   "color": "613e01"
+  },
+  {
+   "id": "wood_trailer",
+   "zh": "木材",
+   "en": "wood",
+   "category": "box2d",
+   "color": "a44620"
+  },
+  {
+   "id": "wood_wall",
+   "zh": "木墙",
+   "en": "wood",
+   "category": "box2d",
+   "color": "644600"
+  },
+  {
+   "id": "cactus",
+   "zh": "疏松木材",
+   "en": "wood",
+   "category": "box2d",
+   "color": "64f640"
+  },
+  {
+   "id": "grass_loose",
+   "zh": "松软的草",
+   "en": "fungal matter",
+   "category": "box2d",
+   "color": "64e64a"
+  },
+  {
+   "id": "fungus_loose",
+   "zh": "真菌",
+   "en": "fungus",
+   "category": "box2d",
+   "color": "64ab40"
+  },
+  {
+   "id": "fungus_loose_green",
+   "zh": "真菌",
+   "en": "fungus",
+   "category": "box2d",
+   "color": "64ab2c"
+  },
+  {
+   "id": "fungus_loose_trippy",
+   "zh": "诡异真菌",
+   "en": "weird fungus",
+   "category": "box2d",
+   "color": "64ab41"
+  },
+  {
+   "id": "wood_prop",
+   "zh": "木板",
+   "en": "wood",
+   "category": "box2d",
+   "color": "966400"
+  },
+  {
+   "id": "wood_prop_noplayerhit",
+   "zh": "木板",
+   "en": "wood",
+   "category": "box2d",
+   "color": "966401"
+  },
+  {
+   "id": "aluminium",
+   "zh": "铝",
+   "en": "aluminium",
+   "category": "box2d",
+   "color": "3b5d3c"
+  },
+  {
+   "id": "cloth_box2d",
+   "zh": "布料",
+   "en": "Cloth",
+   "category": "box2d",
+   "color": "937f52"
+  },
+  {
+   "id": "wood_prop_durable",
+   "zh": "硬木",
+   "en": "tough wood",
+   "category": "box2d",
+   "color": "966410"
+  },
+  {
+   "id": "nest_box2d",
+   "zh": "巢",
+   "en": "nest",
+   "category": "box2d",
+   "color": "3b8d4b"
+  },
+  {
+   "id": "nest_firebug_box2d",
+   "zh": "巢",
+   "en": "nest",
+   "category": "box2d",
+   "color": "3b3e3b"
+  },
+  {
+   "id": "cocoon_box2d",
+   "zh": "茧",
+   "en": "cocoon",
+   "category": "box2d",
+   "color": "3f8d4b"
+  },
+  {
+   "id": "rock_loose",
+   "zh": "松散岩石",
+   "en": "rock",
+   "category": "box2d",
+   "color": "937d58"
+  },
+  {
+   "id": "ice_ceiling",
+   "zh": "冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "3b93ba"
+  },
+  {
+   "id": "brick",
+   "zh": "砖墙",
+   "en": "brick wall",
+   "category": "box2d",
+   "color": "b80900"
+  },
+  {
+   "id": "concrete_collapsed",
+   "zh": "地震碎块",
+   "en": "collapsed concrete",
+   "category": "box2d",
+   "color": "b80901"
+  },
+  {
+   "id": "tnt",
+   "zh": "TNT",
+   "en": "tnt",
+   "category": "box2d",
+   "color": "ab5e4f"
+  },
+  {
+   "id": "tnt_static",
+   "zh": "TNT",
+   "en": "tnt",
+   "category": "box2d",
+   "color": "c1ffee"
+  },
+  {
+   "id": "meteorite",
+   "zh": "陨石",
+   "en": "meteorite",
+   "category": "box2d",
+   "color": "1D1012"
+  },
+  {
+   "id": "sulphur_box2d",
+   "zh": "硫磺",
+   "en": "sulphur",
+   "category": "box2d",
+   "color": "C9C169"
+  },
+  {
+   "id": "meteorite_test",
+   "zh": "陨石",
+   "en": "meteorite",
+   "category": "box2d",
+   "color": "1D1013"
+  },
+  {
+   "id": "meteorite_crackable",
+   "zh": "陨石",
+   "en": "meteorite",
+   "category": "box2d",
+   "color": "a86C42"
+  },
+  {
+   "id": "meteorite_green",
+   "zh": "绿色陨石",
+   "en": "green meteorite",
+   "category": "box2d",
+   "color": "4e5244"
+  },
+  {
+   "id": "steel",
+   "zh": "钢板",
+   "en": "steel",
+   "category": "box2d",
+   "color": "3b5d4b"
+  },
+  {
+   "id": "steel_rust",
+   "zh": "锈蚀的钢",
+   "en": "rusted steel",
+   "category": "box2d",
+   "color": "73727e"
+  },
+  {
+   "id": "metal_rust_rust",
+   "zh": "重度锈蚀金属",
+   "en": "rusted metal",
+   "category": "box2d",
+   "color": "73a27e"
+  },
+  {
+   "id": "metal_rust_barrel_rust",
+   "zh": "重度锈蚀铁桶",
+   "en": "rusted metal",
+   "category": "box2d",
+   "color": "73a27f"
+  },
+  {
+   "id": "plastic",
+   "zh": "塑料",
+   "en": "plastic",
+   "category": "box2d",
+   "color": "3b5d3b"
+  },
+  {
+   "id": "plastic_prop",
+   "zh": "塑料",
+   "en": "plastic",
+   "category": "box2d",
+   "color": "3b6d4b"
+  },
+  {
+   "id": "aluminium_robot",
+   "zh": "铝",
+   "en": "aluminium",
+   "category": "box2d",
+   "color": "3c2d3c"
+  },
+  {
+   "id": "metal_prop",
+   "zh": "铁块",
+   "en": "metal",
+   "category": "box2d",
+   "color": "968800"
+  },
+  {
+   "id": "metal_prop_low_restitution",
+   "zh": "铁块",
+   "en": "metal",
+   "category": "box2d",
+   "color": "9a8f00"
+  },
+  {
+   "id": "metal_prop_loose",
+   "zh": "铁块",
+   "en": "metal",
+   "category": "box2d",
+   "color": "9677a0"
+  },
+  {
+   "id": "metal",
+   "zh": "铁板",
+   "en": "metal",
+   "category": "box2d",
+   "color": "3d2d3c"
+  },
+  {
+   "id": "metal_hard",
+   "zh": "铁板",
+   "en": "metal",
+   "category": "box2d",
+   "color": "3df03c"
+  },
+  {
+   "id": "rock_box2d",
+   "zh": "石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "2d2dac"
+  },
+  {
+   "id": "templebrick_box2d_edgetiles",
+   "zh": "砖块",
+   "en": "brickwork",
+   "category": "box2d",
+   "color": "2ffda4"
+  },
+  {
+   "id": "rock_box2d_hard",
+   "zh": "致密石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "2d6dbc"
+  },
+  {
+   "id": "poop_box2d_hard",
+   "zh": "致密石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "a38431"
+  },
+  {
+   "id": "rock_box2d_nohit",
+   "zh": "石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "2d2dbc"
+  },
+  {
+   "id": "rock_box2d_nohit_hard",
+   "zh": "致密石块",
+   "en": "dense rock",
+   "category": "box2d",
+   "color": "2d4dbc"
+  },
+  {
+   "id": "rock_static_box2d",
+   "zh": "石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "2d2dff"
+  },
+  {
+   "id": "item_box2d",
+   "zh": "物品",
+   "en": "item",
+   "category": "box2d",
+   "color": "fe2dac"
+  },
+  {
+   "id": "item_box2d_glass",
+   "zh": "物品",
+   "en": "item",
+   "category": "box2d",
+   "color": "fe2dab"
+  },
+  {
+   "id": "item_box2d_meat",
+   "zh": "肉",
+   "en": "meat",
+   "category": "box2d",
+   "color": "fe11a1"
+  },
+  {
+   "id": "gem_box2d",
+   "zh": "宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "fd2dac"
+  },
+  {
+   "id": "potion_glass_box2d",
+   "zh": "玻璃瓶",
+   "en": "glass",
+   "category": "box2d",
+   "color": "fd2dab"
+  },
+  {
+   "id": "glass_box2d",
+   "zh": "玻璃",
+   "en": "glass",
+   "category": "box2d",
+   "color": "fd4dab"
+  },
+  {
+   "id": "gem_box2d_yellow_sun",
+   "zh": "太阳宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "ff9919"
+  },
+  {
+   "id": "gem_box2d_red_float",
+   "zh": "太阳宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "fd2d7d"
+  },
+  {
+   "id": "gem_box2d_yellow_sun_gravity",
+   "zh": "太阳宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "af9019"
+  },
+  {
+   "id": "gem_box2d_darksun",
+   "zh": "太阳宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "1e4866"
+  },
+  {
+   "id": "gem_box2d_pink",
+   "zh": "粉宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "fd2dad"
+  },
+  {
+   "id": "gem_box2d_red",
+   "zh": "太阳宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "fd2d9d"
+  },
+  {
+   "id": "gem_box2d_turquoise",
+   "zh": "绿松石",
+   "en": "Turquoise gemstone",
+   "category": "box2d",
+   "color": "14ffd7"
+  },
+  {
+   "id": "gem_box2d_opal",
+   "zh": "绿松石",
+   "en": "Turquoise gemstone",
+   "category": "box2d",
+   "color": "52dd60"
+  },
+  {
+   "id": "gem_box2d_white",
+   "zh": "白宝石",
+   "en": "White gemstone",
+   "category": "box2d",
+   "color": "ebeaef"
+  },
+  {
+   "id": "gem_box2d_green",
+   "zh": "绿宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "fd2dae"
+  },
+  {
+   "id": "gem_box2d_orange",
+   "zh": "橙宝石",
+   "en": "gem",
+   "category": "box2d",
+   "color": "F98227"
+  },
+  {
+   "id": "gold_box2d",
+   "zh": "金块",
+   "en": "gold",
+   "category": "box2d",
+   "color": "F98228"
+  },
+  {
+   "id": "bloodgold_box2d",
+   "zh": "血金块",
+   "en": "Ruby",
+   "category": "box2d",
+   "color": "F92828"
+  },
+  {
+   "id": "metal_nohit",
+   "zh": "铁链",
+   "en": "metal",
+   "category": "box2d",
+   "color": "ad2dac"
+  },
+  {
+   "id": "metal_chain_nohit",
+   "zh": "铁链",
+   "en": "metal",
+   "category": "box2d",
+   "color": "ad2dad"
+  },
+  {
+   "id": "metal_wire_nohit",
+   "zh": "铁链",
+   "en": "metal",
+   "category": "box2d",
+   "color": "ad2dae"
+  },
+  {
+   "id": "metal_rust",
+   "zh": "锈蚀金属",
+   "en": "rusted metal",
+   "category": "box2d",
+   "color": "4d2d3c"
+  },
+  {
+   "id": "metal_rust_barrel",
+   "zh": "锈蚀铁桶",
+   "en": "rusted metal",
+   "category": "box2d",
+   "color": "4d2d3d"
+  },
+  {
+   "id": "bone_box2d",
+   "zh": "骨头",
+   "en": "bone",
+   "category": "box2d",
+   "color": "1c2d2c"
+  },
+  {
+   "id": "crystal",
+   "zh": "水晶",
+   "en": "crystal",
+   "category": "box2d",
+   "color": "3b5d2e"
+  },
+  {
+   "id": "magic_crystal",
+   "zh": "魔法水晶",
+   "en": "Magical crystal",
+   "category": "box2d",
+   "color": "3b5d43"
+  },
+  {
+   "id": "magic_crystal_green",
+   "zh": "魔法水晶",
+   "en": "Magical crystal",
+   "category": "box2d",
+   "color": "b2d740"
+  },
+  {
+   "id": "gold_b2",
+   "zh": "黄金像",
+   "en": "gold",
+   "category": "box2d",
+   "color": "fefae4"
+  },
+  {
+   "id": "crystal_purple",
+   "zh": "紫水晶",
+   "en": "purple crystal",
+   "category": "box2d",
+   "color": "a53d77"
+  },
+  {
+   "id": "crystal_solid",
+   "zh": "水晶",
+   "en": "crystal",
+   "category": "box2d",
+   "color": "a5ad11"
+  },
+  {
+   "id": "crystal_magic",
+   "zh": "魔法水晶",
+   "en": "crystal",
+   "category": "box2d",
+   "color": "3b5d2f"
+  },
+  {
+   "id": "aluminium_oxide",
+   "zh": "氧化铝",
+   "en": "aluminium",
+   "category": "box2d",
+   "color": "3b5d4d"
+  },
+  {
+   "id": "meat_fruit",
+   "zh": "果肉",
+   "en": "Fruit flesh",
+   "category": "box2d",
+   "color": "a50e77"
+  },
+  {
+   "id": "meat_pumpkin",
+   "zh": "果肉",
+   "en": "Fruit flesh",
+   "category": "box2d",
+   "color": "ff531b"
+  },
+  {
+   "id": "meat_warm",
+   "zh": "温热的肉",
+   "en": "Lightly-cooked meat",
+   "category": "box2d",
+   "color": "5b5246"
+  },
+  {
+   "id": "meat_hot",
+   "zh": "微熟的肉",
+   "en": "Cooked meat",
+   "category": "box2d",
+   "color": "5c5246"
+  },
+  {
+   "id": "meat_done",
+   "zh": "烤熟的肉",
+   "en": "Fully-cooked meat",
+   "category": "box2d",
+   "color": "5d5246"
+  },
+  {
+   "id": "meat_burned",
+   "zh": "烧焦的肉",
+   "en": "Burned meat",
+   "category": "box2d",
+   "color": "5e5246"
+  },
+  {
+   "id": "physics_throw_material_part2",
+   "zh": "谁知道呢",
+   "en": "who knows",
+   "category": "box2d",
+   "color": "dee1fe"
+  },
+  {
+   "id": "ice_melting_perf_killer",
+   "zh": "融化的冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "dee1aa"
+  },
+  {
+   "id": "ice_b2",
+   "zh": "冰",
+   "en": "ice",
+   "category": "box2d",
+   "color": "dee1ec"
+  },
+  {
+   "id": "glass_liquidcave",
+   "zh": "钢化玻璃",
+   "en": "Tempered glass",
+   "category": "box2d",
+   "color": "dee1fa"
+  },
+  {
+   "id": "glass",
+   "zh": "玻璃",
+   "en": "glass",
+   "category": "box2d",
+   "color": "aeddee"
+  },
+  {
+   "id": "neon_tube_purple",
+   "zh": "紫色霓虹灯管",
+   "en": "neon tube",
+   "category": "box2d",
+   "color": "aedde6"
+  },
+  {
+   "id": "neon_tube_cyan",
+   "zh": "青色霓虹灯管",
+   "en": "neon tube",
+   "category": "box2d",
+   "color": "aedde7"
+  },
+  {
+   "id": "neon_tube_blood_red",
+   "zh": "红色霓虹灯管",
+   "en": "neon tube",
+   "category": "box2d",
+   "color": "aedde8"
+  },
+  {
+   "id": "snow_b2",
+   "zh": "雪",
+   "en": "snow",
+   "category": "box2d",
+   "color": "b80902"
+  },
+  {
+   "id": "rock_box2d_nohit_heavy",
+   "zh": "石块",
+   "en": "rock",
+   "category": "box2d",
+   "color": "888888"
+  }
+ ],
+ "items": [
+  {
+   "id": "SHINY_ORB",
+   "zh": "闪耀魔球",
+   "en": "Shiny orb",
+   "iconIndex": 0,
+   "description": "踢击会吐出金块，但多踢几次可能爆炸。"
+  },
+  {
+   "id": "CRUEL_ORB",
+   "zh": "残忍魔球",
+   "en": "Cruel Orb",
+   "iconIndex": 1,
+   "description": "踢击会吐出金块，但会附上贪婪诅咒，受击伤害增加。"
+  },
+  {
+   "id": "BROKEN_WAND",
+   "zh": "坏掉的魔杖",
+   "en": "Broken wand",
+   "iconIndex": 2,
+   "description": "一根损坏的法杖，无法正常装填法术。"
+  },
+  {
+   "id": "EVIL_EYE",
+   "zh": "邪王真眼",
+   "en": "Paha Silmä",
+   "iconIndex": 3,
+   "description": "手持时能看见幽灵；触发后会释放激光。"
+  },
+  {
+   "id": "MOON",
+   "zh": "月亮",
+   "en": "Kuu",
+   "iconIndex": 4,
+   "description": "非常稀有的物品；与月亮祭坛和献祭仪式相关。"
+  },
+  {
+   "id": "SPELL_REFRESH",
+   "zh": "法术刷新器",
+   "en": "Spell refresher",
+   "iconIndex": 5,
+   "description": "拾取后恢复限次法术的使用次数。"
+  },
+  {
+   "id": "UTILITY_BOX",
+   "zh": "杂物箱",
+   "en": "Utility box",
+   "iconIndex": 6,
+   "description": "随机开出材料、石头等杂物的箱子。"
+  },
+  {
+   "id": "JAR",
+   "zh": "罐子",
+   "en": "Jar",
+   "iconIndex": 7,
+   "description": "可以盛放液体的小罐子。"
+  },
+  {
+   "id": "JAR_URINE",
+   "zh": "尿罐",
+   "en": "Jar of urine",
+   "iconIndex": 7,
+   "description": "装着尿液的罐子，可以泼洒。"
+  },
+  {
+   "id": "GOURD",
+   "zh": "刷新胡瓜",
+   "en": "Refreshing gourd",
+   "iconIndex": 8,
+   "description": "食用后刷新限次法术的使用次数。"
+  },
+  {
+   "id": "CHAOS_DIE",
+   "zh": "混沌骰子",
+   "en": "Chaos die",
+   "iconIndex": 9,
+   "description": "投掷后随机触发各种效果，包括爆炸。"
+  },
+  {
+   "id": "GREED_DIE",
+   "zh": "贪婪骰子",
+   "en": "Greed Die",
+   "iconIndex": 10,
+   "description": "投掷后随机触发效果，有时会带来贪婪诅咒。"
+  },
+  {
+   "id": "BEAMSTONE",
+   "zh": "萨德祈唯",
+   "en": "Sädekivi",
+   "iconIndex": 11,
+   "description": "手持时释放放逐激光。"
+  },
+  {
+   "id": "BRIMSTONE",
+   "zh": "硫磺石",
+   "en": "Kiuaskivi",
+   "iconIndex": 12,
+   "description": "手持时释放硫磺气流。"
+  },
+  {
+   "id": "MUSICSTONE",
+   "zh": "库罗基维",
+   "en": "Kuulokivi",
+   "iconIndex": 13,
+   "description": "手持时会奏响音乐。"
+  },
+  {
+   "id": "POOPSTONE",
+   "zh": "卡卡基卡雷",
+   "en": "Kakkakikkare",
+   "iconIndex": 14,
+   "description": "手持时排放恶臭的毒云。"
+  },
+  {
+   "id": "STONESTONE",
+   "zh": "坦纳基维",
+   "en": "Tannerkivi",
+   "iconIndex": 15,
+   "description": "手持时喷出岩石。"
+  },
+  {
+   "id": "THUNDERSTONE",
+   "zh": "雷石",
+   "en": "Ukkoskivi",
+   "iconIndex": 16,
+   "description": "手持时释放雷电。"
+  },
+  {
+   "id": "WATERSTONE",
+   "zh": "流水石",
+   "en": "Vuoksikivi",
+   "iconIndex": 17,
+   "description": "手持时释放水流。"
+  },
+  {
+   "id": "WANDSTONE",
+   "zh": "索凡伊丁",
+   "en": "Sauvan Ydin",
+   "iconIndex": 18,
+   "description": "手持时向法杖方向释放法术光束。"
+  },
+  {
+   "id": "SAFE_HAVEN",
+   "zh": "卡米",
+   "en": "Kammi",
+   "iconIndex": 19,
+   "description": "手持时打开通往卡米（安全屋）的传送门。"
+  },
+  {
+   "id": "EGG_FIRE",
+   "zh": "暖和的蛋",
+   "en": "Toasty egg",
+   "iconIndex": 20,
+   "description": "会孵化的蛋。"
+  },
+  {
+   "id": "EGG_HOLLOW",
+   "zh": "空的蛋",
+   "en": "Hollow egg",
+   "iconIndex": 21,
+   "description": "蛋壳是空的，可以装进材料或液体。"
+  },
+  {
+   "id": "EGG_MONSTER",
+   "zh": "蛋（怪物）",
+   "en": "Egg",
+   "iconIndex": 22,
+   "description": "会孵化出随机怪物的蛋。"
+  },
+  {
+   "id": "EGG_PURPLE",
+   "zh": "冰凉的蛋",
+   "en": "Chilly egg",
+   "iconIndex": 23,
+   "description": "会孵化出冰霜类生物的蛋。"
+  },
+  {
+   "id": "EGG_RED",
+   "zh": "蛋（红色）",
+   "en": "Egg",
+   "iconIndex": 20,
+   "description": "会孵化出红色生物的蛋。"
+  },
+  {
+   "id": "EGG_SLIME",
+   "zh": "发黏的蛋",
+   "en": "Slimy egg",
+   "iconIndex": 21,
+   "description": "会孵化出史莱姆的蛋。"
+  },
+  {
+   "id": "EGG_SPIDERS",
+   "zh": "冰凉的蛋（蜘蛛）",
+   "en": "Chilly egg",
+   "iconIndex": 23,
+   "description": "会孵化出蜘蛛的蛋。"
+  },
+  {
+   "id": "EGG_WORM",
+   "zh": "摆动的蛋",
+   "en": "Wiggling egg",
+   "iconIndex": 24,
+   "description": "会孵化出蠕虫的蛋。"
+  },
+  {
+   "id": "ESSENCE_AIR",
+   "zh": "气之精髓",
+   "en": "Essence of Air",
+   "iconIndex": 25,
+   "description": "蕴含气之力量的精髓，与精粹仪式相关。"
+  },
+  {
+   "id": "ESSENCE_ALCOHOL",
+   "zh": "酒之精髓",
+   "en": "Essence of Spirits",
+   "iconIndex": 26,
+   "description": "蕴含烈酒之力的精髓，与精粹仪式相关。"
+  },
+  {
+   "id": "ESSENCE_FIRE",
+   "zh": "火之精髓",
+   "en": "Essence of Fire",
+   "iconIndex": 27,
+   "description": "蕴含火之力量的精髓，与精粹仪式相关。"
+  },
+  {
+   "id": "ESSENCE_EARTH",
+   "zh": "地之精髓",
+   "en": "Essence of Earth",
+   "iconIndex": 28,
+   "description": "蕴含大地之力的精髓，与精粹仪式相关。"
+  },
+  {
+   "id": "ESSENCE_WATER",
+   "zh": "水之精髓",
+   "en": "Essence of Water",
+   "iconIndex": 29,
+   "description": "蕴含水之力量的精髓，与精粹仪式相关。"
+  },
+  {
+   "id": "BOOK_00",
+   "zh": "翠玉石板 第 I 卷",
+   "en": "Emerald Tablet - volume I",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_01",
+   "zh": "翠玉石板·托特之书",
+   "en": "Emerald Tablet of Thoth",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_02",
+   "zh": "翠玉石板 第 II 卷",
+   "en": "Emerald Tablet - volume II",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_03",
+   "zh": "翠玉石板 第 III 卷",
+   "en": "Emerald Tablet - volume III",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_04",
+   "zh": "翠玉石板 第 IV 卷",
+   "en": "Emerald Tablet - volume IV",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_05",
+   "zh": "翠玉石板 第 V 卷",
+   "en": "Emerald Tablet - volume V",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_06",
+   "zh": "翠玉石板 第 VI 卷",
+   "en": "Emerald Tablet - volume VI",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_07",
+   "zh": "翠玉石板 第 VII 卷",
+   "en": "Emerald Tablet - volume VII",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_08",
+   "zh": "翠玉石板 第 VIII 卷",
+   "en": "Emerald Tablet - volume VIII",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_09",
+   "zh": "翠玉石板 第 IX 卷",
+   "en": "Emerald Tablet - volume IX",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_10",
+   "zh": "翠玉石板 第 X 卷",
+   "en": "Emerald Tablet - volume X",
+   "iconIndex": 30,
+   "description": "古老的翠玉石板，可以被阅读。"
+  },
+  {
+   "id": "BOOK_ALL_SPELLS",
+   "zh": "灵知地图",
+   "en": "Map of Gnosis",
+   "iconIndex": 31,
+   "description": "记载着一切法术知识的书籍。"
+  },
+  {
+   "id": "BOOK_BARREN",
+   "zh": "专家的笔记",
+   "en": "Adept's Note",
+   "iconIndex": 32,
+   "description": "一位专家的研究笔记。"
+  },
+  {
+   "id": "BOOK_BUNKER",
+   "zh": "炼金术士的笔记",
+   "en": "Alchemist's Note",
+   "iconIndex": 32,
+   "description": "一位炼金术士留下的笔记。"
+  },
+  {
+   "id": "BOOK_CORPSE",
+   "zh": "翠玉石板·原典",
+   "en": "Tabula Smaragdina",
+   "iconIndex": 30,
+   "description": "最古老的翠玉石板原典。"
+  },
+  {
+   "id": "BOOK_DIAMOND",
+   "zh": "珠宝之书",
+   "en": "Book of the Jewel",
+   "iconIndex": 32,
+   "description": "记载着珠宝奥秘的书籍。"
+  },
+  {
+   "id": "BOOK_ESSENCES",
+   "zh": "精髓书卷",
+   "en": "Tome of Essences",
+   "iconIndex": 32,
+   "description": "记载着精髓之力的书卷。"
+  },
+  {
+   "id": "BOOK_HINT",
+   "zh": "指引之书",
+   "en": "Book of Guidance",
+   "iconIndex": 32,
+   "description": "指引求知者的书籍。"
+  },
+  {
+   "id": "BOOK_MESTARI",
+   "zh": "狡猾的陷阱",
+   "en": "A Cunning Contraption",
+   "iconIndex": 32,
+   "description": "记载着巧妙机关的笔记。"
+  },
+  {
+   "id": "BOOK_MOON",
+   "zh": "天体之书",
+   "en": "Book of Celestial Bodies",
+   "iconIndex": 32,
+   "description": "记载着天体奥秘的书籍。"
+  },
+  {
+   "id": "BOOK_MUSIC_A",
+   "zh": "炼金术士的笔记本",
+   "en": "Alchemist's Notebook",
+   "iconIndex": 32,
+   "description": "炼金术士的私人笔记本。"
+  },
+  {
+   "id": "BOOK_MUSIC_B",
+   "zh": "发行说明",
+   "en": "Research Notes",
+   "iconIndex": 32,
+   "description": "一份研究说明。"
+  },
+  {
+   "id": "BOOK_MUSIC_C",
+   "zh": "钥匙之书",
+   "en": "Book of the Key",
+   "iconIndex": 32,
+   "description": "记载着钥匙秘密的书籍。"
+  },
+  {
+   "id": "BOOK_ROBOT",
+   "zh": "一名探险者的沉思",
+   "en": "Musings of an Adventurer",
+   "iconIndex": 32,
+   "description": "一位探险者写下的沉思。"
+  },
+  {
+   "id": "BOOK_S_A",
+   "zh": "关于伟大炼金术的笔记 Ⅰ",
+   "en": "Notes on Grand Alchemy",
+   "iconIndex": 33,
+   "description": "关于伟大炼金术的笔记。"
+  },
+  {
+   "id": "BOOK_S_B",
+   "zh": "关于伟大炼金术的笔记 Ⅱ",
+   "en": "Notes on Grand Alchemy",
+   "iconIndex": 33,
+   "description": "关于伟大炼金术的笔记。"
+  },
+  {
+   "id": "BOOK_S_C",
+   "zh": "关于伟大炼金术的笔记 Ⅲ",
+   "en": "Notes on Grand Alchemy",
+   "iconIndex": 33,
+   "description": "关于伟大炼金术的笔记。"
+  },
+  {
+   "id": "BOOK_S_D",
+   "zh": "关于伟大炼金术的笔记 Ⅳ",
+   "en": "Notes on Grand Alchemy",
+   "iconIndex": 33,
+   "description": "关于伟大炼金术的笔记。"
+  },
+  {
+   "id": "BOOK_S_E",
+   "zh": "关于伟大炼金术的笔记 Ⅴ",
+   "en": "Notes on Grand Alchemy",
+   "iconIndex": 33,
+   "description": "关于伟大炼金术的笔记。"
+  },
+  {
+   "id": "BOOK_TREE",
+   "zh": "赫耳墨斯秘典",
+   "en": "Secretorum Hermetis",
+   "iconIndex": 30,
+   "description": "古老的秘典。"
+  }
+ ]
+}

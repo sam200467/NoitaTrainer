@@ -1,0 +1,2792 @@
+[
+  {
+    "id": "fire",
+    "zh": "火",
+    "en": "fire",
+    "category": "spark"
+  },
+  {
+    "id": "fire_blue",
+    "zh": "蓝火",
+    "en": "fire",
+    "category": "spark"
+  },
+  {
+    "id": "flame",
+    "zh": "火焰",
+    "en": "fire",
+    "category": "spark"
+  },
+  {
+    "id": "spark",
+    "zh": "火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_green",
+    "zh": "绿色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_green_bright",
+    "zh": "绿色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_blue",
+    "zh": "蓝色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_blue_dark",
+    "zh": "蓝色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_red",
+    "zh": "红色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_red_bright",
+    "zh": "红色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_white",
+    "zh": "白色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_white_bright",
+    "zh": "白色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_yellow",
+    "zh": "黄色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_purple",
+    "zh": "紫色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_purple_bright",
+    "zh": "紫色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_player",
+    "zh": "玩家火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_teal",
+    "zh": "青色火花",
+    "en": "spark",
+    "category": "spark"
+  },
+  {
+    "id": "spark_electric",
+    "zh": "电火花",
+    "en": "electric spark",
+    "category": "spark"
+  },
+  {
+    "id": "concrete_sand",
+    "zh": "混凝土粉末",
+    "en": "concrete",
+    "category": "powder"
+  },
+  {
+    "id": "sand",
+    "zh": "砂",
+    "en": "sand",
+    "category": "powder"
+  },
+  {
+    "id": "sand_blue",
+    "zh": "蓝砂",
+    "en": "blue sand",
+    "category": "powder"
+  },
+  {
+    "id": "sand_surface",
+    "zh": "砂",
+    "en": "sand",
+    "category": "powder"
+  },
+  {
+    "id": "lavasand",
+    "zh": "火山砂",
+    "en": "volcanic sand",
+    "category": "powder"
+  },
+  {
+    "id": "sand_petrify",
+    "zh": "砂",
+    "en": "sand",
+    "category": "powder"
+  },
+  {
+    "id": "bone",
+    "zh": "骨粉",
+    "en": "bone dust",
+    "category": "powder"
+  },
+  {
+    "id": "soil",
+    "zh": "土壤",
+    "en": "soil",
+    "category": "powder"
+  },
+  {
+    "id": "soil_lush",
+    "zh": "葱郁土壤",
+    "en": "soil",
+    "category": "powder"
+  },
+  {
+    "id": "soil_lush_dark",
+    "zh": "葱郁土壤",
+    "en": "soil",
+    "category": "powder"
+  },
+  {
+    "id": "soil_dead",
+    "zh": "贫瘠土壤",
+    "en": "barren soil",
+    "category": "powder"
+  },
+  {
+    "id": "soil_dark",
+    "zh": "贫瘠土壤",
+    "en": "barren soil",
+    "category": "powder"
+  },
+  {
+    "id": "sandstone",
+    "zh": "砂岩",
+    "en": "sandstone",
+    "category": "powder"
+  },
+  {
+    "id": "sandstone_surface",
+    "zh": "砂岩",
+    "en": "sandstone",
+    "category": "powder"
+  },
+  {
+    "id": "fungisoil",
+    "zh": "菌丝土",
+    "en": "fungal soil",
+    "category": "powder"
+  },
+  {
+    "id": "honey",
+    "zh": "蜂蜜",
+    "en": "honey",
+    "category": "powder"
+  },
+  {
+    "id": "glue",
+    "zh": "胶",
+    "en": "Glue",
+    "category": "powder"
+  },
+  {
+    "id": "endslime_blood",
+    "zh": "地狱黏血",
+    "en": "hell slime",
+    "category": "powder"
+  },
+  {
+    "id": "explosion_dirt",
+    "zh": "尘土",
+    "en": "dirt",
+    "category": "powder"
+  },
+  {
+    "id": "snow",
+    "zh": "雪",
+    "en": "snow",
+    "category": "powder"
+  },
+  {
+    "id": "snow_sticky",
+    "zh": "雪",
+    "en": "snow",
+    "category": "powder"
+  },
+  {
+    "id": "rotten_meat",
+    "zh": "腐肉",
+    "en": "rotten meat",
+    "category": "powder"
+  },
+  {
+    "id": "meat_slime_sand",
+    "zh": "发黏腐肉",
+    "en": "slimy meat",
+    "category": "powder"
+  },
+  {
+    "id": "rotten_meat_radioactive",
+    "zh": "有毒的肉",
+    "en": "toxic meat",
+    "category": "powder"
+  },
+  {
+    "id": "ice",
+    "zh": "冰",
+    "en": "ice",
+    "category": "powder"
+  },
+  {
+    "id": "sand_herb",
+    "zh": "药草",
+    "en": "herb",
+    "category": "powder"
+  },
+  {
+    "id": "wax",
+    "zh": "蜡",
+    "en": "wax",
+    "category": "powder"
+  },
+  {
+    "id": "gold",
+    "zh": "黄金",
+    "en": "gold",
+    "category": "powder"
+  },
+  {
+    "id": "gold_radioactive",
+    "zh": "淬毒黄金",
+    "en": "toxic gold",
+    "category": "powder"
+  },
+  {
+    "id": "silver",
+    "zh": "银",
+    "en": "silver",
+    "category": "powder"
+  },
+  {
+    "id": "steel_sand",
+    "zh": "钢粉",
+    "en": "steel",
+    "category": "powder"
+  },
+  {
+    "id": "metal_sand",
+    "zh": "金属粉末",
+    "en": "Metal dust",
+    "category": "powder"
+  },
+  {
+    "id": "copper",
+    "zh": "铜",
+    "en": "copper",
+    "category": "powder"
+  },
+  {
+    "id": "brass",
+    "zh": "黄铜",
+    "en": "brass",
+    "category": "powder"
+  },
+  {
+    "id": "diamond",
+    "zh": "钻石",
+    "en": "diamond",
+    "category": "powder"
+  },
+  {
+    "id": "coal",
+    "zh": "煤",
+    "en": "coal",
+    "category": "powder"
+  },
+  {
+    "id": "sulphur",
+    "zh": "硫磺",
+    "en": "sulphur",
+    "category": "powder"
+  },
+  {
+    "id": "salt",
+    "zh": "盐",
+    "en": "salt",
+    "category": "powder"
+  },
+  {
+    "id": "sodium",
+    "zh": "钠",
+    "en": "sodium",
+    "category": "powder"
+  },
+  {
+    "id": "purifying_powder",
+    "zh": "净化粉末",
+    "en": "Purifying powder",
+    "category": "powder"
+  },
+  {
+    "id": "burning_powder",
+    "zh": "燃烧粉末",
+    "en": "burning powder",
+    "category": "powder"
+  },
+  {
+    "id": "sodium_unstable",
+    "zh": "潮湿的钠",
+    "en": "wet sodium",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder",
+    "zh": "火药",
+    "en": "gunpowder",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder_explosive",
+    "zh": "易爆火药",
+    "en": "gunpowder",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder_tnt",
+    "zh": "TNT火药",
+    "en": "gunpowder",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder_unstable",
+    "zh": "不稳火药",
+    "en": "gunpowder",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder_unstable_big",
+    "zh": "不稳火药",
+    "en": "gunpowder",
+    "category": "powder"
+  },
+  {
+    "id": "monster_powder_test",
+    "zh": "怪物粉末",
+    "en": "Monstrous powder",
+    "category": "powder"
+  },
+  {
+    "id": "rat_powder",
+    "zh": "鼠鼠粉",
+    "en": "Ratty powder",
+    "category": "powder"
+  },
+  {
+    "id": "fungus_powder",
+    "zh": "菌丝土",
+    "en": "fungal soil",
+    "category": "powder"
+  },
+  {
+    "id": "fungus_powder_bad",
+    "zh": "菌丝土",
+    "en": "fungal soil",
+    "category": "powder"
+  },
+  {
+    "id": "shock_powder",
+    "zh": "菌丝土",
+    "en": "fungal soil",
+    "category": "powder"
+  },
+  {
+    "id": "orb_powder",
+    "zh": "指引粉末",
+    "en": "Guiding powder",
+    "category": "powder"
+  },
+  {
+    "id": "gunpowder_unstable_boss_limbs",
+    "zh": "发黏的肉",
+    "en": "slimy meat",
+    "category": "powder"
+  },
+  {
+    "id": "plastic_red",
+    "zh": "塑料弹壳",
+    "en": "plastic",
+    "category": "powder"
+  },
+  {
+    "id": "mud",
+    "zh": "淤泥",
+    "en": "mud",
+    "category": "powder"
+  },
+  {
+    "id": "plasma_fading_green",
+    "zh": "绿色魔法液体",
+    "en": "magical liquid",
+    "category": "powder"
+  },
+  {
+    "id": "plasma_fading_pink",
+    "zh": "紫色魔法液体",
+    "en": "magical liquid",
+    "category": "powder"
+  },
+  {
+    "id": "grass",
+    "zh": "草",
+    "en": "grass",
+    "category": "powder"
+  },
+  {
+    "id": "grass_ice",
+    "zh": "冰",
+    "en": "ice",
+    "category": "powder"
+  },
+  {
+    "id": "grass_dry",
+    "zh": "草",
+    "en": "grass",
+    "category": "powder"
+  },
+  {
+    "id": "fungi",
+    "zh": "诡异真菌",
+    "en": "weird fungus",
+    "category": "powder"
+  },
+  {
+    "id": "fungi_green",
+    "zh": "真菌",
+    "en": "fungus",
+    "category": "powder"
+  },
+  {
+    "id": "grass_dark",
+    "zh": "草",
+    "en": "grass",
+    "category": "powder"
+  },
+  {
+    "id": "fungi_creeping",
+    "zh": "神秘真菌",
+    "en": "Mystery fungus",
+    "category": "powder"
+  },
+  {
+    "id": "fungi_creeping_secret",
+    "zh": "真菌",
+    "en": "fungus",
+    "category": "powder"
+  },
+  {
+    "id": "spore",
+    "zh": "孢子",
+    "en": "seed",
+    "category": "powder"
+  },
+  {
+    "id": "moss",
+    "zh": "苔藓",
+    "en": "moss",
+    "category": "powder"
+  },
+  {
+    "id": "moss_rust",
+    "zh": "锈苔",
+    "en": "rusty moss",
+    "category": "powder"
+  },
+  {
+    "id": "plant_material",
+    "zh": "灌木",
+    "en": "plant material",
+    "category": "powder"
+  },
+  {
+    "id": "plant_material_red",
+    "zh": "红色灌木",
+    "en": "seed",
+    "category": "powder"
+  },
+  {
+    "id": "ceiling_plant_material",
+    "zh": "垂藤",
+    "en": "seed",
+    "category": "powder"
+  },
+  {
+    "id": "mushroom_seed",
+    "zh": "蘑菇孢子",
+    "en": "fungal spore",
+    "category": "powder"
+  },
+  {
+    "id": "plant_seed",
+    "zh": "灌木种子",
+    "en": "plant seed",
+    "category": "powder"
+  },
+  {
+    "id": "mushroom",
+    "zh": "蘑菇",
+    "en": "fungal spore",
+    "category": "powder"
+  },
+  {
+    "id": "mushroom_giant_red",
+    "zh": "红蘑菇",
+    "en": "fungal spore",
+    "category": "powder"
+  },
+  {
+    "id": "mushroom_giant_blue",
+    "zh": "蓝蘑菇",
+    "en": "fungal spore",
+    "category": "powder"
+  },
+  {
+    "id": "glowshroom",
+    "zh": "光菌孢子",
+    "en": "glowing fungal spore",
+    "category": "powder"
+  },
+  {
+    "id": "bush_seed",
+    "zh": "常绿灌木种子",
+    "en": "evergreen seed",
+    "category": "powder"
+  },
+  {
+    "id": "poo",
+    "zh": "粪便",
+    "en": "excrement",
+    "category": "powder"
+  },
+  {
+    "id": "glass_broken",
+    "zh": "玻璃",
+    "en": "glass",
+    "category": "powder"
+  },
+  {
+    "id": "mammi",
+    "zh": "曼米",
+    "en": "mämmi",
+    "category": "powder"
+  },
+  {
+    "id": "grass_holy",
+    "zh": "神圣草",
+    "en": "Divine Ground",
+    "category": "powder"
+  },
+  {
+    "id": "plant_material_dark",
+    "zh": "灌木",
+    "en": "plant material",
+    "category": "powder"
+  },
+  {
+    "id": "fungi_yellow",
+    "zh": "真菌",
+    "en": "fungus",
+    "category": "powder"
+  },
+  {
+    "id": "grass_darker",
+    "zh": "草",
+    "en": "grass",
+    "category": "powder"
+  },
+  {
+    "id": "plastic_grey",
+    "zh": "塑料弹壳",
+    "en": "plastic",
+    "category": "powder"
+  },
+  {
+    "id": "air",
+    "zh": "空气",
+    "en": "air",
+    "category": "liquid"
+  },
+  {
+    "id": "water_static",
+    "zh": "静态水",
+    "en": "Water",
+    "category": "liquid"
+  },
+  {
+    "id": "endslime_static",
+    "zh": "地狱黏液",
+    "en": "hell slime",
+    "category": "liquid"
+  },
+  {
+    "id": "slime_static",
+    "zh": "黏液",
+    "en": "slime",
+    "category": "liquid"
+  },
+  {
+    "id": "spore_pod_stalk",
+    "zh": "蓝色菌毯",
+    "en": "blue fungus",
+    "category": "liquid"
+  },
+  {
+    "id": "cement",
+    "zh": "水泥",
+    "en": "cement",
+    "category": "liquid"
+  },
+  {
+    "id": "slime",
+    "zh": "紫色黏液",
+    "en": "slime",
+    "category": "liquid"
+  },
+  {
+    "id": "slime_green",
+    "zh": "绿色黏液",
+    "en": "slime",
+    "category": "liquid"
+  },
+  {
+    "id": "slime_yellow",
+    "zh": "黏液",
+    "en": "slime",
+    "category": "liquid"
+  },
+  {
+    "id": "slush",
+    "zh": "雪泥",
+    "en": "Slush",
+    "category": "liquid"
+  },
+  {
+    "id": "pea_soup",
+    "zh": "豌豆汤",
+    "en": "pea soup",
+    "category": "liquid"
+  },
+  {
+    "id": "vomit",
+    "zh": "呕吐物",
+    "en": "Vomit",
+    "category": "liquid"
+  },
+  {
+    "id": "plastic_red_molten",
+    "zh": "熔融塑料弹壳",
+    "en": "molten plastic",
+    "category": "liquid"
+  },
+  {
+    "id": "plastic_molten",
+    "zh": "熔融塑料",
+    "en": "molten plastic",
+    "category": "liquid"
+  },
+  {
+    "id": "plastic_prop_molten",
+    "zh": "熔融塑料",
+    "en": "molten plastic",
+    "category": "liquid"
+  },
+  {
+    "id": "water",
+    "zh": "水",
+    "en": "Water",
+    "category": "liquid"
+  },
+  {
+    "id": "water_fading",
+    "zh": "水雾",
+    "en": "Water",
+    "category": "liquid"
+  },
+  {
+    "id": "water_salt",
+    "zh": "盐水",
+    "en": "brine",
+    "category": "liquid"
+  },
+  {
+    "id": "void_liquid",
+    "zh": "虚空液体",
+    "en": "Void liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "water_temp",
+    "zh": "水",
+    "en": "Water",
+    "category": "liquid"
+  },
+  {
+    "id": "water_ice",
+    "zh": "冰水",
+    "en": "chilly water",
+    "category": "liquid"
+  },
+  {
+    "id": "water_swamp",
+    "zh": "沼泽水",
+    "en": "swamp",
+    "category": "liquid"
+  },
+  {
+    "id": "oil",
+    "zh": "油",
+    "en": "oil",
+    "category": "liquid"
+  },
+  {
+    "id": "liquid_fire",
+    "zh": "液态火",
+    "en": "fire",
+    "category": "liquid"
+  },
+  {
+    "id": "liquid_fire_weak",
+    "zh": "低温液态火",
+    "en": "liquid fire",
+    "category": "liquid"
+  },
+  {
+    "id": "alcohol",
+    "zh": "威士忌",
+    "en": "whiskey",
+    "category": "liquid"
+  },
+  {
+    "id": "sima",
+    "zh": "蜂蜜酒",
+    "en": "Sima",
+    "category": "liquid"
+  },
+  {
+    "id": "juhannussima",
+    "zh": "仲夏蜂蜜酒",
+    "en": "Juhannussima",
+    "category": "liquid"
+  },
+  {
+    "id": "midas",
+    "zh": "点金之水",
+    "en": "draught of midas",
+    "category": "liquid"
+  },
+  {
+    "id": "midas_precursor",
+    "zh": "炼金溶液",
+    "en": "alchemic precursor",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid",
+    "zh": "开门魔药",
+    "en": "gate-opener",
+    "category": "liquid"
+  },
+  {
+    "id": "material_confusion",
+    "zh": "混乱魔药",
+    "en": "flummoxium",
+    "category": "liquid"
+  },
+  {
+    "id": "material_darkness",
+    "zh": "不祥液体",
+    "en": "Ominous liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "material_rainbow",
+    "zh": "彩虹",
+    "en": "Rainbow",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_movement_faster",
+    "zh": "加速魔药",
+    "en": "acceleratium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_faster_levitation",
+    "zh": "漂浮魔药",
+    "en": "levitatium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_faster_levitation_and_movement",
+    "zh": "迅捷魔药",
+    "en": "hastium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_worm_attractor",
+    "zh": "蠕虫信息素",
+    "en": "worm pheromone",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_protection_all",
+    "zh": "神佑魔药",
+    "en": "ambrosia",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_mana_regeneration",
+    "zh": "汇聚法力",
+    "en": "concentrated mana",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_unstable_teleportation",
+    "zh": "不稳传送魔药",
+    "en": "unstable teleportatium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_teleportation",
+    "zh": "传送魔药",
+    "en": "teleportatium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_hp_regeneration",
+    "zh": "生命基质",
+    "en": "healthium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_hp_regeneration_unstable",
+    "zh": "活性混合物",
+    "en": "lively concoction",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_polymorph",
+    "zh": "变形魔药",
+    "en": "polymorphine",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_random_polymorph",
+    "zh": "混沌变形魔药",
+    "en": "chaotic polymorphine",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_unstable_polymorph",
+    "zh": "不稳变形魔药",
+    "en": "unstable polymorphine",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_berserk",
+    "zh": "狂暴魔药",
+    "en": "berserkium",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_charm",
+    "zh": "魅惑魔药",
+    "en": "pheromone",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_invisibility",
+    "zh": "隐形魔药",
+    "en": "invisiblium",
+    "category": "liquid"
+  },
+  {
+    "id": "cloud_radioactive",
+    "zh": "绿色毒雾",
+    "en": "toxic mist",
+    "category": "liquid"
+  },
+  {
+    "id": "cloud_blood",
+    "zh": "血雾",
+    "en": "blood mist",
+    "category": "liquid"
+  },
+  {
+    "id": "cloud_slime",
+    "zh": "黏液雾",
+    "en": "slime mist",
+    "category": "liquid"
+  },
+  {
+    "id": "swamp",
+    "zh": "黑沼泽",
+    "en": "swamp",
+    "category": "liquid"
+  },
+  {
+    "id": "blood",
+    "zh": "血液",
+    "en": "blood",
+    "category": "liquid"
+  },
+  {
+    "id": "blood_fading",
+    "zh": "挥发血液",
+    "en": "blood",
+    "category": "liquid"
+  },
+  {
+    "id": "blood_fading_slow",
+    "zh": "血液",
+    "en": "blood",
+    "category": "liquid"
+  },
+  {
+    "id": "blood_fungi",
+    "zh": "真菌血液",
+    "en": "fungus blood",
+    "category": "liquid"
+  },
+  {
+    "id": "blood_worm",
+    "zh": "蠕虫血液",
+    "en": "worm blood",
+    "category": "liquid"
+  },
+  {
+    "id": "porridge",
+    "zh": "暖心白粥",
+    "en": "Hearty Porridge",
+    "category": "liquid"
+  },
+  {
+    "id": "blood_cold",
+    "zh": "冰冻液体",
+    "en": "freezing liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "radioactive_liquid",
+    "zh": "绿色毒液",
+    "en": "toxic sludge",
+    "category": "liquid"
+  },
+  {
+    "id": "poison",
+    "zh": "紫色毒液",
+    "en": "Poison",
+    "category": "liquid"
+  },
+  {
+    "id": "cursed_liquid",
+    "zh": "贪婪诅咒液体",
+    "en": "Greed-cursed liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "radioactive_liquid_yellow",
+    "zh": "黄色毒液",
+    "en": "toxic sludge",
+    "category": "liquid"
+  },
+  {
+    "id": "radioactive_liquid_fading",
+    "zh": "挥发绿色毒液",
+    "en": "toxic sludge",
+    "category": "liquid"
+  },
+  {
+    "id": "plasma_fading",
+    "zh": "蓝色魔法液体",
+    "en": "magical liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "plasma_fading_bright",
+    "zh": "蓝色魔法液体",
+    "en": "magical liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "gold_molten",
+    "zh": "熔融黄金",
+    "en": "molten gold",
+    "category": "liquid"
+  },
+  {
+    "id": "steel_static_molten",
+    "zh": "熔融钢液",
+    "en": "molten steel",
+    "category": "liquid"
+  },
+  {
+    "id": "steelmoss_slanted_molten",
+    "zh": "熔融苔钢",
+    "en": "molten steel",
+    "category": "liquid"
+  },
+  {
+    "id": "steelmoss_static_molten",
+    "zh": "熔融苔钢",
+    "en": "molten steel",
+    "category": "liquid"
+  },
+  {
+    "id": "steelsmoke_static_molten",
+    "zh": "熔融烟钢",
+    "en": "molten steel",
+    "category": "liquid"
+  },
+  {
+    "id": "metal_sand_molten",
+    "zh": "熔融金属粉末",
+    "en": "Molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "metal_molten",
+    "zh": "熔融金属",
+    "en": "molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "metal_rust_molten",
+    "zh": "熔融铁锈",
+    "en": "molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "metal_nohit_molten",
+    "zh": "熔融铁链",
+    "en": "molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "aluminium_molten",
+    "zh": "熔融铝液",
+    "en": "molten aluminium",
+    "category": "liquid"
+  },
+  {
+    "id": "aluminium_robot_molten",
+    "zh": "熔融铝壳",
+    "en": "molten aluminium",
+    "category": "liquid"
+  },
+  {
+    "id": "metal_prop_molten",
+    "zh": "熔融铁块",
+    "en": "molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "steel_rust_molten",
+    "zh": "熔融钢锈",
+    "en": "molten steel",
+    "category": "liquid"
+  },
+  {
+    "id": "aluminium_oxide_molten",
+    "zh": "熔融氧化铝",
+    "en": "molten aluminium",
+    "category": "liquid"
+  },
+  {
+    "id": "wax_molten",
+    "zh": "蜡油",
+    "en": "molten wax",
+    "category": "liquid"
+  },
+  {
+    "id": "silver_molten",
+    "zh": "熔融银液",
+    "en": "molten silver",
+    "category": "liquid"
+  },
+  {
+    "id": "copper_molten",
+    "zh": "熔融铜液",
+    "en": "molten copper",
+    "category": "liquid"
+  },
+  {
+    "id": "brass_molten",
+    "zh": "熔融黄铜",
+    "en": "molten brass",
+    "category": "liquid"
+  },
+  {
+    "id": "glass_molten",
+    "zh": "熔融玻璃",
+    "en": "molten glass",
+    "category": "liquid"
+  },
+  {
+    "id": "glass_broken_molten",
+    "zh": "熔融玻璃",
+    "en": "molten glass",
+    "category": "liquid"
+  },
+  {
+    "id": "steel_molten",
+    "zh": "熔融钢板",
+    "en": "molten metal",
+    "category": "liquid"
+  },
+  {
+    "id": "creepy_liquid",
+    "zh": "恐怖液体",
+    "en": "creepy liquid",
+    "category": "liquid"
+  },
+  {
+    "id": "peat",
+    "zh": "泥炭",
+    "en": "Peat",
+    "category": "liquid"
+  },
+  {
+    "id": "acid",
+    "zh": "酸液",
+    "en": "acid",
+    "category": "liquid"
+  },
+  {
+    "id": "lava",
+    "zh": "岩浆",
+    "en": "lava",
+    "category": "liquid"
+  },
+  {
+    "id": "urine",
+    "zh": "尿液",
+    "en": "urine",
+    "category": "liquid"
+  },
+  {
+    "id": "rocket_particles",
+    "zh": "烟",
+    "en": "smoke",
+    "category": "liquid"
+  },
+  {
+    "id": "mimic_liquid",
+    "zh": "拟态液",
+    "en": "mimicium",
+    "category": "liquid"
+  },
+  {
+    "id": "just_death",
+    "zh": "死亡黑质",
+    "en": "instant deathium",
+    "category": "liquid"
+  },
+  {
+    "id": "beer",
+    "zh": "啤酒",
+    "en": "beer",
+    "category": "liquid"
+  },
+  {
+    "id": "milk",
+    "zh": "牛奶",
+    "en": "milk",
+    "category": "liquid"
+  },
+  {
+    "id": "pus",
+    "zh": "脓液",
+    "en": "pus",
+    "category": "liquid"
+  },
+  {
+    "id": "magic_liquid_weakness",
+    "zh": "虚弱魔药",
+    "en": "diminution",
+    "category": "liquid"
+  },
+  {
+    "id": "molut",
+    "zh": "奶啤酒",
+    "en": "molut",
+    "category": "liquid"
+  },
+  {
+    "id": "plastic_grey_molten",
+    "zh": "熔融塑料弹壳",
+    "en": "molten plastic",
+    "category": "liquid"
+  },
+  {
+    "id": "alcohol_gas",
+    "zh": "威士忌蒸汽",
+    "en": "Whiskey fumes",
+    "category": "gas"
+  },
+  {
+    "id": "smoke",
+    "zh": "烟",
+    "en": "smoke",
+    "category": "gas"
+  },
+  {
+    "id": "cloud",
+    "zh": "云",
+    "en": "cloud",
+    "category": "gas"
+  },
+  {
+    "id": "cloud_lighter",
+    "zh": "云",
+    "en": "cloud",
+    "category": "gas"
+  },
+  {
+    "id": "smoke_magic",
+    "zh": "烟",
+    "en": "smoke",
+    "category": "gas"
+  },
+  {
+    "id": "smoke_explosion",
+    "zh": "烟",
+    "en": "smoke",
+    "category": "gas"
+  },
+  {
+    "id": "steam",
+    "zh": "水蒸汽",
+    "en": "steam",
+    "category": "gas"
+  },
+  {
+    "id": "steam_trailer",
+    "zh": "水蒸汽",
+    "en": "steam",
+    "category": "gas"
+  },
+  {
+    "id": "acid_gas",
+    "zh": "可燃气体",
+    "en": "flammable gas",
+    "category": "gas"
+  },
+  {
+    "id": "acid_gas_static",
+    "zh": "可燃气体",
+    "en": "flammable gas",
+    "category": "gas"
+  },
+  {
+    "id": "smoke_static",
+    "zh": "烟",
+    "en": "smoke",
+    "category": "gas"
+  },
+  {
+    "id": "poison_gas",
+    "zh": "紫色可燃气体",
+    "en": "poison gas",
+    "category": "gas"
+  },
+  {
+    "id": "fungal_gas",
+    "zh": "真菌气体",
+    "en": "fungal gas",
+    "category": "gas"
+  },
+  {
+    "id": "poo_gas",
+    "zh": "恶臭气体",
+    "en": "Nauseating gas",
+    "category": "gas"
+  },
+  {
+    "id": "blood_cold_vapour",
+    "zh": "冰冻蒸汽",
+    "en": "freezing vapour",
+    "category": "gas"
+  },
+  {
+    "id": "sand_herb_vapour",
+    "zh": "迷幻蒸汽",
+    "en": "funky vapour",
+    "category": "gas"
+  },
+  {
+    "id": "radioactive_gas",
+    "zh": "绿色毒液蒸汽",
+    "en": "toxic gas",
+    "category": "gas"
+  },
+  {
+    "id": "radioactive_gas_static",
+    "zh": "绿色毒液蒸汽",
+    "en": "toxic gas",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_hp_regeneration",
+    "zh": "活性蒸汽",
+    "en": "Healium",
+    "category": "gas"
+  },
+  {
+    "id": "rainbow_gas",
+    "zh": "彩虹屁",
+    "en": "Unicorn farts",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_midas",
+    "zh": "点金气体",
+    "en": "gas of midas",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_weakness",
+    "zh": "虚弱云雾",
+    "en": "diminution cloud",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_teleport",
+    "zh": "传送云雾",
+    "en": "teleportatium cloud",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_fungus",
+    "zh": "致幻云雾",
+    "en": "funky cloud",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_worm_blood",
+    "zh": "蠕虫气体",
+    "en": "worm gas",
+    "category": "gas"
+  },
+  {
+    "id": "magic_gas_polymorph",
+    "zh": "变形云雾",
+    "en": "polymorphine cloud",
+    "category": "gas"
+  },
+  {
+    "id": "sand_static",
+    "zh": "泥土",
+    "en": "ground",
+    "category": "solid"
+  },
+  {
+    "id": "sand_static_rainforest",
+    "zh": "葱郁泥土",
+    "en": "lush ground",
+    "category": "solid"
+  },
+  {
+    "id": "sand_static_rainforest_dark",
+    "zh": "葱郁泥土",
+    "en": "lush ground",
+    "category": "solid"
+  },
+  {
+    "id": "bone_static",
+    "zh": "骨墙",
+    "en": "bone wall",
+    "category": "solid"
+  },
+  {
+    "id": "rust_static",
+    "zh": "锈蚀金属",
+    "en": "rusted metal",
+    "category": "solid"
+  },
+  {
+    "id": "sand_static_bright",
+    "zh": "花岗岩泥土",
+    "en": "granite ground",
+    "category": "solid"
+  },
+  {
+    "id": "sand_static_red",
+    "zh": "红土",
+    "en": "rusty ground",
+    "category": "solid"
+  },
+  {
+    "id": "nest_static",
+    "zh": "巢穴",
+    "en": "nest",
+    "category": "solid"
+  },
+  {
+    "id": "bluefungi_static",
+    "zh": "蓝色菌毯",
+    "en": "blue fungus",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_hard",
+    "zh": "致密岩石",
+    "en": "dense rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_hard_border",
+    "zh": "极度致密岩石",
+    "en": "extremely dense rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_cursed",
+    "zh": "诅咒岩石",
+    "en": "Cursed rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_magic_gate",
+    "zh": "魔法门",
+    "en": "magic gate",
+    "category": "solid"
+  },
+  {
+    "id": "rock_magic_bottom",
+    "zh": "魔法墙",
+    "en": "magic wall",
+    "category": "solid"
+  },
+  {
+    "id": "rock_vault",
+    "zh": "拱顶岩",
+    "en": "vault rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_wet",
+    "zh": "潮湿岩石",
+    "en": "damp rock",
+    "category": "solid"
+  },
+  {
+    "id": "coal_static",
+    "zh": "煤矿脉",
+    "en": "coal vein",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_fungal",
+    "zh": "菌丝土",
+    "en": "fungal soil",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_intro",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_trip_secret",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_trip_secret2",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_purple",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_noedge",
+    "zh": "岩石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_intro_breakable",
+    "zh": "钟乳石",
+    "en": "rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_grey",
+    "zh": "灰色岩石",
+    "en": "grey rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_radioactive",
+    "zh": "绿毒岩石",
+    "en": "toxic rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_cursed_green",
+    "zh": "贪婪诅咒岩石",
+    "en": "Greed-cursed rock",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_poison",
+    "zh": "紫毒岩石",
+    "en": "poisonous rock",
+    "category": "solid"
+  },
+  {
+    "id": "corruption_static",
+    "zh": "腐化岩石",
+    "en": "corrupted rock",
+    "category": "solid"
+  },
+  {
+    "id": "wood_tree",
+    "zh": "木头",
+    "en": "wood",
+    "category": "solid"
+  },
+  {
+    "id": "the_end",
+    "zh": "地狱岩",
+    "en": "hell rock",
+    "category": "solid"
+  },
+  {
+    "id": "skullrock",
+    "zh": "骷髅岩",
+    "en": "hell rock",
+    "category": "solid"
+  },
+  {
+    "id": "templerock_static",
+    "zh": "石砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_static",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_static_broken",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_static_soft",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_noedge_static",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templerock_soft",
+    "zh": "石砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_thick_static",
+    "zh": "致密砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_thick_static_noedge",
+    "zh": "致密砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templeslab_static",
+    "zh": "石砖",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templeslab_crumbling_static",
+    "zh": "脆弱石砖",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrickdark_static",
+    "zh": "暗色砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_red",
+    "zh": "红色砖块",
+    "en": "brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "creepy_liquid_emitter",
+    "zh": "恐怖砖墙",
+    "en": "brick wall",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_moss_static",
+    "zh": "生苔砖块",
+    "en": "mossy brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_diamond_static",
+    "zh": "钻石砖块",
+    "en": "Diamond brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_static_ruined",
+    "zh": "残破砖块",
+    "en": "Ruined brick wall",
+    "category": "solid"
+  },
+  {
+    "id": "glowstone",
+    "zh": "发光砖块",
+    "en": "glowing stone",
+    "category": "solid"
+  },
+  {
+    "id": "glowstone_altar",
+    "zh": "发光砖块",
+    "en": "glowing stone",
+    "category": "solid"
+  },
+  {
+    "id": "glowstone_altar_hdr",
+    "zh": "发光砖块",
+    "en": "glowing stone",
+    "category": "solid"
+  },
+  {
+    "id": "glowstone_potion",
+    "zh": "发光砖块",
+    "en": "glowing stone",
+    "category": "solid"
+  },
+  {
+    "id": "templebrick_golden_static",
+    "zh": "愚人金砖",
+    "en": "Fool's gold",
+    "category": "solid"
+  },
+  {
+    "id": "wizardstone",
+    "zh": "奇异砖块",
+    "en": "Odd brickwork",
+    "category": "solid"
+  },
+  {
+    "id": "lavarock_static",
+    "zh": "火山岩",
+    "en": "volcanic rock",
+    "category": "solid"
+  },
+  {
+    "id": "meteorite_static",
+    "zh": "陨石",
+    "en": "meteorite",
+    "category": "solid"
+  },
+  {
+    "id": "steel_static",
+    "zh": "钢",
+    "en": "steel",
+    "category": "solid"
+  },
+  {
+    "id": "steelmoss_static",
+    "zh": "锈蚀的钢",
+    "en": "rusted steel",
+    "category": "solid"
+  },
+  {
+    "id": "steel_rusted_no_holes",
+    "zh": "锈蚀的钢",
+    "en": "rusted steel",
+    "category": "solid"
+  },
+  {
+    "id": "steel_grey_static",
+    "zh": "灰钢",
+    "en": "dense steel",
+    "category": "solid"
+  },
+  {
+    "id": "steelfrost_static",
+    "zh": "冻结的钢",
+    "en": "Frozen steel",
+    "category": "solid"
+  },
+  {
+    "id": "steelmoss_slanted",
+    "zh": "生苔的钢",
+    "en": "mossy steel",
+    "category": "solid"
+  },
+  {
+    "id": "steelsmoke_static",
+    "zh": "发烟钢",
+    "en": "smoking steel",
+    "category": "solid"
+  },
+  {
+    "id": "steelpipe_static",
+    "zh": "钢管",
+    "en": "metal pipe",
+    "category": "solid"
+  },
+  {
+    "id": "steel_static_strong",
+    "zh": "灰钢",
+    "en": "dense steel",
+    "category": "solid"
+  },
+  {
+    "id": "steel_static_unmeltable",
+    "zh": "高熔点钢",
+    "en": "hardened steel",
+    "category": "solid"
+  },
+  {
+    "id": "rock_static_glow",
+    "zh": "盐石",
+    "en": "glowing matter",
+    "category": "solid"
+  },
+  {
+    "id": "snow_static",
+    "zh": "压实的雪",
+    "en": "packed snow",
+    "category": "solid"
+  },
+  {
+    "id": "ice_static",
+    "zh": "冰",
+    "en": "ice",
+    "category": "solid"
+  },
+  {
+    "id": "ice_blood_static",
+    "zh": "血冰",
+    "en": "frozen blood",
+    "category": "solid"
+  },
+  {
+    "id": "ice_slime_static",
+    "zh": "黏液冰",
+    "en": "Frozen slime",
+    "category": "solid"
+  },
+  {
+    "id": "ice_acid_static",
+    "zh": "酸冰",
+    "en": "frozen acid",
+    "category": "solid"
+  },
+  {
+    "id": "ice_cold_static",
+    "zh": "寒冰",
+    "en": "ice",
+    "category": "solid"
+  },
+  {
+    "id": "ice_radioactive_static",
+    "zh": "绿色毒冰",
+    "en": "toxic ice",
+    "category": "solid"
+  },
+  {
+    "id": "ice_poison_static",
+    "zh": "紫色毒冰",
+    "en": "Frozen poison",
+    "category": "solid"
+  },
+  {
+    "id": "ice_meteor_static",
+    "zh": "彗星",
+    "en": "ice",
+    "category": "solid"
+  },
+  {
+    "id": "tubematerial",
+    "zh": "霓虹灯管",
+    "en": "neon tube",
+    "category": "solid"
+  },
+  {
+    "id": "glass_static",
+    "zh": "玻璃",
+    "en": "glass",
+    "category": "solid"
+  },
+  {
+    "id": "snowrock_static",
+    "zh": "冻结岩石",
+    "en": "frozen rock",
+    "category": "solid"
+  },
+  {
+    "id": "concrete_static",
+    "zh": "混凝土",
+    "en": "concrete",
+    "category": "solid"
+  },
+  {
+    "id": "wood_static",
+    "zh": "木材",
+    "en": "wood",
+    "category": "solid"
+  },
+  {
+    "id": "wood_static_vertical",
+    "zh": "木材",
+    "en": "wood",
+    "category": "solid"
+  },
+  {
+    "id": "wood_burns_forever",
+    "zh": "木材",
+    "en": "wood",
+    "category": "solid"
+  },
+  {
+    "id": "root_growth",
+    "zh": "藤蔓",
+    "en": "vine",
+    "category": "solid"
+  },
+  {
+    "id": "wood_static_wet",
+    "zh": "潮湿木材",
+    "en": "damp wood",
+    "category": "solid"
+  },
+  {
+    "id": "wood_static_gas",
+    "zh": "耐压木材",
+    "en": "pressurized wood",
+    "category": "solid"
+  },
+  {
+    "id": "cheese_static",
+    "zh": "奶酪",
+    "en": "cheese",
+    "category": "solid"
+  },
+  {
+    "id": "gold_static",
+    "zh": "金矿脉",
+    "en": "gold vein",
+    "category": "solid"
+  },
+  {
+    "id": "gold_static_radioactive",
+    "zh": "淬毒黄金",
+    "en": "toxic gold",
+    "category": "solid"
+  },
+  {
+    "id": "gold_static_dark",
+    "zh": "亮金矿脉",
+    "en": "vibrant gold vein",
+    "category": "solid"
+  },
+  {
+    "id": "endslime",
+    "zh": "地狱黏液",
+    "en": "hell slime",
+    "category": "solid"
+  },
+  {
+    "id": "vine",
+    "zh": "藤蔓",
+    "en": "vine",
+    "category": "solid"
+  },
+  {
+    "id": "root",
+    "zh": "藤蔓",
+    "en": "vine",
+    "category": "solid"
+  },
+  {
+    "id": "wood_player",
+    "zh": "玩家木材",
+    "en": "wood",
+    "category": "solid"
+  },
+  {
+    "id": "trailer_text",
+    "zh": "文本",
+    "en": "text",
+    "category": "solid"
+  },
+  {
+    "id": "blood_thick",
+    "zh": "致密血液",
+    "en": "blood",
+    "category": "solid"
+  },
+  {
+    "id": "static_magic_material",
+    "zh": "澳元素",
+    "en": "australium",
+    "category": "solid"
+  },
+  {
+    "id": "meat_static",
+    "zh": "肉",
+    "en": "meat",
+    "category": "solid"
+  },
+  {
+    "id": "rock_eroding",
+    "zh": "侵蚀岩石",
+    "en": "eroding rock",
+    "category": "box2d"
+  },
+  {
+    "id": "waterrock",
+    "zh": "水岩",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_glass",
+    "zh": "冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "tube_physics",
+    "zh": "霓虹灯管",
+    "en": "neon tube",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_acid_glass",
+    "zh": "酸冰",
+    "en": "frozen acid",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_cold_glass",
+    "zh": "寒冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_radioactive_glass",
+    "zh": "绿色毒冰",
+    "en": "toxic ice",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_poison_glass",
+    "zh": "紫色毒冰",
+    "en": "Frozen poison",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_blood_glass",
+    "zh": "血冰",
+    "en": "Frozen blood",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_slime_glass",
+    "zh": "黏液冰",
+    "en": "Frozen slime",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_glass_b2",
+    "zh": "冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "glass_brittle",
+    "zh": "易碎玻璃",
+    "en": "brittle glass",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_slime",
+    "zh": "发黏的肉",
+    "en": "slimy meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_slime_green",
+    "zh": "绿色黏肉",
+    "en": "green slimy meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_slime_orange",
+    "zh": "橙色黏肉",
+    "en": "slimy meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat",
+    "zh": "肉",
+    "en": "meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_worm",
+    "zh": "蠕虫肉",
+    "en": "worm meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_helpless",
+    "zh": "无辜生命的肉",
+    "en": "Meat of an innocent creature",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_trippy",
+    "zh": "怪异的肉",
+    "en": "Weird meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_frog",
+    "zh": "蛙肉",
+    "en": "frog meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_cursed",
+    "zh": "诅咒的肉",
+    "en": "Cursed meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_cursed_dry",
+    "zh": "诅咒的肉",
+    "en": "Cursed meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_slime_cursed",
+    "zh": "诅咒黏肉",
+    "en": "Slimy cursed meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_teleport",
+    "zh": "虚无的肉",
+    "en": "Ethereal meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_fast",
+    "zh": "长毛的肉",
+    "en": "Wobbly meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_polymorph",
+    "zh": "不稳的肉",
+    "en": "Unstable meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_polymorph_protection",
+    "zh": "发臭的肉",
+    "en": "Stinky meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_confusion",
+    "zh": "迷糊的肉",
+    "en": "Ambiguous meat",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_player_b2",
+    "zh": "木材",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_player_b2_vertical",
+    "zh": "木材",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wood",
+    "zh": "木头",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wax_b2",
+    "zh": "蜡",
+    "en": "wax",
+    "category": "box2d"
+  },
+  {
+    "id": "fuse",
+    "zh": "炸弹",
+    "en": "bomb",
+    "category": "box2d"
+  },
+  {
+    "id": "fuse_bright",
+    "zh": "炸弹",
+    "en": "bomb",
+    "category": "box2d"
+  },
+  {
+    "id": "fuse_tnt",
+    "zh": "TNT",
+    "en": "tnt",
+    "category": "box2d"
+  },
+  {
+    "id": "fuse_holy",
+    "zh": "神圣的东西",
+    "en": "holy matter",
+    "category": "box2d"
+  },
+  {
+    "id": "templebrick_box2d",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_loose",
+    "zh": "疏松木材",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_trailer",
+    "zh": "木材",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_wall",
+    "zh": "木墙",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "cactus",
+    "zh": "疏松木材",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "grass_loose",
+    "zh": "松软的草",
+    "en": "fungal matter",
+    "category": "box2d"
+  },
+  {
+    "id": "fungus_loose",
+    "zh": "真菌",
+    "en": "fungus",
+    "category": "box2d"
+  },
+  {
+    "id": "fungus_loose_green",
+    "zh": "真菌",
+    "en": "fungus",
+    "category": "box2d"
+  },
+  {
+    "id": "fungus_loose_trippy",
+    "zh": "诡异真菌",
+    "en": "weird fungus",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_prop",
+    "zh": "木板",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_prop_noplayerhit",
+    "zh": "木板",
+    "en": "wood",
+    "category": "box2d"
+  },
+  {
+    "id": "aluminium",
+    "zh": "铝",
+    "en": "aluminium",
+    "category": "box2d"
+  },
+  {
+    "id": "cloth_box2d",
+    "zh": "mat_cloth",
+    "en": "(此材料无名)",
+    "category": "box2d"
+  },
+  {
+    "id": "wood_prop_durable",
+    "zh": "硬木",
+    "en": "tough wood",
+    "category": "box2d"
+  },
+  {
+    "id": "nest_box2d",
+    "zh": "巢",
+    "en": "nest",
+    "category": "box2d"
+  },
+  {
+    "id": "nest_firebug_box2d",
+    "zh": "巢",
+    "en": "nest",
+    "category": "box2d"
+  },
+  {
+    "id": "cocoon_box2d",
+    "zh": "茧",
+    "en": "cocoon",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_loose",
+    "zh": "松散岩石",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_ceiling",
+    "zh": "冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "brick",
+    "zh": "砖墙",
+    "en": "brick wall",
+    "category": "box2d"
+  },
+  {
+    "id": "concrete_collapsed",
+    "zh": "地震碎块",
+    "en": "collapsed concrete",
+    "category": "box2d"
+  },
+  {
+    "id": "tnt",
+    "zh": "TNT",
+    "en": "tnt",
+    "category": "box2d"
+  },
+  {
+    "id": "tnt_static",
+    "zh": "TNT",
+    "en": "tnt",
+    "category": "box2d"
+  },
+  {
+    "id": "meteorite",
+    "zh": "陨石",
+    "en": "meteorite",
+    "category": "box2d"
+  },
+  {
+    "id": "sulphur_box2d",
+    "zh": "硫磺",
+    "en": "sulphur",
+    "category": "box2d"
+  },
+  {
+    "id": "meteorite_test",
+    "zh": "陨石",
+    "en": "meteorite",
+    "category": "box2d"
+  },
+  {
+    "id": "meteorite_crackable",
+    "zh": "陨石",
+    "en": "meteorite",
+    "category": "box2d"
+  },
+  {
+    "id": "meteorite_green",
+    "zh": "绿色陨石",
+    "en": "green meteorite",
+    "category": "box2d"
+  },
+  {
+    "id": "steel",
+    "zh": "钢板",
+    "en": "steel",
+    "category": "box2d"
+  },
+  {
+    "id": "steel_rust",
+    "zh": "锈蚀的钢",
+    "en": "rusted steel",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_rust_rust",
+    "zh": "重度锈蚀金属",
+    "en": "rusted metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_rust_barrel_rust",
+    "zh": "重度锈蚀铁桶",
+    "en": "rusted metal",
+    "category": "box2d"
+  },
+  {
+    "id": "plastic",
+    "zh": "塑料",
+    "en": "plastic",
+    "category": "box2d"
+  },
+  {
+    "id": "plastic_prop",
+    "zh": "塑料",
+    "en": "plastic",
+    "category": "box2d"
+  },
+  {
+    "id": "aluminium_robot",
+    "zh": "铝",
+    "en": "aluminium",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_prop",
+    "zh": "铁块",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_prop_low_restitution",
+    "zh": "铁块",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_prop_loose",
+    "zh": "铁块",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal",
+    "zh": "铁板",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_hard",
+    "zh": "铁板",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_box2d",
+    "zh": "石块",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "templebrick_box2d_edgetiles",
+    "zh": "砖块",
+    "en": "brickwork",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_box2d_hard",
+    "zh": "致密石块",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "poop_box2d_hard",
+    "zh": "致密石块",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_box2d_nohit",
+    "zh": "石块",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_box2d_nohit_hard",
+    "zh": "致密石块",
+    "en": "dense rock",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_static_box2d",
+    "zh": "石块",
+    "en": "rock",
+    "category": "box2d"
+  },
+  {
+    "id": "item_box2d",
+    "zh": "物品",
+    "en": "item",
+    "category": "box2d"
+  },
+  {
+    "id": "item_box2d_glass",
+    "zh": "物品",
+    "en": "item",
+    "category": "box2d"
+  },
+  {
+    "id": "item_box2d_meat",
+    "zh": "肉",
+    "en": "meat",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d",
+    "zh": "宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "potion_glass_box2d",
+    "zh": "玻璃瓶",
+    "en": "glass",
+    "category": "box2d"
+  },
+  {
+    "id": "glass_box2d",
+    "zh": "玻璃",
+    "en": "glass",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_yellow_sun",
+    "zh": "太阳宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_red_float",
+    "zh": "太阳宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_yellow_sun_gravity",
+    "zh": "太阳宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_darksun",
+    "zh": "太阳宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_pink",
+    "zh": "粉宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_red",
+    "zh": "太阳宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_turquoise",
+    "zh": "绿松石",
+    "en": "Turquoise gemstone",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_opal",
+    "zh": "绿松石",
+    "en": "Turquoise gemstone",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_white",
+    "zh": "白宝石",
+    "en": "(此材料无名)",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_green",
+    "zh": "绿宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gem_box2d_orange",
+    "zh": "橙宝石",
+    "en": "gem",
+    "category": "box2d"
+  },
+  {
+    "id": "gold_box2d",
+    "zh": "金块",
+    "en": "gold",
+    "category": "box2d"
+  },
+  {
+    "id": "bloodgold_box2d",
+    "zh": "血金块",
+    "en": "Ruby",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_nohit",
+    "zh": "铁链",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_chain_nohit",
+    "zh": "铁链",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_wire_nohit",
+    "zh": "铁链",
+    "en": "metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_rust",
+    "zh": "锈蚀金属",
+    "en": "rusted metal",
+    "category": "box2d"
+  },
+  {
+    "id": "metal_rust_barrel",
+    "zh": "锈蚀铁桶",
+    "en": "rusted metal",
+    "category": "box2d"
+  },
+  {
+    "id": "bone_box2d",
+    "zh": "骨头",
+    "en": "bone",
+    "category": "box2d"
+  },
+  {
+    "id": "crystal",
+    "zh": "水晶",
+    "en": "crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "magic_crystal",
+    "zh": "魔法水晶",
+    "en": "Magical crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "magic_crystal_green",
+    "zh": "魔法水晶",
+    "en": "Magical crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "gold_b2",
+    "zh": "黄金像",
+    "en": "gold",
+    "category": "box2d"
+  },
+  {
+    "id": "crystal_purple",
+    "zh": "紫水晶",
+    "en": "purple crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "crystal_solid",
+    "zh": "水晶",
+    "en": "crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "crystal_magic",
+    "zh": "魔法水晶",
+    "en": "crystal",
+    "category": "box2d"
+  },
+  {
+    "id": "aluminium_oxide",
+    "zh": "氧化铝",
+    "en": "aluminium",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_fruit",
+    "zh": "果肉",
+    "en": "Fruit flesh",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_pumpkin",
+    "zh": "果肉",
+    "en": "Fruit flesh",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_warm",
+    "zh": "温热的肉",
+    "en": "Lightly-cooked meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_hot",
+    "zh": "微熟的肉",
+    "en": "Cooked meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_done",
+    "zh": "烤熟的肉",
+    "en": "Fully-cooked meat",
+    "category": "box2d"
+  },
+  {
+    "id": "meat_burned",
+    "zh": "烧焦的肉",
+    "en": "Burned meat",
+    "category": "box2d"
+  },
+  {
+    "id": "physics_throw_material_part2",
+    "zh": "谁知道呢",
+    "en": "who knows",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_melting_perf_killer",
+    "zh": "融化的冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "ice_b2",
+    "zh": "冰",
+    "en": "ice",
+    "category": "box2d"
+  },
+  {
+    "id": "glass_liquidcave",
+    "zh": "钢化玻璃",
+    "en": "Tempered glass",
+    "category": "box2d"
+  },
+  {
+    "id": "glass",
+    "zh": "玻璃",
+    "en": "glass",
+    "category": "box2d"
+  },
+  {
+    "id": "neon_tube_purple",
+    "zh": "紫色霓虹灯管",
+    "en": "neon tube",
+    "category": "box2d"
+  },
+  {
+    "id": "neon_tube_cyan",
+    "zh": "青色霓虹灯管",
+    "en": "neon tube",
+    "category": "box2d"
+  },
+  {
+    "id": "neon_tube_blood_red",
+    "zh": "红色霓虹灯管",
+    "en": "neon tube",
+    "category": "box2d"
+  },
+  {
+    "id": "snow_b2",
+    "zh": "雪",
+    "en": "snow",
+    "category": "box2d"
+  },
+  {
+    "id": "rock_box2d_nohit_heavy",
+    "zh": "石块",
+    "en": "rock",
+    "category": "box2d"
+  }
+]

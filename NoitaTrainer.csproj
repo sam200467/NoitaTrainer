@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>NoitaTrainer</AssemblyName>
+    <RootNamespace>NoitaTrainer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>4.7.0</Version>
+    <Authors>Codex</Authors>
+    <Product>Noita 即时修改器</Product>
+    <Description>Noita companion trainer using the supported Lua entity API.</Description>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\catalog.json" />
+    <EmbeddedResource Include="Assets\icon-atlas.png" />
+    <EmbeddedResource Include="Assets\material-preview-atlas.png" />
+    <EmbeddedResource Include="Assets\item-icon-atlas.png" />
+    <EmbeddedResource Include="Bridge\init.lua" />
+    <EmbeddedResource Include="Bridge\mod.xml" />
+    <EmbeddedResource Include="Bridge\powder_stash_empty.xml" />
+  </ItemGroup>
+</Project>
