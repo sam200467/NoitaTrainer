@@ -1,8 +1,6 @@
 # Noita 即时修改器
 
-面向 Windows 版 Noita 的中文辅助修改器。程序不会注入 DLL，也不会扫描或修改 Noita 进程内存；桌面程序通过随附的 Lua 桥接模组调用 Noita 自带的实体 API。
-
-当前版本：**4.7.0**
+面向 Windows 版 Noita 的中文辅助修改器。
 
 ## 运行环境
 
