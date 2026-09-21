@@ -74,6 +74,9 @@ internal sealed partial class MainForm : Form
     private readonly RadioButton itemSpawnMode = new() { Text = "生成在玩家脚下", Checked = true, AutoSize = true };
     private readonly RadioButton itemGiveMode = new() { Text = "直接获得该物品", AutoSize = true };
     private readonly NumericUpDown itemCount = CountInput(100);
+    private readonly RadioButton statusTemporaryMode = new() { Text = "临时效果", Checked = true, AutoSize = true };
+    private readonly RadioButton statusPermanentMode = new() { Text = "永久效果", AutoSize = true };
+    private readonly NumericUpDown statusDuration = new() { Minimum = 1, Maximum = 3600, Value = 30, Width = 70, Anchor = AnchorStyles.Left };
     private readonly TableLayoutPanel wandManagementContent = new();
     private readonly Label wandManagementStatus = new();
     private readonly DataGridView managedWandGrid = new();
@@ -132,7 +135,7 @@ internal sealed partial class MainForm : Form
 
     public MainForm()
     {
-        Text = "Noita 即时修改器 4.7";
+        Text = "Noita 即时修改器 4.9";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(900, 760);
         Size = new Size(1440, 1100);
@@ -287,6 +290,7 @@ internal sealed partial class MainForm : Form
         tabs.TabPages.Add(BuildTeleportTab());
         tabs.TabPages.Add(BuildQuickActionsTab());
         tabs.TabPages.Add(BuildPerkTab());
+        tabs.TabPages.Add(BuildStatusTab());
         tabs.TabPages.Add(BuildSpellTab());
         tabs.TabPages.Add(BuildEventTab());
         tabs.TabPages.Add(BuildPotionTab());
@@ -821,6 +825,42 @@ internal sealed partial class MainForm : Form
             perkGiveMode,
             perkCount,
             item => ExecutePerk(item.Id)));
+        return page;
+    }
+
+    private TabPage BuildStatusTab()
+    {
+        var page = Page("添加状态");
+        page.Controls.Add(BuildCatalogButtonPage(
+            catalog.Statuses,
+            "状态",
+            statusTemporaryMode,
+            statusPermanentMode,
+            statusDuration,
+            ExecuteStatus,
+            optionsLabel: "持续方式",
+            countLabel: "时长(秒)"));
+        var clearBar = new FlowLayoutPanel
+        {
+            Dock = DockStyle.Top,
+            AutoSize = true,
+            FlowDirection = FlowDirection.LeftToRight,
+            WrapContents = false,
+            BackColor = Color.White,
+            Padding = new Padding(12, 10, 12, 0)
+        };
+        var clearButton = Button("清除全部状态", (_, _) => ConfirmClearEffects());
+        clearButton.MinimumSize = new Size(120, 32);
+        clearBar.Controls.Add(clearButton);
+        clearBar.Controls.Add(new Label
+        {
+            Text = "移除玩家身上的状态效果（含永久效果），并用水清洗沾染类状态；天赋不受影响。",
+            AutoSize = true,
+            ForeColor = Color.DimGray,
+            Anchor = AnchorStyles.Left,
+            Margin = new Padding(10, 7, 4, 7)
+        });
+        page.Controls.Add(clearBar);
         return page;
     }
 
@@ -1699,6 +1739,45 @@ internal sealed partial class MainForm : Form
         SendCommand("RUN_EVENT", $"触发事件 {item.Zh} [{item.Id}]", item.Id);
     }
 
+    private void ExecuteStatus(CatalogItem item)
+    {
+        if (item.Satiation is int satiation)
+        {
+            if (satiation < 0)
+            {
+                var result = MessageBox.Show(this,
+                    "确定要模拟“又撑又胀”吗？\n\n将立即对当前角色造成其当前生命值两倍的伤害，通常情况下会致命。",
+                    "确认又撑又胀",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes)
+                    return;
+            }
+            SendCommand("SET_SATIATION",
+                satiation >= 0 ? $"设置饱食度：{item.Zh}" : $"触发 {item.Zh}", satiation);
+            return;
+        }
+        var permanent = statusPermanentMode.Checked;
+        var seconds = (int)statusDuration.Value;
+        SendCommand("GIVE_EFFECT",
+            permanent ? $"施加状态 {item.Zh}（永久）" : $"施加状态 {item.Zh}（{seconds} 秒）",
+            item.Path ?? item.Id, permanent ? 1 : 0, seconds,
+            item.UiIcon ?? "", item.Zh, item.Description);
+    }
+
+    private void ConfirmClearEffects()
+    {
+        var result = MessageBox.Show(this,
+            "确定要清除当前角色身上的全部状态效果吗？\n\n将移除所有通过本工具或游戏内途径获得的状态（含永久状态），并用水清洗沾染类状态。天赋不受影响。",
+            "确认清除全部状态",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning,
+            MessageBoxDefaultButton.Button2);
+        if (result == DialogResult.Yes)
+            SendCommand("CLEAR_EFFECTS", "清除全部状态");
+    }
+
     private void ReadCurrentWands()
     {
         SendWandSnapshotCommand("READ_WANDS", "读取当前魔杖栏");
@@ -2037,11 +2116,14 @@ internal sealed partial class MainForm : Form
     {
         var button = new Button
         {
-            Text = $"{name}{Environment.NewLine}({x}, {y})",
+            Text = name,
             Dock = DockStyle.Fill,
             Height = 42,
             MinimumSize = new Size(150, 42),
-            Margin = new Padding(2)
+            Margin = new Padding(2),
+            Padding = new Padding(0, 2, 0, 0),
+            TextAlign = ContentAlignment.MiddleCenter,
+            UseCompatibleTextRendering = false
         };
         button.Click += (_, _) => TeleportTo(name, x, y, true);
         layout.Controls.Add(button, index % 5, index / 5);
@@ -2179,7 +2261,7 @@ internal sealed partial class MainForm : Form
             return;
         }
 
-        if (status.Protocol < 15)
+        if (status.Protocol < 18)
         {
             SetConnection("● 配套模组需更新", Color.Firebrick);
             liveStatsLabel.Text = "请点击“安装/修复配套模组”，然后重新启动或重新载入 Noita。";
@@ -2459,7 +2541,9 @@ internal sealed partial class MainForm : Form
         RadioButton? giveMode,
         NumericUpDown? countInput,
         Action<CatalogItem> execute,
-        bool showIcons = true)
+        bool showIcons = true,
+        string optionsLabel = "操作方式",
+        string countLabel = "数量")
     {
         var showOptions = spawnMode is not null && giveMode is not null && countInput is not null;
         var outer = new TableLayoutPanel
@@ -2528,14 +2612,14 @@ internal sealed partial class MainForm : Form
                 Padding = new Padding(4),
                 Margin = new Padding(0, 0, 0, 10)
             };
-            options.Controls.Add(Label("操作方式"));
+            options.Controls.Add(Label(optionsLabel));
             spawnMode!.Margin = new Padding(4, 8, 16, 7);
             giveMode!.Margin = new Padding(4, 8, 24, 7);
             spawnMode.BackColor = Color.White;
             giveMode.BackColor = Color.White;
             options.Controls.Add(spawnMode);
             options.Controls.Add(giveMode);
-            options.Controls.Add(Label("数量"));
+            options.Controls.Add(Label(countLabel));
             countInput!.Margin = new Padding(3, 5, 3, 3);
             options.Controls.Add(countInput);
             outer.Controls.Add(options, 0, 2);
@@ -2620,7 +2704,7 @@ internal sealed partial class MainForm : Form
 
     private void BuildCatalogButtonImages()
     {
-        var maxIconIndex = catalog.Spells.Concat(catalog.Perks)
+        var maxIconIndex = catalog.Spells.Concat(catalog.Perks).Concat(catalog.Statuses)
             .Select(item => item.IconIndex)
             .DefaultIfEmpty(-1)
             .Max();
@@ -2654,7 +2738,16 @@ internal sealed partial class MainForm : Form
 
     private static Button Button(string text, EventHandler onClick)
     {
-        var button = new Button { Text = text, AutoSize = true, MinimumSize = new Size(0, 30), Margin = new Padding(4) };
+        var button = new Button
+        {
+            Text = text,
+            AutoSize = true,
+            MinimumSize = new Size(0, 30),
+            Margin = new Padding(4),
+            Padding = new Padding(0, 2, 0, 0),
+            TextAlign = ContentAlignment.MiddleCenter,
+            UseCompatibleTextRendering = false
+        };
         button.Click += onClick;
         return button;
     }

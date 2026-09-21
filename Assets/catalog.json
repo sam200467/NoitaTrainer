@@ -8255,5 +8255,538 @@
    "iconIndex": 30,
    "description": "古老的秘典。"
   }
+ ],
+ "statuses": [
+  {
+   "id": "WET",
+   "zh": "潮湿",
+   "en": "Wet",
+   "description": "防止着火，会因为接触到火焰而快速消耗。",
+   "path": "data/entities/misc/effect_wet.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/wet.png",
+   "iconIndex": 528
+  },
+  {
+   "id": "BLOODY",
+   "zh": "染血",
+   "en": "Bloody",
+   "description": "防止着火，同时施放的法术暴击率提升 5%。",
+   "path": "data/entities/misc/effect_bloody.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/bloody.png",
+   "iconIndex": 529
+  },
+  {
+   "id": "OILED",
+   "zh": "油污",
+   "en": "Oiled",
+   "description": "行动打滑，更容易着火且着火状态持续更长时间。",
+   "path": "data/entities/misc/effect_oiled.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/oiled.png",
+   "iconIndex": 530
+  },
+  {
+   "id": "SLIMY",
+   "zh": "黏液",
+   "en": "Slimy",
+   "description": "减慢移动速度，防止着火。",
+   "path": "data/entities/misc/effect_slimy.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/slimy.png",
+   "iconIndex": 531
+  },
+  {
+   "id": "RADIOACTIVE",
+   "zh": "毒液（绿毒）",
+   "en": "Toxic",
+   "description": "生命值缓慢减少（不会致死），防止着火，可用液体清洗去除。",
+   "path": "data/entities/misc/effect_radioactive.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/radioactive.png",
+   "iconIndex": 532
+  },
+  {
+   "id": "POISONED",
+   "zh": "中毒",
+   "en": "Poisoned",
+   "description": "生命值缓慢减少（不会致死），防止着火。",
+   "path": "data/entities/misc/effect_poison.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/poisoned.png",
+   "iconIndex": 533
+  },
+  {
+   "id": "JARATE",
+   "zh": "尿渍（瓶手道）",
+   "en": "Jarated",
+   "description": "防止着火，更容易被打出暴击。",
+   "path": "data/entities/misc/effect_jarate.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/jarate.png",
+   "iconIndex": 534
+  },
+  {
+   "id": "DRUNK",
+   "zh": "醉酒",
+   "en": "Drunk",
+   "description": "法术散射更严重，视觉模糊。",
+   "path": "data/entities/misc/effect_drunk.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/drunk.png",
+   "iconIndex": 535
+  },
+  {
+   "id": "FOOD_POISONING",
+   "zh": "食物中毒",
+   "en": "Food poisoning",
+   "description": "偶尔呕吐并失去饱腹感，呕吐可清除其他摄取状态。",
+   "path": "data/entities/misc/effect_food_poisoning.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/food_poisoning.png",
+   "iconIndex": 536
+  },
+  {
+   "id": "FARTS",
+   "zh": "胀气",
+   "en": "Gassy",
+   "description": "定期放出可燃气体。",
+   "path": "data/entities/misc/effect_farts.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/farts.png",
+   "iconIndex": 537
+  },
+  {
+   "id": "RAINBOW_FARTS",
+   "zh": "彩虹屁",
+   "en": "Rainbow farts",
+   "description": "定期放出彩虹气体。",
+   "path": "data/entities/misc/effect_rainbow_farts.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/farts.png",
+   "iconIndex": 537
+  },
+  {
+   "id": "NIGHTVISION",
+   "zh": "蠕虫视觉",
+   "en": "Wormy vision",
+   "description": "获得类似全知之眼的视野和特殊的视觉效果。",
+   "path": "data/entities/misc/effect_nightvision.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/nightvision.png",
+   "iconIndex": 538
+  },
+  {
+   "id": "TRIP",
+   "zh": "流畅（幻觉）",
+   "en": "Tripping",
+   "description": "强烈的幻觉视觉效果（重度档），可能引起呕吐。",
+   "path": "data/entities/misc/effect_trip_02.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/trip.png",
+   "iconIndex": 539
+  },
+  {
+   "id": "CURSE_CLOUD_RAIN",
+   "zh": "雨云诅咒",
+   "en": "Rain curse",
+   "description": "雨云会一直跟着你。注意：该状态在游戏内本身即为永久设计。",
+   "path": "data/entities/misc/effect_curse_cloud_00.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_cloud.png",
+   "iconIndex": 540
+  },
+  {
+   "id": "CURSE_CLOUD_THUNDER",
+   "zh": "雷云诅咒",
+   "en": "Thunder curse",
+   "description": "雷云会一直跟着你并电击周围。注意：该状态在游戏内本身即为永久设计。",
+   "path": "data/entities/misc/effect_curse_cloud_01.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_cloud.png",
+   "iconIndex": 540
+  },
+  {
+   "id": "CURSE_CLOUD_ACID",
+   "zh": "酸雨诅咒",
+   "en": "Acid rain curse",
+   "description": "酸液云会一直跟着你并降下酸液。注意：该状态在游戏内本身即为永久设计。",
+   "path": "data/entities/misc/effect_curse_cloud_02.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_cloud.png",
+   "iconIndex": 540
+  },
+  {
+   "id": "BERSERK",
+   "zh": "狂暴",
+   "en": "Berserk",
+   "description": "法术双倍伤害、双倍爆炸半径，部分法术能破坏通常无法破坏的地形。",
+   "path": "data/entities/misc/effect_berserk.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/berserk.png",
+   "iconIndex": 541
+  },
+  {
+   "id": "INVISIBILITY",
+   "zh": "隐形",
+   "en": "Invisibility",
+   "description": "变得透明，被大多数敌人忽略；使用法杖、踢击或受伤会短暂解除。",
+   "path": "data/entities/misc/effect_invisibility.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/invisibility.png",
+   "iconIndex": 542
+  },
+  {
+   "id": "CHARM",
+   "zh": "迷惑（魅惑）",
+   "en": "Charmed",
+   "description": "使大多数生物变得友好。",
+   "path": "data/entities/misc/effect_charm.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/charm.png",
+   "iconIndex": 543
+  },
+  {
+   "id": "HP_REGENERATION",
+   "zh": "再生",
+   "en": "Regeneration",
+   "description": "生命值持续回复（每帧约 0.2%）。",
+   "path": "data/entities/misc/effect_regeneration.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/hp_regeneration.png",
+   "iconIndex": 544
+  },
+  {
+   "id": "MANA_REGENERATION",
+   "zh": "法力再生",
+   "en": "Mana regeneration",
+   "description": "法杖的法力回复更快。",
+   "path": "data/entities/misc/effect_mana_regeneration.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/mana_regeneration.png",
+   "iconIndex": 545
+  },
+  {
+   "id": "PROTECTION_ALL",
+   "zh": "全面防护",
+   "en": "Protection from all",
+   "description": "免疫除治疗伤害以外的所有伤害。",
+   "path": "data/entities/misc/effect_protection_all.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/protection_all.png",
+   "iconIndex": 546
+  },
+  {
+   "id": "MOVEMENT_FASTER",
+   "zh": "如同闪电",
+   "en": "Greased lightning",
+   "description": "移动速度增加。",
+   "path": "data/entities/misc/effect_movement_faster.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/movement_faster.png",
+   "iconIndex": 547
+  },
+  {
+   "id": "FASTER_LEVITATION",
+   "zh": "更快漂浮",
+   "en": "Faster levitation",
+   "description": "漂浮速度提高 75%。",
+   "path": "data/entities/misc/effect_faster_levitation.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/faster_levitation.png",
+   "iconIndex": 548
+  },
+  {
+   "id": "CONFUSION",
+   "zh": "混乱",
+   "en": "Confusion",
+   "description": "左右移动键互换。",
+   "path": "data/entities/misc/effect_confusion.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/confusion.png",
+   "iconIndex": 549
+  },
+  {
+   "id": "WORM_ATTRACTOR",
+   "zh": "蠕虫饲料",
+   "en": "Worm food",
+   "description": "世界上的蠕虫会被吸引到你身边。",
+   "path": "data/entities/misc/effect_worm_attractor.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/worm_attractor.png",
+   "iconIndex": 550
+  },
+  {
+   "id": "TELEPORTATION",
+   "zh": "传送混乱",
+   "en": "Teleportitis",
+   "description": "不时向光标方向传送，被阻挡则随机传送。",
+   "path": "data/entities/misc/effect_teleportation.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/teleportation.png",
+   "iconIndex": 551
+  },
+  {
+   "id": "UNSTABLE_TELEPORTATION",
+   "zh": "传送混乱（不稳）",
+   "en": "Unstable teleportitis",
+   "description": "不时被随机传送。",
+   "path": "data/entities/misc/effect_unstable_teleportation.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/teleportation.png",
+   "iconIndex": 551
+  },
+  {
+   "id": "POLYMORPH",
+   "zh": "变形",
+   "en": "Polymorph",
+   "description": "变成一只羊！可用本页的「清除全部状态」解除。",
+   "path": "data/entities/misc/effect_polymorph.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/polymorph.png",
+   "iconIndex": 552
+  },
+  {
+   "id": "POLYMORPH_RANDOM",
+   "zh": "混乱变形",
+   "en": "Chaos polymorph",
+   "description": "随机变成游戏中绝大部分生物之一。",
+   "path": "data/entities/misc/effect_polymorph_random.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/polymorph_random.png",
+   "iconIndex": 553
+  },
+  {
+   "id": "POLYMORPH_UNSTABLE",
+   "zh": "不稳变形",
+   "en": "Unstable polymorph",
+   "description": "随机变成席西士兵之一。",
+   "path": "data/entities/misc/effect_polymorph_unstable.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/polymorph_random.png",
+   "iconIndex": 553
+  },
+  {
+   "id": "PROTECTION_POLYMORPH",
+   "zh": "变形免疫",
+   "en": "Polymorph immunity",
+   "description": "免疫一切变形效果。",
+   "path": "data/entities/misc/effect_protection_polymorph.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/protection_polymorph.png",
+   "iconIndex": 554
+  },
+  {
+   "id": "ON_FIRE",
+   "zh": "着火",
+   "en": "On fire",
+   "description": "每秒失去 2% 最大生命值，移动速度增加 15%。小心！",
+   "path": "data/entities/misc/effect_on_fire.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/on_fire.png",
+   "iconIndex": 555
+  },
+  {
+   "id": "INGESTION_ON_FIRE",
+   "zh": "内火上升",
+   "en": "Internal fire",
+   "description": "从内而外燃烧，即使被液体淹没也无法熄灭。",
+   "path": "data/entities/misc/effect_internal_fire.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/internal_fire.png",
+   "iconIndex": 556
+  },
+  {
+   "id": "INGESTION_FREEZING",
+   "zh": "寒冷",
+   "en": "Chilly",
+   "description": "瑟瑟发抖，移动速度降低。",
+   "path": "data/entities/misc/effect_internal_ice.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/ingestion_freezing.png",
+   "iconIndex": 557
+  },
+  {
+   "id": "FROZEN",
+   "zh": "冻结",
+   "en": "Frozen",
+   "description": "无法移动；冻结时受到近战伤害会损失 50% 当前生命值。",
+   "path": "data/entities/misc/effect_frozen.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/frozen.png",
+   "iconIndex": 558
+  },
+  {
+   "id": "ELECTROCUTION",
+   "zh": "电击",
+   "en": "Electrocution",
+   "description": "被电击击晕，无法行动。",
+   "path": "data/entities/misc/effect_electricity.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/electrocution.png",
+   "iconIndex": 559
+  },
+  {
+   "id": "BLINDNESS",
+   "zh": "盲眼",
+   "en": "Blinded",
+   "description": "视野受限，只能看到自己周围一小段距离。",
+   "path": "data/entities/misc/effect_blindness.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/blindness.png",
+   "iconIndex": 560
+  },
+  {
+   "id": "TWITCHY",
+   "zh": "抽搐",
+   "en": "Twitchy",
+   "description": "随机自动使用法杖，自己的法术会伤到自己！",
+   "path": "data/entities/misc/effect_twitchy.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/twitchy.png",
+   "iconIndex": 561
+  },
+  {
+   "id": "HEARTY",
+   "zh": "心绞痛",
+   "en": "Heartache",
+   "description": "最大生命值与当前生命值暂时减半。",
+   "path": "data/entities/misc/effect_hearty.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/hearty.png",
+   "iconIndex": 562
+  },
+  {
+   "id": "WEAKEN",
+   "zh": "被削弱",
+   "en": "Weakened",
+   "description": "所有免疫天赋失效，所有承伤系数变为 1.2 倍。",
+   "path": "data/entities/misc/effect_weaken.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/wither.png",
+   "iconIndex": 563
+  },
+  {
+   "id": "WITHER",
+   "zh": "凋零",
+   "en": "Withered",
+   "description": "所有承伤系数变为 1.2 倍。",
+   "path": "data/entities/misc/effect_wither.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/wither.png",
+   "iconIndex": 563
+  },
+  {
+   "id": "HOMING_SHOOTER",
+   "zh": "自我追踪法术",
+   "en": "Homing shooter",
+   "description": "自己的法术会暂时追踪自己。",
+   "path": "data/entities/misc/effect_homing_shooter.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/homing_shooter.png",
+   "iconIndex": 564
+  },
+  {
+   "id": "INGESTION_MOVEMENT_SLOWER",
+   "zh": "更慢移动",
+   "en": "Slower movement",
+   "description": "移动速度减慢。",
+   "path": "data/entities/misc/effect_movement_slower.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/movement_slower.png",
+   "iconIndex": 565
+  },
+  {
+   "id": "MAGIC_DRUNK",
+   "zh": "醉酒魔法",
+   "en": "Magic drunkenness",
+   "description": "法术散射更严重，更容易被点燃。",
+   "path": "data/entities/misc/effect_drunk_ui.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/alcoholic.png",
+   "iconIndex": 566
+  },
+  {
+   "id": "WEAKNESS",
+   "zh": "虚弱",
+   "en": "Weakness",
+   "description": "对大多数伤害源受到 10 倍伤害！",
+   "path": "data/entities/misc/effect_weakness.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/wither.png",
+   "iconIndex": 563
+  },
+  {
+   "id": "NEUTRALIZED",
+   "zh": "无效化法术",
+   "en": "Neutralized spells",
+   "description": "投射物法术会短路消失，爆炸性法术会立即引爆。",
+   "path": "data/scripts/streaming_integration/entities/effect_neutralized.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/neutralized.png",
+   "iconIndex": 567
+  },
+  {
+   "id": "CURSE_WITHER_ELECTRICITY",
+   "zh": "削弱诅咒 - 雷电",
+   "en": "Weakening curse - electricity",
+   "description": "雷电额外对你造成 25% 伤害，不可叠加。",
+   "path": "data/entities/misc/curse_wither_electricity.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_wither_electricity.png",
+   "iconIndex": 568
+  },
+  {
+   "id": "CURSE_WITHER_EXPLOSION",
+   "zh": "削弱诅咒 - 爆炸",
+   "en": "Weakening curse - explosion",
+   "description": "爆炸额外对你造成 25% 伤害，不可叠加。",
+   "path": "data/entities/misc/curse_wither_explosion.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_wither_explosion.png",
+   "iconIndex": 569
+  },
+  {
+   "id": "CURSE_WITHER_MELEE",
+   "zh": "削弱诅咒 - 近战",
+   "en": "Weakening curse - melee",
+   "description": "近战额外对你造成 25% 伤害，不可叠加。",
+   "path": "data/entities/misc/curse_wither_melee.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_wither_melee.png",
+   "iconIndex": 570
+  },
+  {
+   "id": "CURSE_WITHER_PROJECTILE",
+   "zh": "削弱诅咒 - 投射物",
+   "en": "Weakening curse - projectile",
+   "description": "投射物额外对你造成 25% 伤害，不可叠加。",
+   "path": "data/entities/misc/curse_wither_projectile.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/curse_wither_projectile.png",
+   "iconIndex": 571
+  },
+  {
+   "id": "DAMAGE_PLUS",
+   "zh": "伤害提升",
+   "en": "Damage plus",
+   "description": "投射物伤害短时间内提升。",
+   "path": "data/entities/misc/effect_damage_plus_small.xml",
+   "uiIcon": "data/ui_gfx/status_indicators/damage_plus_small.png",
+   "iconIndex": 572
+  },
+  {
+   "id": "SATIATION_00",
+   "zh": "最底限满足",
+   "en": "Minimally satiated",
+   "description": "立即清空饱食度：你腹中几乎空荡荡。",
+   "satiation": 0,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_00.png",
+   "iconIndex": 573
+  },
+  {
+   "id": "SATIATION_01",
+   "zh": "满足",
+   "en": "Satiated",
+   "description": "立即将饱食度设为 25%：肚子里还能塞点东西。",
+   "satiation": 1875,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_01.png",
+   "iconIndex": 574
+  },
+  {
+   "id": "SATIATION_02",
+   "zh": "完全饱足",
+   "en": "Fully satiated",
+   "description": "立即将饱食度设为 90%：你感觉吃饱了。",
+   "satiation": 6750,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_02.png",
+   "iconIndex": 575
+  },
+  {
+   "id": "SATIATION_03",
+   "zh": "吃撑了",
+   "en": "Stuffed",
+   "description": "立即将饱食度设为 100%：获得笨拙的移动动作；超过容量后会持续损失生命。",
+   "satiation": 7500,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_03.png",
+   "iconIndex": 576
+  },
+  {
+   "id": "SATIATION_04",
+   "zh": "胀爆了",
+   "en": "Bursting at the seams",
+   "description": "立即将饱食度设为 140%：将持续损失生命，直到消化回 100% 以下。",
+   "satiation": 10500,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_04.png",
+   "iconIndex": 577
+  },
+  {
+   "id": "SATIATION_05",
+   "zh": "腹中满溢",
+   "en": "Terribly overstuffed",
+   "description": "立即将饱食度设为 150%：将持续损失生命，直到消化回 100% 以下。",
+   "satiation": 11250,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_05.png",
+   "iconIndex": 578
+  },
+  {
+   "id": "SATIATION_CHOKING",
+   "zh": "又撑又胀",
+   "en": "Choking on food",
+   "description": "模拟原版撑爆：立即受到当前生命值两倍的伤害（致命，需二次确认）。",
+   "satiation": -1,
+   "uiIcon": "data/ui_gfx/status_indicators/satiation_choking.png",
+   "iconIndex": 579
+  }
  ]
 }

@@ -7,6 +7,8 @@ internal sealed class CatalogItem
     public string En { get; set; } = "";
     public string Description { get; set; } = "";
     public string? Path { get; set; }
+    public string? UiIcon { get; set; }
+    public int? Satiation { get; set; }
     public int IconIndex { get; set; } = -1;
 
     public string DisplayName
@@ -31,6 +33,7 @@ internal sealed class CatalogRoot
     public List<CatalogItem> Wands { get; set; } = [];
     public List<MaterialItem> Materials { get; set; } = [];
     public List<CatalogItem> Items { get; set; } = [];
+    public List<CatalogItem> Statuses { get; set; } = [];
 }
 
 internal sealed class MaterialItem

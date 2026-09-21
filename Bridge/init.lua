@@ -10,7 +10,7 @@ local CHARACTER_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/characte
 local NEXT_SEED_PATH = "mods/codex_noita_trainer_bridge/bridge/next_seed.txt"
 local HP_DISPLAY_SCALE = 25.0
 local OVERLAY_FONT = "data/fonts/font_pixel_white.xml"
-local BRIDGE_PROTOCOL = 15
+local BRIDGE_PROTOCOL = 18
 local HEALED_TOTAL_KEY = "CODEX_TRAINER_HEALED_TOTAL_DISPLAY"
 
 local initialized = false
@@ -1181,6 +1181,102 @@ local function execute_command(lines)
       return "已直接获得天赋 " .. perk_id .. " x" .. tostring(count)
     end
     return "已在脚下生成天赋 " .. perk_id .. " x" .. tostring(count)
+  end
+
+  if command == "GIVE_EFFECT" then
+    local player = active_player()
+    if player == nil then error("没有找到当前玩家；请先进入一局游戏") end
+    local path = lines[3]
+    if path == nil or string.match(path, "^data/[A-Za-z0-9_/%.]+%.xml$") == nil then
+      error("效果路径无效")
+    end
+    if string.match(path, "effect_") == nil and string.match(path, "curse_wither_") == nil then
+      error("效果路径无效")
+    end
+    local permanent = lines[4] == "1"
+    local seconds = required_number(lines[5] or "30", "持续时间", 1, 3600)
+    local icon_path = lines[6] or ""
+    local icon_name = lines[7] or ""
+    local icon_description = lines[8] or ""
+    local effect_entity = LoadGameEffectEntityTo(player, path)
+    if effect_entity == nil or effect_entity == 0 then error("无法加载状态效果 " .. path) end
+    local frames = math.floor(seconds * 60)
+    local game_effect = EntityGetFirstComponentIncludingDisabled(effect_entity, "GameEffectComponent")
+    if game_effect ~= nil then
+      if permanent then
+        ComponentSetValue2(game_effect, "frames", -1)
+      else
+        ComponentSetValue2(game_effect, "frames", frames)
+      end
+    else
+      local lifetime = EntityGetFirstComponentIncludingDisabled(effect_entity, "LifetimeComponent")
+      if lifetime ~= nil then
+        if permanent then
+          ComponentSetValue2(lifetime, "lifetime", 2147483647)
+        else
+          ComponentSetValue2(lifetime, "lifetime", frames)
+        end
+      end
+    end
+    if icon_path ~= "" and EntityGetFirstComponentIncludingDisabled(effect_entity, "UIIconComponent") == nil then
+      EntityAddComponent2(effect_entity, "UIIconComponent", {
+        name = icon_name,
+        description = icon_description,
+        icon_sprite_file = icon_path,
+        is_perk = false,
+        display_above_head = false,
+        display_in_hud = true,
+      })
+    end
+    if permanent then
+      return "已施加永久状态 " .. path
+    end
+    return "已施加状态 " .. path .. "（" .. tostring(math.floor(seconds)) .. " 秒）"
+  end
+
+  if command == "SET_SATIATION" then
+    local player = active_player()
+    if player == nil then error("没有找到当前玩家；请先进入一局游戏") end
+    local size = math.floor(required_number(lines[3], "饱食度", -1, 100000))
+    if size < 0 then
+      local damage = EntityGetFirstComponentIncludingDisabled(player, "DamageModelComponent")
+      if damage == nil then error("无法读取玩家生命组件") end
+      local hp = ComponentGetValue2(damage, "hp")
+      local x, y = EntityGetTransform(player)
+      EntityInflictDamage(player, hp * 2, "DAMAGE_OVEREATING", "$damage_overeating",
+        "NONE", 0, 0, player, x or 0, y or 0, 0)
+      return "已模拟“又撑又胀”：造成当前生命值两倍的伤害"
+    end
+    local ingestion = EntityGetFirstComponentIncludingDisabled(player, "IngestionComponent")
+    if ingestion == nil then error("当前形态没有饱食度组件（变形状态下不可用）") end
+    ComponentSetValue2(ingestion, "ingestion_size", size)
+    return "已设置饱食度为 " .. tostring(size) .. " / 7500"
+  end
+
+  if command == "CLEAR_EFFECTS" then
+    local player = active_player()
+    if player == nil then error("没有找到当前玩家；请先进入一局游戏") end
+    local removed = 0
+    for _, child in ipairs(EntityGetAllChildren(player) or {}) do
+      if EntityGetIsAlive(child) and not EntityHasTag(child, "perk_entity") then
+        local filename = EntityGetFilename(child)
+        local game_effect = EntityGetFirstComponentIncludingDisabled(child, "GameEffectComponent")
+        local is_effect_file = string.match(filename, "entities/misc/effect_") ~= nil
+          or string.match(filename, "entities/misc/curse_wither_") ~= nil
+          or string.match(filename, "effect_neutralized") ~= nil
+        if game_effect ~= nil or is_effect_file then
+          EntityKill(child)
+          removed = removed + 1
+        end
+      end
+    end
+    local ingestion_ids = { "TRIP", "INGESTION_DRUNK", "FOOD_POISONING", "FARTS", "RAINBOW_FARTS",
+      "INGESTION_ON_FIRE", "INGESTION_FREEZING", "INGESTION_MOVEMENT_SLOWER", "CURSE_CLOUD", "NIGHTVISION" }
+    for _, status_id in ipairs(ingestion_ids) do
+      EntityRemoveIngestionStatusEffect(player, status_id)
+    end
+    EntityAddRandomStains(player, CellFactory_GetType("water"), 2000)
+    return "已清除全部状态效果（移除效果实体 " .. tostring(removed) .. " 个，并清洗沾染）"
   end
 
   if command == "SPAWN_MATERIAL_CONTAINER" then
