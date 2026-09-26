@@ -10,7 +10,7 @@ local CHARACTER_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/characte
 local NEXT_SEED_PATH = "mods/codex_noita_trainer_bridge/bridge/next_seed.txt"
 local HP_DISPLAY_SCALE = 25.0
 local OVERLAY_FONT = "data/fonts/font_pixel_white.xml"
-local BRIDGE_PROTOCOL = 18
+local BRIDGE_PROTOCOL = 19
 local HEALED_TOTAL_KEY = "CODEX_TRAINER_HEALED_TOTAL_DISPLAY"
 
 local initialized = false
@@ -1183,6 +1183,31 @@ local function execute_command(lines)
     return "已在脚下生成天赋 " .. perk_id .. " x" .. tostring(count)
   end
 
+  if command == "APPLY_STAIN" then
+    local player = player_and_position()
+    local material = lines[3]
+    local allowed_stains = { water = true, blood = true, oil = true, slime = true,
+      radioactive_liquid = true, urine = true, alcohol = true }
+    if material == nil or not allowed_stains[material] then error("沾染材质无效") end
+    local percent = math.floor(required_number(lines[4] or "100", "沾染程度", 1, 100) + 0.5)
+    local display_name = lines[5] or material
+    EntityAddRandomStains(player, CellFactory_GetType(material), percent * 20)
+    return "已施加沾染 " .. display_name .. "（约 " .. tostring(percent) .. "%）"
+  end
+
+  if command == "INGEST_STATUS" then
+    local player = player_and_position()
+    local material = lines[3]
+    if material ~= "fungi" then error("摄取材质无效") end
+    local ingestion = EntityGetFirstComponentIncludingDisabled(player, "IngestionComponent")
+    if ingestion == nil then error("当前形态没有摄取组件（变形状态下不可用）") end
+    local cells = math.floor(required_number(lines[4], "摄取量", 1, 100000) + 0.5)
+    local seconds = math.floor(required_number(lines[5] or "30", "幻觉时长", 1, 3600) + 0.5)
+    local display_name = lines[6] or material
+    EntityIngestMaterial(player, CellFactory_GetType(material), cells)
+    return "已施加摄取状态 " .. display_name .. "（约 " .. tostring(seconds) .. " 秒；超过 180 秒会触发真菌转化）"
+  end
+
   if command == "GIVE_EFFECT" then
     local player = active_player()
     if player == nil then error("没有找到当前玩家；请先进入一局游戏") end
@@ -1275,8 +1300,26 @@ local function execute_command(lines)
     for _, status_id in ipairs(ingestion_ids) do
       EntityRemoveIngestionStatusEffect(player, status_id)
     end
+    -- 沾染类状态由引擎按身上的污渍持续重建，必须用专用接口移除状态本身
+    local stain_ids = { "WET", "OILED", "BLOODY", "SLIMY", "RADIOACTIVE", "JARATE", "ALCOHOLIC" }
+    for _, status_id in ipairs(stain_ids) do
+      EntityRemoveStainStatusEffect(player, status_id, 0)
+    end
     EntityAddRandomStains(player, CellFactory_GetType("water"), 2000)
-    return "已清除全部状态效果（移除效果实体 " .. tostring(removed) .. " 个，并清洗沾染）"
+    -- 水洗会短暂带来潮湿；抑制它在水渍晾干前反复出现
+    EntityRemoveStainStatusEffect(player, "WET", 180)
+    -- 幻觉/醉酒/夜视的画面扭曲缓存在 DrugEffectComponent 里，杀效果实体不会自动归零，需显式重置
+    pcall(function()
+      local drug = EntityGetFirstComponentIncludingDisabled(player, "DrugEffectComponent")
+      if drug == nil then return end
+      for _, object_name in ipairs({ "drug_fx_target", "m_drug_fx_current" }) do
+        ComponentObjectSetValue2(drug, object_name, "distortion_amount", 0)
+        ComponentObjectSetValue2(drug, object_name, "color_amount", 0)
+        ComponentObjectSetValue2(drug, object_name, "fractals_amount", 0)
+        ComponentObjectSetValue2(drug, object_name, "fractals_size", 0)
+      end
+    end)
+    return "已清除全部状态效果（移除效果实体 " .. tostring(removed) .. " 个，清除沾染/摄取状态并重置视觉扭曲）"
   end
 
   if command == "SPAWN_MATERIAL_CONTAINER" then

@@ -8261,46 +8261,51 @@
    "id": "WET",
    "zh": "潮湿",
    "en": "Wet",
-   "description": "防止着火，会因为接触到火焰而快速消耗。",
+   "description": "防止着火，会因为接触到火焰而快速消耗。数值为沾染程度（%），随时间自然干燥消退。",
    "path": "data/entities/misc/effect_wet.xml",
    "uiIcon": "data/ui_gfx/status_indicators/wet.png",
-   "iconIndex": 528
+   "iconIndex": 528,
+   "stainMaterial": "water"
   },
   {
    "id": "BLOODY",
    "zh": "染血",
    "en": "Bloody",
-   "description": "防止着火，同时施放的法术暴击率提升 5%。",
+   "description": "防止着火，同时施放的法术暴击率提升 5%。数值为沾染程度（%），随时间自然消退。",
    "path": "data/entities/misc/effect_bloody.xml",
    "uiIcon": "data/ui_gfx/status_indicators/bloody.png",
-   "iconIndex": 529
+   "iconIndex": 529,
+   "stainMaterial": "blood"
   },
   {
    "id": "OILED",
    "zh": "油污",
    "en": "Oiled",
-   "description": "行动打滑，更容易着火且着火状态持续更长时间。",
+   "description": "行动打滑，更容易着火且着火状态持续更长时间。数值为沾染程度（%），随时间自然消退。",
    "path": "data/entities/misc/effect_oiled.xml",
    "uiIcon": "data/ui_gfx/status_indicators/oiled.png",
-   "iconIndex": 530
+   "iconIndex": 530,
+   "stainMaterial": "oil"
   },
   {
    "id": "SLIMY",
    "zh": "黏液",
    "en": "Slimy",
-   "description": "减慢移动速度，防止着火。",
+   "description": "减慢移动速度，防止着火。数值为沾染程度（%），随时间自然消退。",
    "path": "data/entities/misc/effect_slimy.xml",
    "uiIcon": "data/ui_gfx/status_indicators/slimy.png",
-   "iconIndex": 531
+   "iconIndex": 531,
+   "stainMaterial": "slime"
   },
   {
    "id": "RADIOACTIVE",
    "zh": "毒液（绿毒）",
    "en": "Toxic",
-   "description": "生命值缓慢减少（不会致死），防止着火，可用液体清洗去除。",
+   "description": "生命值缓慢减少（不会致死），防止着火，可用液体清洗去除。数值为沾染程度（%）。",
    "path": "data/entities/misc/effect_radioactive.xml",
    "uiIcon": "data/ui_gfx/status_indicators/radioactive.png",
-   "iconIndex": 532
+   "iconIndex": 532,
+   "stainMaterial": "radioactive_liquid"
   },
   {
    "id": "POISONED",
@@ -8315,19 +8320,21 @@
    "id": "JARATE",
    "zh": "尿渍（瓶手道）",
    "en": "Jarated",
-   "description": "防止着火，更容易被打出暴击。",
+   "description": "防止着火，更容易被打出暴击。数值为沾染程度（%），随时间自然消退。",
    "path": "data/entities/misc/effect_jarate.xml",
    "uiIcon": "data/ui_gfx/status_indicators/jarate.png",
-   "iconIndex": 534
+   "iconIndex": 534,
+   "stainMaterial": "urine"
   },
   {
    "id": "DRUNK",
    "zh": "醉酒",
    "en": "Drunk",
-   "description": "法术散射更严重，视觉模糊。",
+   "description": "衣服沾满酒气：法术散射更严重、更易着火。数值为沾染程度（%），随时间自然消退。",
    "path": "data/entities/misc/effect_drunk.xml",
    "uiIcon": "data/ui_gfx/status_indicators/drunk.png",
-   "iconIndex": 535
+   "iconIndex": 535,
+   "stainMaterial": "alcohol"
   },
   {
    "id": "FOOD_POISONING",
@@ -8369,10 +8376,12 @@
    "id": "TRIP",
    "zh": "流畅（幻觉）",
    "en": "Tripping",
-   "description": "强烈的幻觉视觉效果（重度档），可能引起呕吐。",
+   "description": "摄取真菌产生的幻觉：约 30 秒进入轻度、90 秒重度、180 秒“飘飘欲仙”档并触发一次真菌转化。数值为时长（秒）；选择永久效果时按 3600 秒计。",
    "path": "data/entities/misc/effect_trip_02.xml",
    "uiIcon": "data/ui_gfx/status_indicators/trip.png",
-   "iconIndex": 539
+   "iconIndex": 539,
+   "ingestMaterial": "fungi",
+   "ingestSecondsPerCell": 0.5
   },
   {
    "id": "CURSE_CLOUD_RAIN",

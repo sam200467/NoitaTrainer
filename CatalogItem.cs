@@ -9,6 +9,9 @@ internal sealed class CatalogItem
     public string? Path { get; set; }
     public string? UiIcon { get; set; }
     public int? Satiation { get; set; }
+    public string? StainMaterial { get; set; }
+    public string? IngestMaterial { get; set; }
+    public double? IngestSecondsPerCell { get; set; }
     public int IconIndex { get; set; } = -1;
 
     public string DisplayName

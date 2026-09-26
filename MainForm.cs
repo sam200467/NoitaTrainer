@@ -135,7 +135,7 @@ internal sealed partial class MainForm : Form
 
     public MainForm()
     {
-        Text = "Noita 即时修改器 4.9";
+        Text = "Noita 即时修改器 4.9.1";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(900, 760);
         Size = new Size(1440, 1100);
@@ -839,7 +839,7 @@ internal sealed partial class MainForm : Form
             statusDuration,
             ExecuteStatus,
             optionsLabel: "持续方式",
-            countLabel: "时长(秒)"));
+            countLabel: "时长(秒)/沾染程度(%)"));
         var clearBar = new FlowLayoutPanel
         {
             Dock = DockStyle.Top,
@@ -854,7 +854,7 @@ internal sealed partial class MainForm : Form
         clearBar.Controls.Add(clearButton);
         clearBar.Controls.Add(new Label
         {
-            Text = "移除玩家身上的状态效果（含永久效果），并用水清洗沾染类状态；天赋不受影响。",
+            Text = "移除玩家身上的状态效果（含永久效果），清除沾染与摄取状态，并重置幻觉/醉酒等视觉扭曲；天赋不受影响。",
             AutoSize = true,
             ForeColor = Color.DimGray,
             Anchor = AnchorStyles.Left,
@@ -1758,6 +1758,21 @@ internal sealed partial class MainForm : Form
                 satiation >= 0 ? $"设置饱食度：{item.Zh}" : $"触发 {item.Zh}", satiation);
             return;
         }
+        if (item.StainMaterial is string stainMaterial)
+        {
+            var percent = Math.Clamp((int)statusDuration.Value, 1, 100);
+            SendCommand("APPLY_STAIN", $"施加沾染 {item.Zh}（约 {percent}%）", stainMaterial, percent, item.Zh);
+            return;
+        }
+        if (item.IngestMaterial is string ingestMaterial)
+        {
+            var ingestSeconds = statusPermanentMode.Checked ? 3600 : (int)statusDuration.Value;
+            var cells = Math.Max(1, (int)Math.Round(ingestSeconds / (item.IngestSecondsPerCell ?? 0.5)));
+            var ingestNote = statusPermanentMode.Checked ? "（永久按 3600 秒计）" : "";
+            SendCommand("INGEST_STATUS", $"施加状态 {item.Zh}（约 {ingestSeconds} 秒{ingestNote}）",
+                ingestMaterial, cells, ingestSeconds, item.Zh);
+            return;
+        }
         var permanent = statusPermanentMode.Checked;
         var seconds = (int)statusDuration.Value;
         SendCommand("GIVE_EFFECT",
@@ -1769,7 +1784,7 @@ internal sealed partial class MainForm : Form
     private void ConfirmClearEffects()
     {
         var result = MessageBox.Show(this,
-            "确定要清除当前角色身上的全部状态效果吗？\n\n将移除所有通过本工具或游戏内途径获得的状态（含永久状态），并用水清洗沾染类状态。天赋不受影响。",
+            "确定要清除当前角色身上的全部状态效果吗？\n\n将移除所有通过本工具或游戏内途径获得的状态（含永久状态），清除沾染与摄取状态并重置幻觉类视觉扭曲。天赋不受影响。",
             "确认清除全部状态",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Warning,
@@ -2261,7 +2276,7 @@ internal sealed partial class MainForm : Form
             return;
         }
 
-        if (status.Protocol < 18)
+        if (status.Protocol < 19)
         {
             SetConnection("● 配套模组需更新", Color.Firebrick);
             liveStatsLabel.Text = "请点击“安装/修复配套模组”，然后重新启动或重新载入 Noita。";
