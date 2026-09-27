@@ -10,11 +10,13 @@ local CHARACTER_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/characte
 local NEXT_SEED_PATH = "mods/codex_noita_trainer_bridge/bridge/next_seed.txt"
 local HP_DISPLAY_SCALE = 25.0
 local OVERLAY_FONT = "data/fonts/font_pixel_white.xml"
-local BRIDGE_PROTOCOL = 19
+local BRIDGE_PROTOCOL = 20
 local HEALED_TOTAL_KEY = "CODEX_TRAINER_HEALED_TOTAL_DISPLAY"
 
 local initialized = false
 local last_command_id = ""
+local stain_job = nil
+local stain_index_by_material = {}
 local last_ok = true
 local last_message = "桥接已加载"
 local tick_counter = 0
@@ -290,6 +292,14 @@ local function player_and_position()
   if player == nil then error("没有找到当前玩家；请先进入一局游戏") end
   local x, y = EntityGetTransform(player)
   return player, x, y
+end
+
+local function read_stain_vector(player)
+  local comp = EntityGetFirstComponentIncludingDisabled(player, "StatusEffectDataComponent")
+  if comp == nil then return nil end
+  local ok, vec = pcall(ComponentGetVector, comp, "stain_effects", "float")
+  if not ok or vec == nil then return nil end
+  return vec
 end
 
 local function collect_loaded_gold(player)
@@ -1191,8 +1201,21 @@ local function execute_command(lines)
     if material == nil or not allowed_stains[material] then error("沾染材质无效") end
     local percent = math.floor(required_number(lines[4] or "100", "沾染程度", 1, 100) + 0.5)
     local display_name = lines[5] or material
-    EntityAddRandomStains(player, CellFactory_GetType(material), percent * 20)
-    return "已施加沾染 " .. display_name .. "（约 " .. tostring(percent) .. "%）"
+    if read_stain_vector(player) == nil then error("无法读取当前污渍状态（变形状态下不可用）") end
+    stain_job = {
+      material = material,
+      cell_type = CellFactory_GetType(material),
+      percent = percent,
+      target = percent / 100,
+      scale = 1,
+      display_name = display_name,
+      baseline = nil,
+      index = stain_index_by_material[material],
+      start_frame = GameGetFrameNum(),
+      added = 0,
+      command_id = lines[1],
+    }
+    return "开始施加沾染 " .. display_name .. " " .. tostring(percent) .. "%（按实际污渍量逐帧校准，约需数秒）"
   end
 
   if command == "INGEST_STATUS" then
@@ -1418,6 +1441,75 @@ local function draw_overlay()
   end
 end
 
+local function finish_stain_job(message, ok)
+  if stain_job ~= nil and last_command_id == stain_job.command_id then
+    last_ok = ok
+    last_message = message
+    write_status()
+  end
+  GamePrint((ok and "Trainer: " or "Trainer error: ") .. game_message(message))
+  stain_job = nil
+end
+
+local function stain_job_level_text(job, current)
+  local shown = current
+  if job.scale == 1 then shown = current * 100 end
+  return tostring(math.floor(shown + 0.5))
+end
+
+local function tick_stain_job(player)
+  local job = stain_job
+  if job == nil then return end
+  if GameGetFrameNum() - job.start_frame > 1800 then
+    finish_stain_job("施加沾染 " .. job.display_name .. " 超时中止", false)
+    return
+  end
+  local vec = read_stain_vector(player)
+  if vec == nil then return end
+  if job.baseline == nil then job.baseline = vec end
+  for i = 1, #vec do
+    if (vec[i] or 0) > 1.0 then
+      job.scale = 100
+      job.target = job.percent
+      break
+    end
+  end
+  if job.index == nil then
+    EntityAddRandomStains(player, job.cell_type, 10)
+    job.added = job.added + 10
+    local best_index, best_delta = nil, 0.0002
+    for i = 1, #vec do
+      local delta = (vec[i] or 0) - (job.baseline[i] or 0)
+      if delta > best_delta then
+        best_index, best_delta = i, delta
+      end
+    end
+    if best_index == nil and GameGetFrameNum() - job.start_frame > 90 then
+      for i = 1, #vec do
+        local delta = (vec[i] or 0) - (job.baseline[i] or 0)
+        if best_index == nil or delta > best_delta then
+          best_index, best_delta = i, delta
+        end
+      end
+    end
+    if best_index ~= nil then
+      job.index = best_index
+      stain_index_by_material[job.material] = best_index
+    end
+    return
+  end
+  local current = vec[job.index] or 0
+  if current >= job.target - 0.004 then
+    finish_stain_job("已施加沾染 " .. job.display_name .. "（约 " .. stain_job_level_text(job, current) .. "%）", true)
+    return
+  end
+  EntityAddRandomStains(player, job.cell_type, 10)
+  job.added = job.added + 10
+  if job.added >= 900 then
+    finish_stain_job("沾染 " .. job.display_name .. " 停在约 " .. stain_job_level_text(job, current) .. "%（可能已接近引擎上限）", true)
+  end
+end
+
 local function process_command()
   local lines = read_lines(COMMAND_PATH)
   if lines == nil or lines[1] == nil or lines[1] == "" then return end
@@ -1444,6 +1536,7 @@ local function trainer_tick()
   tick_counter = tick_counter + 1
   process_command()
   local player = active_player()
+  if player ~= nil and stain_job ~= nil then tick_stain_job(player) end
   if pending_sheep ~= nil then
     local message = nil
     -- The command only starts on an untransformed player and explicitly targets sheep.
