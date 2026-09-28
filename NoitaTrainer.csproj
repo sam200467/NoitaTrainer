@@ -8,7 +8,7 @@
     <AssemblyName>NoitaTrainer</AssemblyName>
     <RootNamespace>NoitaTrainer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Version>4.9.2</Version>
+    <Version>4.9.3</Version>
     <Authors>Codex</Authors>
     <Product>Noita 即时修改器</Product>
     <Description>Noita companion trainer using the supported Lua entity API.</Description>

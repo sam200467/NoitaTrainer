@@ -10,7 +10,7 @@ local CHARACTER_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/characte
 local NEXT_SEED_PATH = "mods/codex_noita_trainer_bridge/bridge/next_seed.txt"
 local HP_DISPLAY_SCALE = 25.0
 local OVERLAY_FONT = "data/fonts/font_pixel_white.xml"
-local BRIDGE_PROTOCOL = 20
+local BRIDGE_PROTOCOL = 21
 local HEALED_TOTAL_KEY = "CODEX_TRAINER_HEALED_TOTAL_DISPLAY"
 
 local initialized = false
@@ -1201,6 +1201,8 @@ local function execute_command(lines)
     if material == nil or not allowed_stains[material] then error("沾染材质无效") end
     local percent = math.floor(required_number(lines[4] or "100", "沾染程度", 1, 100) + 0.5)
     local display_name = lines[5] or material
+    local stain_effect_ids = { water = "WET", blood = "BLOODY", oil = "OILED", slime = "SLIMY",
+      radioactive_liquid = "RADIOACTIVE", urine = "JARATE", alcohol = "ALCOHOLIC" }
     if read_stain_vector(player) == nil then error("无法读取当前污渍状态（变形状态下不可用）") end
     stain_job = {
       material = material,
@@ -1214,6 +1216,9 @@ local function execute_command(lines)
       start_frame = GameGetFrameNum(),
       added = 0,
       command_id = lines[1],
+      effect_id = stain_effect_ids[material],
+      removed = false,
+      remove_frame = 0,
     }
     return "开始施加沾染 " .. display_name .. " " .. tostring(percent) .. "%（按实际污渍量逐帧校准，约需数秒）"
   end
@@ -1499,7 +1504,21 @@ local function tick_stain_job(player)
     return
   end
   local current = vec[job.index] or 0
-  if current >= job.target - 0.004 then
+  local eps = 0.004 * job.scale
+  if current > job.target + eps then
+    -- 高于目标值：污渍向量没有写入接口，先用原版接口清零该种沾染，再重新补到目标
+    if not job.removed then
+      EntityRemoveStainStatusEffect(player, job.effect_id, 0)
+      job.removed = true
+      job.remove_frame = GameGetFrameNum()
+      return
+    end
+    if GameGetFrameNum() - job.remove_frame > 120 then
+      finish_stain_job("无法将沾染 " .. job.display_name .. " 下调到 " .. tostring(job.percent) .. "%（清零后仍为约 " .. stain_job_level_text(job, current) .. "%）", false)
+    end
+    return
+  end
+  if current >= job.target - eps then
     finish_stain_job("已施加沾染 " .. job.display_name .. "（约 " .. stain_job_level_text(job, current) .. "%）", true)
     return
   end

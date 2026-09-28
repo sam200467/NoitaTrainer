@@ -135,7 +135,7 @@ internal sealed partial class MainForm : Form
 
     public MainForm()
     {
-        Text = "Noita 即时修改器 4.9.2";
+        Text = "Noita 即时修改器 4.9.3";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(900, 760);
         Size = new Size(1440, 1100);
@@ -2276,7 +2276,7 @@ internal sealed partial class MainForm : Form
             return;
         }
 
-        if (status.Protocol < 20)
+        if (status.Protocol < 21)
         {
             SetConnection("● 配套模组需更新", Color.Firebrick);
             liveStatsLabel.Text = "请点击“安装/修复配套模组”，然后重新启动或重新载入 Noita。";
