@@ -5,12 +5,13 @@ dofile_once("data/scripts/perks/perk.lua")
 
 local COMMAND_PATH = "mods/codex_noita_trainer_bridge/bridge/command.txt"
 local STATUS_PATH = "mods/codex_noita_trainer_bridge/bridge/status.txt"
+local STAIN_DEBUG_PATH = "mods/codex_noita_trainer_bridge/bridge/stains_debug.txt"
 local WAND_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/wands.txt"
 local CHARACTER_SNAPSHOT_PATH = "mods/codex_noita_trainer_bridge/bridge/character.txt"
 local NEXT_SEED_PATH = "mods/codex_noita_trainer_bridge/bridge/next_seed.txt"
 local HP_DISPLAY_SCALE = 25.0
 local OVERLAY_FONT = "data/fonts/font_pixel_white.xml"
-local BRIDGE_PROTOCOL = 21
+local BRIDGE_PROTOCOL = 22
 local HEALED_TOTAL_KEY = "CODEX_TRAINER_HEALED_TOTAL_DISPLAY"
 
 local initialized = false
@@ -1217,10 +1218,10 @@ local function execute_command(lines)
       added = 0,
       command_id = lines[1],
       effect_id = stain_effect_ids[material],
-      removed = false,
-      remove_frame = 0,
+      removals = 0,
+      waiting = false,
     }
-    return "开始施加沾染 " .. display_name .. " " .. tostring(percent) .. "%（按实际污渍量逐帧校准，约需数秒）"
+    return "开始施加沾染 " .. display_name .. " " .. tostring(percent) .. "%（按实际污渍量分批校准，可能需要十几秒）"
   end
 
   if command == "INGEST_STATUS" then
@@ -1446,11 +1447,27 @@ local function draw_overlay()
   end
 end
 
+local function stain_job_log(job, text)
+  if job.log == nil then job.log = {} end
+  if #job.log < 240 then
+    job.log[#job.log + 1] = tostring(GameGetFrameNum() - job.start_frame) .. " " .. text
+  end
+end
+
 local function finish_stain_job(message, ok)
-  if stain_job ~= nil and last_command_id == stain_job.command_id then
-    last_ok = ok
-    last_message = message
-    write_status()
+  if stain_job ~= nil then
+    if stain_job.log ~= nil then
+      local handle = io.open(STAIN_DEBUG_PATH, "wb")
+      if handle ~= nil then
+        handle:write(table.concat(stain_job.log, "\n"))
+        handle:close()
+      end
+    end
+    if last_command_id == stain_job.command_id then
+      last_ok = ok
+      last_message = message
+      write_status()
+    end
   end
   GamePrint((ok and "Trainer: " or "Trainer error: ") .. game_message(message))
   stain_job = nil
@@ -1465,7 +1482,8 @@ end
 local function tick_stain_job(player)
   local job = stain_job
   if job == nil then return end
-  if GameGetFrameNum() - job.start_frame > 1800 then
+  local frame = GameGetFrameNum() - job.start_frame
+  if frame > 3600 then
     finish_stain_job("施加沾染 " .. job.display_name .. " 超时中止", false)
     return
   end
@@ -1479,9 +1497,16 @@ local function tick_stain_job(player)
       break
     end
   end
+  local tol = 0.0125 * job.scale
+
+  -- 阶段一：用一小批探针发现该材质在 stain_effects 向量中的下标
   if job.index == nil then
-    EntityAddRandomStains(player, job.cell_type, 10)
-    job.added = job.added + 10
+    if job.probe_frame == nil then
+      EntityAddRandomStains(player, job.cell_type, 10)
+      job.added = job.added + 10
+      job.probe_frame = frame
+      return
+    end
     local best_index, best_delta = nil, 0.0002
     for i = 1, #vec do
       local delta = (vec[i] or 0) - (job.baseline[i] or 0)
@@ -1489,42 +1514,91 @@ local function tick_stain_job(player)
         best_index, best_delta = i, delta
       end
     end
-    if best_index == nil and GameGetFrameNum() - job.start_frame > 90 then
-      for i = 1, #vec do
-        local delta = (vec[i] or 0) - (job.baseline[i] or 0)
-        if best_index == nil or delta > best_delta then
-          best_index, best_delta = i, delta
-        end
-      end
-    end
     if best_index ~= nil then
       job.index = best_index
       stain_index_by_material[job.material] = best_index
-    end
-    return
-  end
-  local current = vec[job.index] or 0
-  local eps = 0.004 * job.scale
-  if current > job.target + eps then
-    -- 高于目标值：污渍向量没有写入接口，先用原版接口清零该种沾染，再重新补到目标
-    if not job.removed then
-      EntityRemoveStainStatusEffect(player, job.effect_id, 0)
-      job.removed = true
-      job.remove_frame = GameGetFrameNum()
+      if best_delta > 0 then
+        job.cells_per_unit = 10 / best_delta
+      end
+      stain_job_log(job, "probe index=" .. tostring(best_index) .. " delta=" .. tostring(best_delta))
       return
     end
-    if GameGetFrameNum() - job.remove_frame > 120 then
-      finish_stain_job("无法将沾染 " .. job.display_name .. " 下调到 " .. tostring(job.percent) .. "%（清零后仍为约 " .. stain_job_level_text(job, current) .. "%）", false)
+    if frame - job.probe_frame > 240 then
+      finish_stain_job("施加沾染 " .. job.display_name .. " 失败：未检测到污渍量变化", false)
     end
     return
   end
-  if current >= job.target - eps then
+
+  local current = vec[job.index] or 0
+
+  -- 阶段二：上一批污渍尚未稳定时只观察不加量（stain_effects 并非每帧更新，盲目连加会超冲）
+  if job.waiting then
+    if math.abs(current - job.last_value) > 0.001 * job.scale then
+      job.last_value = current
+      job.stable_frames = 0
+      job.saw_change = true
+    else
+      job.stable_frames = job.stable_frames + 1
+    end
+    if (job.saw_change and job.stable_frames >= 20) or frame >= job.wait_deadline then
+      job.waiting = false
+      if (job.wait_added or 0) > 0 then
+        local delta = current - job.wait_base
+        if delta > 0.0001 * job.scale then
+          local measured = job.wait_added / delta
+          if job.cells_per_unit == nil then
+            job.cells_per_unit = measured
+          else
+            job.cells_per_unit = job.cells_per_unit * 0.6 + measured * 0.4
+          end
+          stain_job_log(job, "settle value=" .. tostring(current) .. " delta=" .. tostring(delta) .. " cpu=" .. tostring(job.cells_per_unit))
+        end
+      end
+    else
+      return
+    end
+  end
+
+  -- 高于目标：污渍向量没有写入接口，用原版接口清零该种沾染后重新补量
+  if current > job.target + tol then
+    if (job.removals or 0) >= 3 then
+      finish_stain_job("无法将沾染 " .. job.display_name .. " 下调到 " .. tostring(job.percent) .. "%（清零后仍为约 " .. stain_job_level_text(job, current) .. "%）", false)
+      return
+    end
+    EntityRemoveStainStatusEffect(player, job.effect_id, 0)
+    job.removals = (job.removals or 0) + 1
+    job.waiting = true
+    job.saw_change = false
+    job.last_value = current
+    job.stable_frames = 0
+    job.wait_base = current
+    job.wait_added = 0
+    job.wait_deadline = frame + 240
+    stain_job_log(job, "remove #" .. tostring(job.removals) .. " at value=" .. tostring(current))
+    return
+  end
+
+  if current >= job.target - tol then
     finish_stain_job("已施加沾染 " .. job.display_name .. "（约 " .. stain_job_level_text(job, current) .. "%）", true)
     return
   end
-  EntityAddRandomStains(player, job.cell_type, 10)
-  job.added = job.added + 10
-  if job.added >= 900 then
+
+  -- 按实测速率估算本批格数，留 25% 余量防止超冲，每批之后等待稳定再评估
+  local cpu = job.cells_per_unit or (500 / job.scale)
+  local cells = math.floor((job.target - current) * cpu * 0.75 + 0.5)
+  if cells < 5 then cells = 5 end
+  if cells > 150 then cells = 150 end
+  EntityAddRandomStains(player, job.cell_type, cells)
+  job.added = job.added + cells
+  job.waiting = true
+  job.saw_change = false
+  job.last_value = current
+  job.stable_frames = 0
+  job.wait_base = current
+  job.wait_added = cells
+  job.wait_deadline = frame + 240
+  stain_job_log(job, "add " .. tostring(cells) .. " at value=" .. tostring(current))
+  if job.added >= 1500 then
     finish_stain_job("沾染 " .. job.display_name .. " 停在约 " .. stain_job_level_text(job, current) .. "%（可能已接近引擎上限）", true)
   end
 end
