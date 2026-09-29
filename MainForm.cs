@@ -135,7 +135,7 @@ internal sealed partial class MainForm : Form
 
     public MainForm()
     {
-        Text = "Noita 即时修改器 4.9.4";
+        Text = "Noita 即时修改器 4.9.6";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(900, 760);
         Size = new Size(1440, 1100);
@@ -838,8 +838,9 @@ internal sealed partial class MainForm : Form
             statusPermanentMode,
             statusDuration,
             ExecuteStatus,
-            optionsLabel: "持续方式",
-            countLabel: "时长(秒)/沾染程度(%)"));
+            optionsLabel: "其他状态持续方式",
+            countLabel: "时长(秒)",
+            separateStains: true));
         var clearBar = new FlowLayoutPanel
         {
             Dock = DockStyle.Top,
@@ -1760,8 +1761,7 @@ internal sealed partial class MainForm : Form
         }
         if (item.StainMaterial is string stainMaterial)
         {
-            var percent = Math.Clamp((int)statusDuration.Value, 1, 100);
-            SendCommand("APPLY_STAIN", $"施加沾染 {item.Zh}（约 {percent}%）", stainMaterial, percent, item.Zh);
+            SendCommand("APPLY_STAIN", $"施加沾染 {item.Zh}（100%）", stainMaterial, item.Zh);
             return;
         }
         if (item.IngestMaterial is string ingestMaterial)
@@ -2276,7 +2276,7 @@ internal sealed partial class MainForm : Form
             return;
         }
 
-        if (status.Protocol < 22)
+        if (status.Protocol < 24)
         {
             SetConnection("● 配套模组需更新", Color.Firebrick);
             liveStatsLabel.Text = "请点击“安装/修复配套模组”，然后重新启动或重新载入 Noita。";
@@ -2558,7 +2558,8 @@ internal sealed partial class MainForm : Form
         Action<CatalogItem> execute,
         bool showIcons = true,
         string optionsLabel = "操作方式",
-        string countLabel = "数量")
+        string countLabel = "数量",
+        bool separateStains = false)
     {
         var showOptions = spawnMode is not null && giveMode is not null && countInput is not null;
         var outer = new TableLayoutPanel
@@ -2668,7 +2669,9 @@ internal sealed partial class MainForm : Form
                 : null;
             var button = new CatalogButton(image)
             {
-                Text = item.DisplayName,
+                Text = separateStains && item.StainMaterial is not null
+                    ? $"{item.DisplayName}  ·  100%"
+                    : item.DisplayName,
                 Font = catalogButtonFont,
                 Dock = DockStyle.Fill,
                 Height = 62,
@@ -2682,6 +2685,19 @@ internal sealed partial class MainForm : Form
             catalogButtons.Add((item, button));
         }
 
+        Label GroupHeading(string title) => new()
+        {
+            Text = title,
+            Dock = DockStyle.Fill,
+            AutoSize = true,
+            Font = new Font(Font, FontStyle.Bold),
+            BackColor = Color.FromArgb(235, 241, 247),
+            Padding = new Padding(8, 7, 8, 7),
+            Margin = new Padding(2, 8, 2, 4)
+        };
+        var stainHeading = GroupHeading("沾染状态 · 点击赋予 100% 沾染");
+        var otherHeading = GroupHeading("其他状态 · 使用上方持续方式和时长");
+
         void ApplySearchFilter()
         {
             var query = searchText.Text.Trim();
@@ -2694,9 +2710,31 @@ internal sealed partial class MainForm : Form
 
             grid.SuspendLayout();
             grid.Controls.Clear();
-            grid.RowCount = Math.Max(1, (matches.Count + CatalogGridColumns - 1) / CatalogGridColumns);
-            for (var index = 0; index < matches.Count; index++)
-                grid.Controls.Add(matches[index].Button, index % CatalogGridColumns, index / CatalogGridColumns);
+            if (separateStains)
+            {
+                var stainMatches = matches.Where(entry => entry.Item.StainMaterial is not null).ToList();
+                var otherMatches = matches.Where(entry => entry.Item.StainMaterial is null).ToList();
+                var row = 0;
+                void AddGroup(Label heading, List<(CatalogItem Item, CatalogButton Button)> entries)
+                {
+                    if (entries.Count == 0) return;
+                    grid.Controls.Add(heading, 0, row);
+                    grid.SetColumnSpan(heading, CatalogGridColumns);
+                    row++;
+                    for (var index = 0; index < entries.Count; index++)
+                        grid.Controls.Add(entries[index].Button, index % CatalogGridColumns, row + index / CatalogGridColumns);
+                    row += (entries.Count + CatalogGridColumns - 1) / CatalogGridColumns;
+                }
+                AddGroup(stainHeading, stainMatches);
+                AddGroup(otherHeading, otherMatches);
+                grid.RowCount = Math.Max(1, row);
+            }
+            else
+            {
+                grid.RowCount = Math.Max(1, (matches.Count + CatalogGridColumns - 1) / CatalogGridColumns);
+                for (var index = 0; index < matches.Count; index++)
+                    grid.Controls.Add(matches[index].Button, index % CatalogGridColumns, index / CatalogGridColumns);
+            }
             grid.ResumeLayout(true);
             resultCount.Text = $"{matches.Count} / {items.Count}";
             scrollHost.AutoScrollPosition = Point.Empty;
